@@ -1,5 +1,2407 @@
-<!DOCTYPE html>
-<html>
-<body>
-<iframe src='https://github.com/klieka/klieka.github.io/wiki' width='100%' height='100%' scrolling='yes' style='border:0'></iframe></body>
-</html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Baseline</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Simeon">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="assets/style.css">
+<style type="text/css">.docsify-copy-code-button,.docsify-copy-code-button>span{cursor:pointer;transition:all .25s ease}.docsify-copy-code-button{background:grey;background:var(--theme-color,grey);border:0;border-radius:0;color:#fff;font-size:1em;opacity:0;outline:0;overflow:visible;padding:.65em .8em;position:absolute;right:0;top:0;z-index:1}.docsify-copy-code-button>span{background:inherit;border-radius:3px;pointer-events:none}.docsify-copy-code-button>.error,.docsify-copy-code-button>.success{font-size:.825em;opacity:0;padding:.5em .65em;position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:-100}.docsify-copy-code-button.error>.error,.docsify-copy-code-button.success>.success{opacity:1;right:100%;transform:translate(-25%,-50%)}.docsify-copy-code-button:focus,pre:hover .docsify-copy-code-button{opacity:1}.docsify-copy-code-button>[aria-live]{height:1px;left:-10000px;overflow:hidden;position:absolute;top:auto;width:1px}</style><style>
+.sidebar {
+  padding-top: 0;
+}
+
+.search {
+  margin-bottom: 20px;
+  padding: 6px;
+  border-bottom: 1px solid #eee;
+}
+
+.search .input-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.search .results-panel {
+  display: none;
+}
+
+.search .results-panel.show {
+  display: block;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.6em 7px;
+  font-size: inherit;
+  border: 1px solid transparent;
+}
+
+.search input:focus {
+  box-shadow: 0 0 5px var(--theme-color, #42b983);
+  border: 1px solid var(--theme-color, #42b983);
+}
+
+.search input::-webkit-search-decoration,
+.search input::-webkit-search-cancel-button,
+.search input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search input::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.search .clear-button {
+  cursor: pointer;
+  width: 36px;
+  text-align: right;
+  display: none;
+}
+
+.search .clear-button.show {
+  display: block;
+}
+
+.search .clear-button svg {
+  transform: scale(.5);
+}
+
+.search h2 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.search a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search .matching-post {
+  border-bottom: 1px solid #eee;
+}
+
+.search .matching-post:last-child {
+  border-bottom: 0;
+}
+
+.search p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.search p.empty {
+  text-align: center;
+}
+
+.app-name.hide, .sidebar-nav.hide {
+  display: none;
+}</style></head>
+<body data-page="baseline.md" class="ready sticky">
+  <nav class="app-nav no-badge"><ul><li><a href="//www.simeoncloud.com" target="_blank" rel="noopener" title="Home">Home</a></li><li><a href="//www.github.com/simeoncloud" target="_blank" rel="noopener" title="GitHub">GitHub</a></li></ul></nav><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><div class="search"><div class="input-wrap">
+      <input type="search" value="" aria-label="Search text" placeholder="Type to search">
+      <div class="clear-button">
+        <svg width="26" height="24">
+          <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
+          <path stroke="white" stroke-width="2" d="M8.25,8.25,15.75,15.75"></path>
+          <path stroke="white" stroke-width="2" d="M8.25,15.75,15.75,8.25"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="results-panel"></div>
+    </div><h1 class="app-name"><a class="app-name-link" data-nosearch="" href="/docs/"><img alt="Simeon" src="/docs/assets/images/logo.png"></a></h1><div class="sidebar-nav"><ul><li><a href="#/" title="Overview">Overview</a></li><li><a href="#/getting-started" title="Getting Started">Getting Started</a></li><li><a href="#/how-it-works" title="How It Works">How It Works</a></li><li><a href="#/how-to" title="How To">How To</a></li><li><a href="#/permissions" title="Permissions">Permissions</a></li><li><a href="#/app-builder" title="App Builder">App Builder</a></li><li><a href="#/managed-configurations" title="Managed Configurations">Managed Configurations</a></li><li class=""><a href="#/baseline" title="Baseline">Baseline</a><ul class="app-sub-sidebar"><li class="active"><a class="section-link" href="#/baseline?id=the-simeon-baseline-a-comprehensive-set-of-best-practice-microsoft-365-configurations" title="The Simeon Baseline: A comprehensive set of best practice Microsoft 365 configurations.">The Simeon Baseline: A comprehensive set of best practice Microsoft 365 configurations.</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=summary-of-security-focused-configurations" title="Summary of security-focused configurations">Summary of security-focused configurations</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=data-loss-prevention-dlp" title="Data loss prevention (DLP)">Data loss prevention (DLP)</a></li><li class=""><a class="section-link" href="#/baseline?id=security-auditing" title="Security auditing">Security auditing</a></li><li class=""><a class="section-link" href="#/baseline?id=authentication" title="Authentication">Authentication</a></li><li class=""><a class="section-link" href="#/baseline?id=endpoint-security" title="Endpoint security">Endpoint security</a></li><li class=""><a class="section-link" href="#/baseline?id=data-retention" title="Data retention">Data retention</a></li><li class=""><a class="section-link" href="#/baseline?id=user-privileges" title="User privileges">User privileges</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-gt-resource-groups" title="Azure > Resource groups">Azure &gt; Resource groups</a></li><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-authorization-policies" title="Azure AD > Authorization policies">Azure AD &gt; Authorization policies</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-company-branding" title="Azure AD > Company branding">Azure AD &gt; Company branding</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=default" title="Default">Default</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-device-settings" title="Azure AD > Device settings">Azure AD &gt; Device settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-1" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-directory-settings" title="Azure AD > Directory settings">Azure AD &gt; Directory settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=groupunified" title="Group.Unified">Group.Unified</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-enterprise-applications-gt-user-settings" title="Azure AD > Enterprise applications > User settings">Azure AD &gt; Enterprise applications &gt; User settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-2" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-external-user-directory-settings" title="Azure AD > External user directory settings">Azure AD &gt; External user directory settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-3" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-external-user-guest-settings" title="Azure AD > External user guest settings">Azure AD &gt; External user guest settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-4" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-group-settings" title="Azure AD > Group settings">Azure AD &gt; Group settings</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-5" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-groups" title="Azure AD > Groups">Azure AD &gt; Groups</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=baseline-autopilot-devices-self-deploying" title="Baseline - Autopilot Devices - Self Deploying">Baseline - Autopilot Devices - Self Deploying</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-autopilot-devices-user-driven" title="Baseline - Autopilot Devices - User Driven">Baseline - Autopilot Devices - User Driven</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-corporate-devices" title="Baseline - Corporate Devices">Baseline - Corporate Devices</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-corporate-devices-insiders" title="Baseline - Corporate Devices - Insiders">Baseline - Corporate Devices - Insiders</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-corporate-devices-physical" title="Baseline - Corporate Devices - Physical">Baseline - Corporate Devices - Physical</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-corporate-devices-preview" title="Baseline - Corporate Devices - Preview">Baseline - Corporate Devices - Preview</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-corporate-devices-virtual" title="Baseline - Corporate Devices - Virtual">Baseline - Corporate Devices - Virtual</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-device-administrators" title="Baseline - Device Administrators">Baseline - Device Administrators</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-device-enrollers" title="Baseline - Device Enrollers">Baseline - Device Enrollers</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-group-creators" title="Baseline - Group Creators">Baseline - Group Creators</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-microsoft-365-users" title="Baseline - Microsoft 365 Users">Baseline - Microsoft 365 Users</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-microsoft-365-users-insiders" title="Baseline - Microsoft 365 Users - Insiders">Baseline - Microsoft 365 Users - Insiders</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-microsoft-365-users-preview" title="Baseline - Microsoft 365 Users - Preview">Baseline - Microsoft 365 Users - Preview</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-unrestricted-access-from-unmanaged-devices-and-untrusted-locations" title="Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations">Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-mobility-mdm-and-mam" title="Azure AD > Mobility (MDM and MAM)">Azure AD &gt; Mobility (MDM and MAM)</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=microsoft-intune" title="Microsoft Intune">Microsoft Intune</a></li><li class=""><a class="section-link" href="#/baseline?id=microsoft-intune-enrollment" title="Microsoft Intune Enrollment">Microsoft Intune Enrollment</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-password-reset" title="Azure AD > Password reset">Azure AD &gt; Password reset</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=configuration-6" title="Configuration">Configuration</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-roles-and-administrators" title="Azure AD > Roles and Administrators">Azure AD &gt; Roles and Administrators</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=azure-ad-joined-device-local-administrator" title="Azure AD Joined Device Local Administrator">Azure AD Joined Device Local Administrator</a></li><li class=""><a class="section-link" href="#/baseline?id=directory-readers" title="Directory Readers">Directory Readers</a></li><li class=""><a class="section-link" href="#/baseline?id=directory-synchronization-accounts" title="Directory Synchronization Accounts">Directory Synchronization Accounts</a></li><li class=""><a class="section-link" href="#/baseline?id=global-administrator" title="Global Administrator">Global Administrator</a></li><li class=""><a class="section-link" href="#/baseline?id=guest-user" title="Guest User">Guest User</a></li></ul><li class=""><a class="section-link" href="#/baseline?id=azure-ad-gt-security-gt-conditional-access-gt-policies" title="Azure AD > Security > Conditional Access > Policies">Azure AD &gt; Security &gt; Conditional Access &gt; Policies</a></li><ul class="app-sub-sidebar"><li class=""><a class="section-link" href="#/baseline?id=baseline-block-legacy-apps" title="Baseline - Block Legacy Apps">Baseline - Block Legacy Apps</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-block-legacy-exchange-activesync" title="Baseline - Block Legacy Exchange ActiveSync">Baseline - Block Legacy Exchange ActiveSync</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-block-platforms-other-than-ios-or-android-from-unmanaged-devices-and-untrusted-locations" title="Baseline - Block Platforms Other than iOS or Android from Unmanaged Devices and Untrusted Locations">Baseline - Block Platforms Other than iOS or Android from Unmanaged Devices and Untrusted Locations</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-require-approved-client-apps-from-unmanaged-devices-and-untrusted-locations" title="Baseline - Require Approved Client Apps from Unmanaged Devices and Untrusted Locations">Baseline - Require Approved Client Apps from Unmanaged Devices and Untrusted Locations</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-require-compliant-device-for-intune-enrollment" title="Baseline - Require Compliant Device for Intune Enrollment">Baseline - Require Compliant Device for Intune Enrollment</a></li><li class=""><a class="section-link" href="#/baseline?id=baseline-require-mfa-for-admins" title="Baseline - Require MFA for Admins">Baseline - Require MFA for Admins</a></li><li><a class="section-link" href="#/baseline?id=baseline-require-mfa-from-unmanaged-devices-and-untrusted-locations" title="Baseline - Require MFA from Unmanaged Devices and Untrusted Locations">Baseline - Require MFA from Unmanaged Devices and Untrusted Locations</a></li></ul><li><a class="section-link" href="#/baseline?id=azure-ad-gt-security-gt-identity-protection" title="Azure AD > Security > Identity Protection">Azure AD &gt; Security &gt; Identity Protection</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=sign-in-risk-policy" title="Sign-In Risk Policy">Sign-In Risk Policy</a></li><li><a class="section-link" href="#/baseline?id=user-risk-and-mfa-registration-policy" title="User Risk and MFA Registration Policy">User Risk and MFA Registration Policy</a></li></ul><li><a class="section-link" href="#/baseline?id=azure-ad-gt-user-settings" title="Azure AD > User settings">Azure AD &gt; User settings</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=configuration-7" title="Configuration">Configuration</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-apps" title="Intune > Apps">Intune &gt; Apps</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=_7-zip" title="7-Zip">7-Zip</a></li><li><a class="section-link" href="#/baseline?id=adobe-acrobat-pro-dc" title="Adobe Acrobat Pro DC">Adobe Acrobat Pro DC</a></li><li><a class="section-link" href="#/baseline?id=cmtrace" title="CMTrace">CMTrace</a></li><li><a class="section-link" href="#/baseline?id=microsoft-net-framework-35" title="Microsoft .NET Framework 3.5">Microsoft .NET Framework 3.5</a></li><li><a class="section-link" href="#/baseline?id=officesuiteapp-office-365" title="officeSuiteApp - Office 365">officeSuiteApp - Office 365</a></li><li><a class="section-link" href="#/baseline?id=windowsmicrosoftedgeapp-microsoft-edge-for-windows-10" title="windowsMicrosoftEdgeApp - Microsoft Edge for Windows 10">windowsMicrosoftEdgeApp - Microsoft Edge for Windows 10</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-apps-gt-app-configuration-policies" title="Intune > Apps > App configuration policies">Intune &gt; Apps &gt; App configuration policies</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-configure-policy-managed-client-apps-on-unmanaged-ios-devices" title="Baseline - Configure Policy Managed Client Apps on Unmanaged iOS Devices">Baseline - Configure Policy Managed Client Apps on Unmanaged iOS Devices</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-apps-gt-app-protection-policies-platform-android" title="Intune > Apps > App protection policies (Platform = Android)">Intune &gt; Apps &gt; App protection policies (Platform = Android)</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-protect-policy-managed-client-apps-on-unmanaged-android-devices" title="Baseline - Protect Policy Managed Client Apps on Unmanaged Android Devices">Baseline - Protect Policy Managed Client Apps on Unmanaged Android Devices</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-apps-gt-app-protection-policies-platform-iosipados" title="Intune > Apps > App protection policies (Platform = iOS/iPadOS)">Intune &gt; Apps &gt; App protection policies (Platform = iOS/iPadOS)</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-protect-policy-managed-client-apps-on-unmanaged-ios-devices" title="Baseline - Protect Policy Managed Client Apps on Unmanaged iOS Devices">Baseline - Protect Policy Managed Client Apps on Unmanaged iOS Devices</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-compliance-policies" title="Intune > Devices > Compliance policies">Intune &gt; Devices &gt; Compliance policies</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-corporate-devices-physical-windows" title="Baseline - Corporate Devices - Physical - Windows">Baseline - Corporate Devices - Physical - Windows</a></li><li><a class="section-link" href="#/baseline?id=baseline-corporate-devices-windows" title="Baseline - Corporate Devices - Windows">Baseline - Corporate Devices - Windows</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-configuration-profiles" title="Intune > Devices > Configuration profiles">Intune &gt; Devices &gt; Configuration profiles</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-functionality-microsoft-store-limited-to-private-store-only" title="Baseline - Functionality - Microsoft Store Limited to Private Store Only">Baseline - Functionality - Microsoft Store Limited to Private Store Only</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-default-windows-10-update-ring" title="Baseline - OS - Default Windows 10 Update Ring">Baseline - OS - Default Windows 10 Update Ring</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-insiders-windows-10-update-ring" title="Baseline - OS - Insiders Windows 10 Update Ring">Baseline - OS - Insiders Windows 10 Update Ring</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-local-autopilot-reset-enabled" title="Baseline - OS - Local Autopilot Reset Enabled">Baseline - OS - Local Autopilot Reset Enabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-preview-windows-10-update-ring" title="Baseline - OS - Preview Windows 10 Update Ring">Baseline - OS - Preview Windows 10 Update Ring</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-rdp-enabled" title="Baseline - OS - RDP Enabled">Baseline - OS - RDP Enabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-bitlocker-device-encryption-enabled" title="Baseline - Security - BitLocker Device Encryption Enabled">Baseline - Security - BitLocker Device Encryption Enabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-ie-site-to-zone-assignment" title="Baseline - Security - IE Site-to-Zone Assignment">Baseline - Security - IE Site-to-Zone Assignment</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-ntlmv2-lan-manager-authentication-level" title="Baseline - Security - NTLMv2 LAN Manager Authentication Level">Baseline - Security - NTLMv2 LAN Manager Authentication Level</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-password-reset-enabled" title="Baseline - Security - Password Reset Enabled">Baseline - Security - Password Reset Enabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-personal-microsoft-accounts-blocked" title="Baseline - Security - Personal Microsoft Accounts Blocked">Baseline - Security - Personal Microsoft Accounts Blocked</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-simple-passwords-disabled" title="Baseline - Security - Simple Passwords Disabled">Baseline - Security - Simple Passwords Disabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-ux-microsoft-consumer-experience-disabled" title="Baseline - UX - Microsoft Consumer Experience Disabled">Baseline - UX - Microsoft Consumer Experience Disabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-ux-windows-first-run-animation-disabled" title="Baseline - UX - Windows First Run Animation Disabled">Baseline - UX - Windows First Run Animation Disabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-ux-windows-hello-disabled" title="Baseline - UX - Windows Hello Disabled">Baseline - UX - Windows Hello Disabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-ux-windows-spotlight-disabled" title="Baseline - UX - Windows Spotlight Disabled">Baseline - UX - Windows Spotlight Disabled</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-configuration-profiles-profile-type-administrative-templates" title="Intune > Devices > Configuration profiles (Profile Type = Administrative Templates)">Intune &gt; Devices &gt; Configuration profiles (Profile Type = Administrative Templates)</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-functionality-microsoft-edge-configuration" title="Baseline - Functionality - Microsoft Edge Configuration">Baseline - Functionality - Microsoft Edge Configuration</a></li><li><a class="section-link" href="#/baseline?id=baseline-functionality-onedrive-silent-configuration" title="Baseline - Functionality - OneDrive Silent Configuration">Baseline - Functionality - OneDrive Silent Configuration</a></li><li><a class="section-link" href="#/baseline?id=baseline-functionality-windows-known-folders-move-to-onedrive" title="Baseline - Functionality - Windows Known Folders Move to OneDrive">Baseline - Functionality - Windows Known Folders Move to OneDrive</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-sleep-when-plugged-in-disabled" title="Baseline - OS - Sleep When Plugged In Disabled">Baseline - OS - Sleep When Plugged In Disabled</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-linkedin-features-in-office-applications-disabled" title="Baseline - Security - LinkedIn Features in Office Applications Disabled">Baseline - Security - LinkedIn Features in Office Applications Disabled</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-enrollment-restrictions" title="Intune > Devices > Enrollment restrictions">Intune &gt; Devices &gt; Enrollment restrictions</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=limit-all-users-and-all-devices" title="Limit - All users and all devices">Limit - All users and all devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestriction-android-baseline-device-enrollers-can-enroll-any-devices" title="PlatformRestriction - android - Baseline - Device Enrollers can enroll any devices">PlatformRestriction - android - Baseline - Device Enrollers can enroll any devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestriction-androidforwork-baseline-device-enrollers-can-enroll-any-devices" title="PlatformRestriction - androidForWork - Baseline - Device Enrollers can enroll any devices">PlatformRestriction - androidForWork - Baseline - Device Enrollers can enroll any devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestriction-ios-baseline-device-enrollers-can-enroll-any-devices" title="PlatformRestriction - ios - Baseline - Device Enrollers can enroll any devices">PlatformRestriction - ios - Baseline - Device Enrollers can enroll any devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestriction-mac-baseline-device-enrollers-can-enroll-any-devices" title="PlatformRestriction - mac - Baseline - Device Enrollers can enroll any devices">PlatformRestriction - mac - Baseline - Device Enrollers can enroll any devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestriction-windows-baseline-device-enrollers-can-enroll-any-devices" title="PlatformRestriction - windows - Baseline - Device Enrollers can enroll any devices">PlatformRestriction - windows - Baseline - Device Enrollers can enroll any devices</a></li><li><a class="section-link" href="#/baseline?id=platformrestrictions-all-users-and-all-devices" title="PlatformRestrictions - All users and all devices">PlatformRestrictions - All users and all devices</a></li><li><a class="section-link" href="#/baseline?id=windows10enrollmentcompletionpage-all-users-and-all-devices" title="windows10EnrollmentCompletionPage - All users and all devices">windows10EnrollmentCompletionPage - All users and all devices</a></li><li><a class="section-link" href="#/baseline?id=windowshelloforbusiness-all-users-and-all-devices" title="WindowsHelloForBusiness - All users and all devices">WindowsHelloForBusiness - All users and all devices</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-scripts" title="Intune > Devices > Scripts">Intune &gt; Devices &gt; Scripts</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-management-set-intunemanagementextensionconfiguration" title="Baseline - Management - Set-IntuneManagementExtensionConfiguration">Baseline - Management - Set-IntuneManagementExtensionConfiguration</a></li><li><a class="section-link" href="#/baseline?id=baseline-management-set-localadminpassword" title="Baseline - Management - Set-LocalAdminPassword">Baseline - Management - Set-LocalAdminPassword</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-enable-taskschedulerhistory" title="Baseline - OS - Enable-TaskSchedulerHistory">Baseline - OS - Enable-TaskSchedulerHistory</a></li><li><a class="section-link" href="#/baseline?id=baseline-os-set-timezone" title="Baseline - OS - Set-TimeZone">Baseline - OS - Set-TimeZone</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-add-authenticateduserstoremotedesktopusers" title="Baseline - Security - Add-AuthenticatedUsersToRemoteDesktopUsers">Baseline - Security - Add-AuthenticatedUsersToRemoteDesktopUsers</a></li><li><a class="section-link" href="#/baseline?id=baseline-security-disable-rdpnetworklevelauthentication" title="Baseline - Security - Disable-RdpNetworkLevelAuthentication">Baseline - Security - Disable-RdpNetworkLevelAuthentication</a></li></ul><li><a class="section-link" href="#/baseline?id=intune-gt-devices-gt-windows-autopilot-deployment-profiles" title="Intune > Devices > Windows Autopilot deployment profiles">Intune &gt; Devices &gt; Windows Autopilot deployment profiles</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-self-deploying-profile" title="Baseline: Self Deploying Profile">Baseline: Self Deploying Profile</a></li><li><a class="section-link" href="#/baseline?id=baseline-user-driven-profile" title="Baseline: User Driven Profile">Baseline: User Driven Profile</a></li></ul><li><a class="section-link" href="#/baseline?id=m365-admin-center-gt-password-expiration-policy" title="M365 Admin Center > Password expiration policy">M365 Admin Center &gt; Password expiration policy</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=resourcecontexttenantdomainname" title="${ResourceContext:TenantDomainName}">${ResourceContext:TenantDomainName}</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-exchange-gt-adminauditlogconfig" title="Office 365 > Exchange > AdminAuditLogConfig">Office 365 &gt; Exchange &gt; AdminAuditLogConfig</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=configuration-8" title="Configuration">Configuration</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-exchange-gt-organizationconfig" title="Office 365 > Exchange > OrganizationConfig">Office 365 &gt; Exchange &gt; OrganizationConfig</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=configuration-9" title="Configuration">Configuration</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-exchange-gt-outlook-web-app-policies" title="Office 365 > Exchange > Outlook Web App policies">Office 365 &gt; Exchange &gt; Outlook Web App policies</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=owamailboxpolicy-default" title="OwaMailboxPolicy-Default">OwaMailboxPolicy-Default</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-security-amp-compliance-gt-information-governance-gt-retention" title="Office 365 > Security &amp; Compliance > Information governance > Retention">Office 365 &gt; Security &amp; Compliance &gt; Information governance &gt; Retention</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=baseline-default-retention-policy" title="Baseline - Default Retention Policy">Baseline - Default Retention Policy</a></li><li><a class="section-link" href="#/baseline?id=baseline-teams-retention-policy" title="Baseline - Teams Retention Policy">Baseline - Teams Retention Policy</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-security-amp-compliance-gt-threat-management-gt-policy-gt-global-settings" title="Office 365 > Security &amp; Compliance > Threat management > Policy > Global Settings">Office 365 &gt; Security &amp; Compliance &gt; Threat management &gt; Policy &gt; Global Settings</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=configuration-10" title="Configuration">Configuration</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-teams-gt-apps-gt-permission-policies" title="Office 365 > Teams > Apps > Permission policies">Office 365 &gt; Teams &gt; Apps &gt; Permission policies</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=global" title="Global">Global</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-teams-gt-meetings-gt-meeting-settings" title="Office 365 > Teams > Meetings > Meeting settings">Office 365 &gt; Teams &gt; Meetings &gt; Meeting settings</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=global-1" title="Global">Global</a></li></ul><li><a class="section-link" href="#/baseline?id=office-365-gt-teams-gt-org-wide-settings-gt-teams-settings" title="Office 365 > Teams > Org-wide settings > Teams settings">Office 365 &gt; Teams &gt; Org-wide settings &gt; Teams settings</a></li><ul class="app-sub-sidebar"><li><a class="section-link" href="#/baseline?id=global-2" title="Global">Global</a></li></ul></ul></ul></li><li><a href="#/reporting" title="Reporting">Reporting</a></li><li><a href="#/security" title="Security">Security</a></li><li><a href="#/credits" title="Credits">Credits</a></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="the-simeon-baseline-a-comprehensive-set-of-best-practice-microsoft-365-configurations"><a href="#/baseline?id=the-simeon-baseline-a-comprehensive-set-of-best-practice-microsoft-365-configurations" data-id="the-simeon-baseline-a-comprehensive-set-of-best-practice-microsoft-365-configurations" class="anchor"><span>The Simeon Baseline: A comprehensive set of best practice Microsoft 365 configurations.</span></a></h1><p>Welcome to the Simeon Baseline. Simeon Cloud has expertly configured these settings to optimize your Microsoft 365 environments in accordance with industry best practices. This list represents the most important, relevant and security-focused configurations across Azure AD, Office 365, and Intune. These configurations can be deployed to a tenant to provide a fully functional environment out of the box, capable of enrolling devices using Autopilot, managing devices using Intune and providing secure access to Office 365 for users.</p><p>Not yet a client of Simeon? <a href="https://www.simeoncloud.com/" target="_blank" rel="noopener">Get started here</a>.</p><h2 id="summary-of-security-focused-configurations"><a href="#/baseline?id=summary-of-security-focused-configurations" data-id="summary-of-security-focused-configurations" class="anchor"><span>Summary of security-focused configurations</span></a></h2><h3 id="data-loss-prevention-dlp"><a href="#/baseline?id=data-loss-prevention-dlp" data-id="data-loss-prevention-dlp" class="anchor"><span>Data loss prevention (DLP)</span></a></h3><ul><li>Users can only access corporate data from:<ul><li>Compliant corporate devices managed by Intune</li><li>In-office locations</li><li>Approved applications on personal mobile devices</li></ul></li><li>Corporate data on personal mobile devices are restricted from leaving approved client applications, preventing data loss</li><li>Integration with third-party services, such as LinkedIn, Dropbox, Google Drive, personal Microsoft accounts, etc., is disabled</li></ul><h3 id="security-auditing"><a href="#/baseline?id=security-auditing" data-id="security-auditing" class="anchor"><span>Security auditing</span></a></h3><ul><li>Microsoft 365 is configured to audit and optionally alert on all login and device management operations</li></ul><h3 id="authentication"><a href="#/baseline?id=authentication" data-id="authentication" class="anchor"><span>Authentication</span></a></h3><ul><li>Multifactor authentication is required whenever authenticating from a personal device or as an administrator</li><li>Corporate devices have a randomized local administrator password</li></ul><h3 id="endpoint-security"><a href="#/baseline?id=endpoint-security" data-id="endpoint-security" class="anchor"><span>Endpoint security</span></a></h3><ul><li>Corporate devices block the use of simple passwords</li><li>Corporate devices are blocked from communicating using insecure protocols</li><li>Corporate devices are encrypted</li><li>Corporate devices use a fixed list of trusted internet sites</li><li>Corporate devices are continuously monitored for security compliance, including encryption status, antivirus protection, and malware protection; non-compliant devices are restricted from accessing corporate data</li></ul><h3 id="data-retention"><a href="#/baseline?id=data-retention" data-id="data-retention" class="anchor"><span>Data retention</span></a></h3><ul><li>All corporate data in O365 is retained for one year, including emails, chat, and files</li></ul><h3 id="user-privileges"><a href="#/baseline?id=user-privileges" data-id="user-privileges" class="anchor"><span>User privileges</span></a></h3><ul><li>End users are restricted from connecting their personal Windows computers to O365</li><li>End users are restricted from creating groups</li><li>End users are restricted from inviting external users to view corporate data</li></ul><h2 id="azure-gt-resource-groups"><a href="#/baseline?id=azure-gt-resource-groups" data-id="azure-gt-resource-groups" class="anchor"><span>Azure &gt; Resource groups</span></a></h2><p><em>AzureManagement/MicrosoftResources/ResourceGroups</em></p><h6 id="hidden-header"><a href="#/baseline?id=hidden-header" data-id="hidden-header" class="anchor"><span>hidden-header</span></a></h6><h2 id="azure-ad-gt-authorization-policies"><a href="#/baseline?id=azure-ad-gt-authorization-policies" data-id="azure-ad-gt-authorization-policies" class="anchor"><span>Azure AD &gt; Authorization policies</span></a></h2><p><em>MSGraph/Policies/AuthorizationPolicy</em></p><h6 id="hidden-header-1"><a href="#/baseline?id=hidden-header-1" data-id="hidden-header-1" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration"><a href="#/baseline?id=configuration" data-id="configuration" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines Azure Active Directory authorization settings. The baseline allows users to sign up for email based subscriptions, use Self-Serve Password Reset, and join the tenant by email validation. Only adminstrators and guest inviters can invite external users to the organization. Users are allowed to read other users.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to apply Azure Active Directory authorization settings.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users are not allowed to read BitLocker keys for their owned device.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0" target="_blank" rel="noopener">Authorization Policy</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-company-branding"><a href="#/baseline?id=azure-ad-gt-company-branding" data-id="azure-ad-gt-company-branding" class="anchor"><span>Azure AD &gt; Company branding</span></a></h2><p><em>AadIam/CompanyBrandings</em></p><h6 id="hidden-header-2"><a href="#/baseline?id=hidden-header-2" data-id="hidden-header-2" class="anchor"><span>hidden-header</span></a></h6><h3 id="default"><a href="#/baseline?id=default" data-id="default" class="anchor"><span>Default</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the messages and logos shown to users on Azure login screens. The baseline automatically populates the username watermark with "<a href="mailto:user@yourcompanyname.org">user@yourcompanyname.org</a>."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to provide your users with a personalized login screen for added security, familiarity, and branding.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will see the watermark (username hint) on Azure login screens.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding" target="_blank" rel="noopener">Customize your Azure AD sign-in page</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-device-settings"><a href="#/baseline?id=azure-ad-gt-device-settings" data-id="azure-ad-gt-device-settings" class="anchor"><span>Azure AD &gt; Device settings</span></a></h2><p><em>MSGraph/Policies/DeviceRegistrationPolicy</em></p><h6 id="hidden-header-3"><a href="#/baseline?id=hidden-header-3" data-id="hidden-header-3" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-1"><a href="#/baseline?id=configuration-1" data-id="configuration-1" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures settings that control joining devices to Azure AD. The baseline allows only the groups "Baseline - Device Enrollers" and "Baseline - Microsoft 365 Users" to join devices to Azure AD. These groups may join up to 100 devices and are required to perform MFA when joining the device.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to restrict the ability to join devices to Azure AD to only authorized groups and require MFA.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only authorized groups may join devices, and users in those groups will be prompted for MFA to join.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-directory-settings"><a href="#/baseline?id=azure-ad-gt-directory-settings" data-id="azure-ad-gt-directory-settings" class="anchor"><span>Azure AD &gt; Directory settings</span></a></h2><p><em>MSGraph/Settings</em></p><h6 id="hidden-header-4"><a href="#/baseline?id=hidden-header-4" data-id="hidden-header-4" class="anchor"><span>hidden-header</span></a></h6><h3 id="groupunified"><a href="#/baseline?id=groupunified" data-id="groupunified" class="anchor"><span>Group.Unified</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Group.Unified</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures restrictions for creating Azure AD Groups. The baseline restricts users not in "Baseline - Group Creators" from creating groups.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to tighten security around group creation.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> User who are not in "Baseline - Group Creators" will not be allowed to create Azure AD groups.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="index.md">Markup link</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-enterprise-applications-gt-user-settings"><a href="#/baseline?id=azure-ad-gt-enterprise-applications-gt-user-settings" data-id="azure-ad-gt-enterprise-applications-gt-user-settings" class="anchor"><span>Azure AD &gt; Enterprise applications &gt; User settings</span></a></h2><p><em>AadIam/EnterpriseApplicationUserSettings</em></p><h6 id="hidden-header-5"><a href="#/baseline?id=hidden-header-5" data-id="hidden-header-5" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-2"><a href="#/baseline?id=configuration-2" data-id="configuration-2" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Prohibits users from registering enterprise applications.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to prohibit users from registering enterprise applications.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not be able to register enterprise applications.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/users-default-permissions#to-restrict-the-default-permissions-for-member-users" target="_blank" rel="noopener">Default user permissions</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-external-user-directory-settings"><a href="#/baseline?id=azure-ad-gt-external-user-directory-settings" data-id="azure-ad-gt-external-user-directory-settings" class="anchor"><span>Azure AD &gt; External user directory settings</span></a></h2><p><em>AadIam/ExternalUserDirectorySettings</em></p><h6 id="hidden-header-6"><a href="#/baseline?id=hidden-header-6" data-id="hidden-header-6" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-3"><a href="#/baseline?id=configuration-3" data-id="configuration-3" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines external collaborator (guest user) settings including who can invite external collaborators and whether restrictions will be placed on such users. The baseline allows only authorized users with the "Guest Inviter" role to invite external collaborators.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">The Azure default allows all users and guests to invite external users, so we recommend using the baseline setting to tighten security.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not be able to invite external collaborators unless authorized.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations" target="_blank" rel="noopener">Configure B2B external collaboration settings</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-external-user-guest-settings"><a href="#/baseline?id=azure-ad-gt-external-user-guest-settings" data-id="azure-ad-gt-external-user-guest-settings" class="anchor"><span>Azure AD &gt; External user guest settings</span></a></h2><p><em>AadIam/ExternalUserGuestSettings</em></p><h6 id="hidden-header-7"><a href="#/baseline?id=hidden-header-7" data-id="hidden-header-7" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-4"><a href="#/baseline?id=configuration-4" data-id="configuration-4" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines settings for permissions that guest users have in the tenant and to which external tenants guest invitations may be sent. The baseline preserves the Microsoft default settings, which only allows Admins and users in the guest inviter role to send invitations and restricts the permissions of guest users. The baseline also enables one-time passcodes for external users without a Microsoft or Azure AD account.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">The baseline applies Microsoft's default settings for guest users and provides improved functionality through the use of one time passcodes.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Authorized users may send invitations to any domain, but guest user permissions are restricted. One time passcodes are enabled.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings" target="_blank" rel="noopener">Configure B2B external collaboration settings</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-group-settings"><a href="#/baseline?id=azure-ad-gt-group-settings" data-id="azure-ad-gt-group-settings" class="anchor"><span>Azure AD &gt; Group settings</span></a></h2><p><em>AadIam/GroupSettings</em></p><h6 id="hidden-header-8"><a href="#/baseline?id=hidden-header-8" data-id="hidden-header-8" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-5"><a href="#/baseline?id=configuration-5" data-id="configuration-5" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures group membership management options. The baseline restricts the following activities to administrators: owners managing group membership requests, access to features in the portal, creation of security groups, and creation of Microsoft 365 groups.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to have a more secure group settings environment.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">The following activities will be restricted to administrators: owners managing group membership requests, access to features in the portal, creation of security groups, and creation of Microsoft 365 groups.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-self-service-management" target="_blank" rel="noopener">Users, groups, and roles</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-groups"><a href="#/baseline?id=azure-ad-gt-groups" data-id="azure-ad-gt-groups" class="anchor"><span>Azure AD &gt; Groups</span></a></h2><p><em>MSGraph/Groups</em></p><h6 id="hidden-header-9"><a href="#/baseline?id=hidden-header-9" data-id="hidden-header-9" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-autopilot-devices-self-deploying"><a href="#/baseline?id=baseline-autopilot-devices-self-deploying" data-id="baseline-autopilot-devices-self-deploying" class="anchor"><span>Baseline - Autopilot Devices - Self Deploying</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Autopilot Devices - Self Deploying</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a dynamic device group that is used to assign the "Baseline - Self Deploying Profile" Autopilot profile to devices. This group contains corporate physical devices with the tag "Autopilot-SelfDeploying." Devices can be tagged from the Intune portal or via an automated hardware hash upload. To tag in Intune go to Devices &gt; Windows Enrollment &gt; Devices, then select the required device and add to the "Group Tag" field.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want devices to be assigned the "Baseline - Self Deploying Profile" Autopilot profile for device enrollment.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Devices in this group will automatically Autopilot without end-user input.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/autopilot/self-deploying" target="_blank" rel="noopener">Windows Autopilot Self-Deploying mode</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-10"><a href="#/baseline?id=hidden-header-10" data-id="hidden-header-10" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-autopilot-devices-user-driven"><a href="#/baseline?id=baseline-autopilot-devices-user-driven" data-id="baseline-autopilot-devices-user-driven" class="anchor"><span>Baseline - Autopilot Devices - User Driven</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Autopilot Devices - User Driven</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a dynamic device group that is used to assign the "Baseline - User Driven Profile" Autopilot profile to devices. This group includes all devices that are not in the Azure AD group "Baseline - Autopilot Devices - Self Deploying."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">When a device is going to be used by a single user, this approach is ideal because the device shows as assigned in all relevant Intune pages and reports. It is also the most stable and consistent Autopilot mode.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Devices with this profile can be Autopiloted by users themselves. The device will be registered to the user and the user will be able to use the company portal application.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/autopilot/user-driven" target="_blank" rel="noopener">Windows Autopilot User-Driven mode</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-11"><a href="#/baseline?id=hidden-header-11" data-id="hidden-header-11" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices"><a href="#/baseline?id=baseline-corporate-devices" data-id="baseline-corporate-devices" class="anchor"><span>Baseline - Corporate Devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group that includes all corporate devices regardless if they are virtual or physical.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This group can be used to assign Intune configurations that should apply to all devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-12"><a href="#/baseline?id=hidden-header-12" data-id="hidden-header-12" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-insiders"><a href="#/baseline?id=baseline-corporate-devices-insiders" data-id="baseline-corporate-devices-insiders" class="anchor"><span>Baseline - Corporate Devices - Insiders</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Insiders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a manually assigned device group to which configurations can be deployed before other rings of devices. Devices added to this group will be assigned to the "Insiders" Windows update ring.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to test configuration changes using release rings (Insiders &gt; Preview &gt; All Devices) containing a subset of devices before deploying to all devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Devices in this group may receive and test configuration changes before others.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-13"><a href="#/baseline?id=hidden-header-13" data-id="hidden-header-13" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-physical"><a href="#/baseline?id=baseline-corporate-devices-physical" data-id="baseline-corporate-devices-physical" class="anchor"><span>Baseline - Corporate Devices - Physical</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Physical</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group that includes only physical corporate devices managed by Intune.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This group is used to assign Intune configurations that should apply to only physical devices (e.g. BitLocker encryption).</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-14"><a href="#/baseline?id=hidden-header-14" data-id="hidden-header-14" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-preview"><a href="#/baseline?id=baseline-corporate-devices-preview" data-id="baseline-corporate-devices-preview" class="anchor"><span>Baseline - Corporate Devices - Preview</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Preview</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a manually assigned device group to which configurations can be deployed before other rings of devices. Devices added to this group will be assigned to the "Preview" Windows update ring.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to test configuration changes using release rings (Insiders &gt; Preview &gt; All Devices) containing a subset of devices before deploying to all devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Devices in this group may receive and test configuration changes before others.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-15"><a href="#/baseline?id=hidden-header-15" data-id="hidden-header-15" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-virtual"><a href="#/baseline?id=baseline-corporate-devices-virtual" data-id="baseline-corporate-devices-virtual" class="anchor"><span>Baseline - Corporate Devices - Virtual</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Virtual</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group that includes virtual corporate devices managed by Intune.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This group is used to assign Intune configurations that should apply to all virtual devices managed by Intune.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-16"><a href="#/baseline?id=hidden-header-16" data-id="hidden-header-16" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-device-administrators"><a href="#/baseline?id=baseline-device-administrators" data-id="baseline-device-administrators" class="anchor"><span>Baseline - Device Administrators</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Device Administrators</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group of users assigned as local administrators on Azure AD joined devices. The baseline grants users in this group the Azure AD role "Azure AD Joined Device Local Administrator."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to have a group of users with local administrator permissions on Azure AD joined devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Members in this group will have local administrator access on Azure AD joined devices.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators" target="_blank" rel="noopener">Azure AD Joined Device Local Administrator Role</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-17"><a href="#/baseline?id=hidden-header-17" data-id="hidden-header-17" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-device-enrollers"><a href="#/baseline?id=baseline-device-enrollers" data-id="baseline-device-enrollers" class="anchor"><span>Baseline - Device Enrollers</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Device Enrollers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group of users that have permission to enroll a device that is not registered with Autopilot. If a user is not a member of this group, they cannot enroll a non-Autopilot device.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to restrict users from being able to enroll new devices into your environment that have not been pre-registered with Autopilot.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in this group will be able to have enroll devices without using Autopilot.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-18"><a href="#/baseline?id=hidden-header-18" data-id="hidden-header-18" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-group-creators"><a href="#/baseline?id=baseline-group-creators" data-id="baseline-group-creators" class="anchor"><span>Baseline - Group Creators</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Group Creators</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a manually assigned group whose members are allowed to create Microsoft 365 groups.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want a user to be able to create Microsoft 365 groups.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in this group will be able to create Microsoft 365 groups.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide" target="_blank" rel="noopener">Manage who can create Microsoft 365 Groups</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-19"><a href="#/baseline?id=hidden-header-19" data-id="hidden-header-19" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-microsoft-365-users"><a href="#/baseline?id=baseline-microsoft-365-users" data-id="baseline-microsoft-365-users" class="anchor"><span>Baseline - Microsoft 365 Users</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Microsoft 365 Users</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">This group is used to assign configurations that should be applied to all Microsoft 365 users.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to apply certain Simeon Baseline configurations to your users.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups" target="_blank" rel="noopener">Assign policies to users and groups</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-20"><a href="#/baseline?id=hidden-header-20" data-id="hidden-header-20" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-microsoft-365-users-insiders"><a href="#/baseline?id=baseline-microsoft-365-users-insiders" data-id="baseline-microsoft-365-users-insiders" class="anchor"><span>Baseline - Microsoft 365 Users - Insiders</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Microsoft 365 Users - Insiders</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a manually assigned group to which configurations can be deployed before other rings of users. The baseline does not assign this group to any configurations. It is provided as a convenience.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to test configuration changes using release rings (Insiders &gt; Preview &gt; All Users) containing a subset of users before deploying to all users.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in this group may receive and test configuration changes before others.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-21"><a href="#/baseline?id=hidden-header-21" data-id="hidden-header-21" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-microsoft-365-users-preview"><a href="#/baseline?id=baseline-microsoft-365-users-preview" data-id="baseline-microsoft-365-users-preview" class="anchor"><span>Baseline - Microsoft 365 Users - Preview</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Microsoft 365 Users - Preview</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a manually assigned group to which configurations can be deployed before other rings of users. The baseline does not assign this group to any configurations. It is provided as a convenience.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to test configuration changes using release rings (Insiders &gt; Preview &gt; All Users) containing a subset of users before deploying to all users.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in this group may receive and test configuration changes before others.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-22"><a href="#/baseline?id=hidden-header-22" data-id="hidden-header-22" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-unrestricted-access-from-unmanaged-devices-and-untrusted-locations"><a href="#/baseline?id=baseline-unrestricted-access-from-unmanaged-devices-and-untrusted-locations" data-id="baseline-unrestricted-access-from-unmanaged-devices-and-untrusted-locations" class="anchor"><span>Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a group that is used to bypass conditional access and mobile application protection policies that ensure content is accessed only from trusted devices, locations, and applications.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users (e.g. a CEO or IT support user) to access content with a lesser degree of content security than is applied by default (e.g. using a personal computer or the native iOS mail app which does not protect content).</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in this group can use any device or application of their choosing to access Microsoft 365 resources without any content protection policies.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-based-conditional-access" target="_blank" rel="noopener">Only allow apps that support protection policies</a>, <a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" target="_blank" rel="noopener">Protecting content on personal devices using app protection policies</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-mobility-mdm-and-mam"><a href="#/baseline?id=azure-ad-gt-mobility-mdm-and-mam" data-id="azure-ad-gt-mobility-mdm-and-mam" class="anchor"><span>Azure AD &gt; Mobility (MDM and MAM)</span></a></h2><p><em>AadIam/MdmApplications</em></p><h6 id="hidden-header-23"><a href="#/baseline?id=hidden-header-23" data-id="hidden-header-23" class="anchor"><span>hidden-header</span></a></h6><h3 id="microsoft-intune"><a href="#/baseline?id=microsoft-intune" data-id="microsoft-intune" class="anchor"><span>Microsoft Intune</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Microsoft Intune</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures Intune enrollment settings for devices. The baseline configures devices to automatically enroll in Intune when joining Azure AD.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to use Intune to manage devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://techcommunity.microsoft.com/t5/microsoft-intune/mdm-vs-mam/m-p/90906" target="_blank" rel="noopener">MDM vs. MAM</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-24"><a href="#/baseline?id=hidden-header-24" data-id="hidden-header-24" class="anchor"><span>hidden-header</span></a></h6><h3 id="microsoft-intune-enrollment"><a href="#/baseline?id=microsoft-intune-enrollment" data-id="microsoft-intune-enrollment" class="anchor"><span>Microsoft Intune Enrollment</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Microsoft Intune Enrollment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures a second version of Microsoft Intune enrollment settings, which is required in some tenants depending on tenant age. The baseline configures devices to automatically enroll in Intune when joining Azure AD.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to use Intune to manage devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://github.com/MicrosoftDocs/azure-docs/issues/27017" target="_blank" rel="noopener">Intune vs. Intune Enrollment</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-password-reset"><a href="#/baseline?id=azure-ad-gt-password-reset" data-id="azure-ad-gt-password-reset" class="anchor"><span>Azure AD &gt; Password reset</span></a></h2><p><em>AadIam/PasswordResetPolicies</em></p><h6 id="hidden-header-25"><a href="#/baseline?id=hidden-header-25" data-id="hidden-header-25" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-6"><a href="#/baseline?id=configuration-6" data-id="configuration-6" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines Azure's password reset policy and specifies the Azure AD groups to which it applies. This allows users to reset their passwords or unlock their Azure accounts. The baseline applies the password reset policy to members of the group "Baseline - Microsoft 365 Users."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want users to use self-service password reset instead of contacting IT support. This improves password reset security because it requires that users reset their passwords only via Mobile application code (the authenticator app) or SMS.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users can securely recover and reset their passwords.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks" target="_blank" rel="noopener">How it works: Azure AD self-service password reset</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-roles-and-administrators"><a href="#/baseline?id=azure-ad-gt-roles-and-administrators" data-id="azure-ad-gt-roles-and-administrators" class="anchor"><span>Azure AD &gt; Roles and Administrators</span></a></h2><p><em>MSGraph/RoleManagement/Directory/RoleDefinitions</em></p><h6 id="hidden-header-26"><a href="#/baseline?id=hidden-header-26" data-id="hidden-header-26" class="anchor"><span>hidden-header</span></a></h6><h3 id="azure-ad-joined-device-local-administrator"><a href="#/baseline?id=azure-ad-joined-device-local-administrator" data-id="azure-ad-joined-device-local-administrator" class="anchor"><span>Azure AD Joined Device Local Administrator</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Azure AD Joined Device Local Administrator</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Users assigned to this role are added to the local administrators group on Azure AD-joined devices.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-27"><a href="#/baseline?id=hidden-header-27" data-id="hidden-header-27" class="anchor"><span>hidden-header</span></a></h6><h3 id="directory-readers"><a href="#/baseline?id=directory-readers" data-id="directory-readers" class="anchor"><span>Directory Readers</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Directory Readers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Can read basic directory information. Commonly used to grant directory read access to applications and guests.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-28"><a href="#/baseline?id=hidden-header-28" data-id="hidden-header-28" class="anchor"><span>hidden-header</span></a></h6><h3 id="directory-synchronization-accounts"><a href="#/baseline?id=directory-synchronization-accounts" data-id="directory-synchronization-accounts" class="anchor"><span>Directory Synchronization Accounts</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Directory Synchronization Accounts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Only used by Azure AD Connect service.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-29"><a href="#/baseline?id=hidden-header-29" data-id="hidden-header-29" class="anchor"><span>hidden-header</span></a></h6><h3 id="global-administrator"><a href="#/baseline?id=global-administrator" data-id="global-administrator" class="anchor"><span>Global Administrator</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Global Administrator</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-30"><a href="#/baseline?id=hidden-header-30" data-id="hidden-header-30" class="anchor"><span>hidden-header</span></a></h6><h3 id="guest-user"><a href="#/baseline?id=guest-user" data-id="guest-user" class="anchor"><span>Guest User</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Guest User</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Default role for guest users. Can read a limited set of directory information.</td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-security-gt-conditional-access-gt-policies"><a href="#/baseline?id=azure-ad-gt-security-gt-conditional-access-gt-policies" data-id="azure-ad-gt-security-gt-conditional-access-gt-policies" class="anchor"><span>Azure AD &gt; Security &gt; Conditional Access &gt; Policies</span></a></h2><p><em>MSGraph/ConditionalAccess/Policies</em></p><h6 id="hidden-header-31"><a href="#/baseline?id=hidden-header-31" data-id="hidden-header-31" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-block-legacy-apps"><a href="#/baseline?id=baseline-block-legacy-apps" data-id="baseline-block-legacy-apps" class="anchor"><span>Baseline - Block Legacy Apps</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Block Legacy Apps</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Blocks legacy protocols (POP, SMTP, IMAP, and MAPI) which can be used to bypass security controls in your environment. This policy does not apply to users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations" or users with the role "Global Administrator" or "Directory Synchronization Accounts."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Improves security by preventing use of insecure protocols.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users may not use legacy protocols (POP, SMTP, IMAP, and MAPI).</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/block-legacy-authentication" target="_blank" rel="noopener">How to: Block legacy authentication to Azure AD with Conditional Access</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-32"><a href="#/baseline?id=hidden-header-32" data-id="hidden-header-32" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-block-legacy-exchange-activesync"><a href="#/baseline?id=baseline-block-legacy-exchange-activesync" data-id="baseline-block-legacy-exchange-activesync" class="anchor"><span>Baseline - Block Legacy Exchange ActiveSync</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Block Legacy Exchange ActiveSync</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Blocks Exchange ActiveSync, which disables native iOS and Android mail clients. The baseline blocks Exchange Active sync for all users except those in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">It is recommended to disable native mail applications since they do not provide the same level of security and functionality as Microsoft Outlook.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users cannot use native mail applications except if specifically allowed.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/secure-email-recommended-policies?view=o365-worldwide" target="_blank" rel="noopener">Policy recommendations for securing email</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-33"><a href="#/baseline?id=hidden-header-33" data-id="hidden-header-33" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-block-platforms-other-than-ios-or-android-from-unmanaged-devices-and-untrusted-locations"><a href="#/baseline?id=baseline-block-platforms-other-than-ios-or-android-from-unmanaged-devices-and-untrusted-locations" data-id="baseline-block-platforms-other-than-ios-or-android-from-unmanaged-devices-and-untrusted-locations" class="anchor"><span>Baseline - Block Platforms Other than iOS or Android from Unmanaged Devices and Untrusted Locations</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Block Platforms Other than iOS or Android from Unmanaged Devices and Untrusted Locations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Blocks platforms other than iOS and Android from devices that are off-network and not Intune-managed. This policy does not apply to external/guest users, users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations" or users with the role "Global Administrator" or "Directory Synchronization Accounts." The policy excludes the applications Microsoft Intune and Microsoft Intune Enrollment.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This policy helps protect your data by blocking authentication from untrusted devices and locations. Application protection policies on iOS and Android protect data and provide DLP.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users are restricted to iOS and Android platforms for authenticating devices when connecting from untrusted devices and locations.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" target="_blank" rel="noopener">How you can protect app data</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-34"><a href="#/baseline?id=hidden-header-34" data-id="hidden-header-34" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-require-approved-client-apps-from-unmanaged-devices-and-untrusted-locations"><a href="#/baseline?id=baseline-require-approved-client-apps-from-unmanaged-devices-and-untrusted-locations" data-id="baseline-require-approved-client-apps-from-unmanaged-devices-and-untrusted-locations" class="anchor"><span>Baseline - Require Approved Client Apps from Unmanaged Devices and Untrusted Locations</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Require Approved Client Apps from Unmanaged Devices and Untrusted Locations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Allows only mobile applications (iOS and Android) that support application protection policies (e.g. Outlook, SharePoint, OneDrive, Excel) to connect from off-network and from unmanaged devices. This policy does not apply to external/guest users, users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations" or users with the role "Global Administrator" or "Directory Synchronization Accounts." The policy is assigned to all applications except Microsoft Intune and Microsoft Intune Enrollment. These protection policies do not work from other device types. This policy works in conjunction with the policy "Block Platforms Other than iOS or Android from Unmanaged Devices and Untrusted Locations" to restrict non-iOS and Android platforms and unprotected applications.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This policy helps protect your data. Application protection policies on iOS and Android protect data and provide DLP.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users may only use applications that support protection policies to access data from iOS and Android devices off-network.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" target="_blank" rel="noopener">How you can protect app data</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-35"><a href="#/baseline?id=hidden-header-35" data-id="hidden-header-35" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-require-compliant-device-for-intune-enrollment"><a href="#/baseline?id=baseline-require-compliant-device-for-intune-enrollment" data-id="baseline-require-compliant-device-for-intune-enrollment" class="anchor"><span>Baseline - Require Compliant Device for Intune Enrollment</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Require Compliant Device for Intune Enrollment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Requires that a device be registered in Autopilot by uploading a hardware hash before it can be enrolled in Intune. This policy does not apply to users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations" or users with the role "Global Administrator" or "Directory Synchronization Accounts."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This increases security by preventing unauthorized devices from being enrolled into your tenant.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> An administrator must register devices in Autopilot before a general user can enroll it.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-36"><a href="#/baseline?id=hidden-header-36" data-id="hidden-header-36" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-require-mfa-for-admins"><a href="#/baseline?id=baseline-require-mfa-for-admins" data-id="baseline-require-mfa-for-admins" class="anchor"><span>Baseline - Require MFA for Admins</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Require MFA for Admins</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Requires that users with privileged administrator roles authenticate using MFA. The baseline includes all users except those with the Azure AD role "Directory Synchronization Accounts."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to protect your tenant by requiring MFA for accounts that have privileged access.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users with privileged access must authenticate using MFA.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/office365/enterprise/protect-your-global-administrator-accounts" target="_blank" rel="noopener">Protect your Microsoft 365 global administrator accounts</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-37"><a href="#/baseline?id=hidden-header-37" data-id="hidden-header-37" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-require-mfa-from-unmanaged-devices-and-untrusted-locations"><a href="#/baseline?id=baseline-require-mfa-from-unmanaged-devices-and-untrusted-locations" data-id="baseline-require-mfa-from-unmanaged-devices-and-untrusted-locations" class="anchor"><span>Baseline - Require MFA from Unmanaged Devices and Untrusted Locations</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Require MFA from Unmanaged Devices and Untrusted Locations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Requires MFA when authenticating from an unmanaged device that is off-network. This policy does not apply to users with the role "Global Administrator" or "Directory Synchronization Accounts."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This protects your data by requiring MFA from unmanaged devices and when off-network.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users must authenticate using MFA when accessing data from unmanaged devices and when off-network.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/untrusted-networks" target="_blank" rel="noopener">How to: Require MFA for access from untrusted networks with Conditional Access</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-security-gt-identity-protection"><a href="#/baseline?id=azure-ad-gt-security-gt-identity-protection" data-id="azure-ad-gt-security-gt-identity-protection" class="anchor"><span>Azure AD &gt; Security &gt; Identity Protection</span></a></h2><p><em>AadGraph/IdentityProtectionPolicies</em></p><h6 id="hidden-header-38"><a href="#/baseline?id=hidden-header-38" data-id="hidden-header-38" class="anchor"><span>hidden-header</span></a></h6><h3 id="sign-in-risk-policy"><a href="#/baseline?id=sign-in-risk-policy" data-id="sign-in-risk-policy" class="anchor"><span>Sign-In Risk Policy</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Sign-In Risk Policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Analyzes user sign-ins and calculates a risk score based on the probability that the sign-in was not performed by the user. If a risky sign-in is detected, the user will be prompted for MFA.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This protects your tenants from nefarious sign-in attempts.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">When a sign-in attempt is flagged as risky, the user will be required to complete MFA. If a user has not yet registered for MFA on their account, they would be blocked from accessing their account. You must configure the MFA registration policy for all users who are a part of the sign-in risk policy to ensure that they are not locked out of their accounts.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies#sign-in-risk-policy" target="_blank" rel="noopener">Sign-in risk policy</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-39"><a href="#/baseline?id=hidden-header-39" data-id="hidden-header-39" class="anchor"><span>hidden-header</span></a></h6><h3 id="user-risk-and-mfa-registration-policy"><a href="#/baseline?id=user-risk-and-mfa-registration-policy" data-id="user-risk-and-mfa-registration-policy" class="anchor"><span>User Risk and MFA Registration Policy</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">User Risk and MFA Registration Policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Blocks users that are deemed risky by Microsoft and requires those users to change their password.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This protects your tenants from hijacked user accounts.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users deemed risky by Microsoft will be required to perform self-service password reset. Password reset must be configured for all users who are a part of this policy to ensure that they are not locked out of their accounts.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies#user-risk-policy" target="_blank" rel="noopener">User risk policy</a></td>
+</tr>
+</tbody></table>
+<h2 id="azure-ad-gt-user-settings"><a href="#/baseline?id=azure-ad-gt-user-settings" data-id="azure-ad-gt-user-settings" class="anchor"><span>Azure AD &gt; User settings</span></a></h2><p><em>AadIam/UserSettings</em></p><h6 id="hidden-header-40"><a href="#/baseline?id=hidden-header-40" data-id="hidden-header-40" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-7"><a href="#/baseline?id=configuration-7" data-id="configuration-7" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables additional controls for users in Azure. The baseline allows users to access the Azure portal, but does not allow users to register applications and does not allow LinkedIn connectors.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to prohibit users from registering new applications and from sharing data with LinkedIn, but allow them to access the Azure portal.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users can neither register new applications nor access their LinkedIn connections within Microsoft applications, but users can access the Azure portal.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/users-default-permissions#to-restrict-the-default-permissions-for-member-users" target="_blank" rel="noopener">Default user permissions</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-apps"><a href="#/baseline?id=intune-gt-apps" data-id="intune-gt-apps" class="anchor"><span>Intune &gt; Apps</span></a></h2><p><em>MSGraph/DeviceAppManagement/MobileApps</em></p><h6 id="hidden-header-41"><a href="#/baseline?id=hidden-header-41" data-id="hidden-header-41" class="anchor"><span>hidden-header</span></a></h6><h3 id="_7-zip"><a href="#/baseline?id=_7-zip" data-id="_7-zip" class="anchor"><span>7-Zip</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">7-Zip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">7-Zip is a file archiver with a high compression ratio.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">7-Zip is one of the most popular, compatible and fastest file archiving software.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will have 7-Zip installed on their computer.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-42"><a href="#/baseline?id=hidden-header-42" data-id="hidden-header-42" class="anchor"><span>hidden-header</span></a></h6><h3 id="adobe-acrobat-pro-dc"><a href="#/baseline?id=adobe-acrobat-pro-dc" data-id="adobe-acrobat-pro-dc" class="anchor"><span>Adobe Acrobat Pro DC</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Adobe Acrobat Pro DC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Installs Adobe Acrobat Pro DC.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want users to have Adobe Acrobat Pro DC installed on their computers.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will have Adobe Acrobat Pro DC installed on their computer.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://acrobat.adobe.com/us/en/acrobat/acrobat-pro.html" target="_blank" rel="noopener">Adobe</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-43"><a href="#/baseline?id=hidden-header-43" data-id="hidden-header-43" class="anchor"><span>hidden-header</span></a></h6><h3 id="cmtrace"><a href="#/baseline?id=cmtrace" data-id="cmtrace" class="anchor"><span>CMTrace</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">CMTrace</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">CMTrace is one of the Configuration Manager tools. It allows you to view and monitor log files including the following types: Log files in Configuration Manager or Client Component Manager (CCM) format, plain ASCII or Unicode text files, such as Intune logs.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">CMTrace helps to analyze Intune log files by highlighting, filtering, and error lookup.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/configmgr/core/support/cmtrace" target="_blank" rel="noopener">CMTrace</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-44"><a href="#/baseline?id=hidden-header-44" data-id="hidden-header-44" class="anchor"><span>hidden-header</span></a></h6><h3 id="microsoft-net-framework-35"><a href="#/baseline?id=microsoft-net-framework-35" data-id="microsoft-net-framework-35" class="anchor"><span>Microsoft .NET Framework 3.5</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Microsoft .NET Framework 3.5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Microsoft .NET Framework 3.5 is used to create and run applications.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Microsoft .NET Framework 3.5 is required to run many applications.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will have Microsoft .NET Framework 3.5 installed on their machines.</td>
+</tr>
+<tr>
+<td align="left">.NET Framework</td>
+<td align="left"><a href="https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet-framework" target="_blank" rel="noopener">What is .NET Framework?</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-45"><a href="#/baseline?id=hidden-header-45" data-id="hidden-header-45" class="anchor"><span>hidden-header</span></a></h6><h3 id="officesuiteapp-office-365"><a href="#/baseline?id=officesuiteapp-office-365" data-id="officesuiteapp-office-365" class="anchor"><span>officeSuiteApp - Office 365</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">officeSuiteApp - Office 365</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Office 365 is Microsoft’s productivity suite with popular applications such as Word, Excel and PowerPoint.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want Office 365 desktop applications to be installed on managed devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will have Office 365 installed on their devices.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-46"><a href="#/baseline?id=hidden-header-46" data-id="hidden-header-46" class="anchor"><span>hidden-header</span></a></h6><h3 id="windowsmicrosoftedgeapp-microsoft-edge-for-windows-10"><a href="#/baseline?id=windowsmicrosoftedgeapp-microsoft-edge-for-windows-10" data-id="windowsmicrosoftedgeapp-microsoft-edge-for-windows-10" class="anchor"><span>windowsMicrosoftEdgeApp - Microsoft Edge for Windows 10</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">windowsMicrosoftEdgeApp - Microsoft Edge for Windows 10</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Microsoft Edge is the browser for business with modern and legacy web compatibility, new privacy features such as Tracking prevention, and built-in productivity tools such as enterprise-grade PDF support and access to Office and corporate search right from a new tab. This is the new Chromium based version of Edge and is a viable replacement for Chrome for many organizations.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want users to have a faster default web browser with more features.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will have Microsoft Edge installed on their machines.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener">Microsoft Edge</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-apps-gt-app-configuration-policies"><a href="#/baseline?id=intune-gt-apps-gt-app-configuration-policies" data-id="intune-gt-apps-gt-app-configuration-policies" class="anchor"><span>Intune &gt; Apps &gt; App configuration policies</span></a></h2><p><em>MSGraph/DeviceAppManagement/TargetedManagedAppConfigurations</em></p><h6 id="hidden-header-47"><a href="#/baseline?id=hidden-header-47" data-id="hidden-header-47" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-configure-policy-managed-client-apps-on-unmanaged-ios-devices"><a href="#/baseline?id=baseline-configure-policy-managed-client-apps-on-unmanaged-ios-devices" data-id="baseline-configure-policy-managed-client-apps-on-unmanaged-ios-devices" class="anchor"><span>Baseline - Configure Policy Managed Client Apps on Unmanaged iOS Devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Configure Policy Managed Client Apps on Unmanaged iOS Devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures the default behavior for application settings of managed applications on unmanaged iOS devices. The baseline expands the list of applications that are allowed by Intune and data loss protection policies.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to improve your users' iOS mobile experience by expanding the list of allowed applications.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">If you want to expand the list of applications that can access organization data on iOS devices.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-managed-app" target="_blank" rel="noopener">Add app configuration policies for managed apps without device enrollment</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-apps-gt-app-protection-policies-platform-android"><a href="#/baseline?id=intune-gt-apps-gt-app-protection-policies-platform-android" data-id="intune-gt-apps-gt-app-protection-policies-platform-android" class="anchor"><span>Intune &gt; Apps &gt; App protection policies (Platform = Android)</span></a></h2><p><em>MSGraph/DeviceAppManagement/AndroidManagedAppProtections</em></p><h6 id="hidden-header-48"><a href="#/baseline?id=hidden-header-48" data-id="hidden-header-48" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-protect-policy-managed-client-apps-on-unmanaged-android-devices"><a href="#/baseline?id=baseline-protect-policy-managed-client-apps-on-unmanaged-android-devices" data-id="baseline-protect-policy-managed-client-apps-on-unmanaged-android-devices" class="anchor"><span>Baseline - Protect Policy Managed Client Apps on Unmanaged Android Devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Protect Policy Managed Client Apps on Unmanaged Android Devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures the default behavior for managed client applications on unmanaged Android devices. The baseline allows data to flow between allowed applications, but prohibits users from copying or saving data outside of the application except for users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations."</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to protect users' personal Android devices by preventing organization data from leaving allowed apps.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Android device users cannot copy or save data outside of your managed client applications.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" target="_blank" rel="noopener">App protection policies overview</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-apps-gt-app-protection-policies-platform-iosipados"><a href="#/baseline?id=intune-gt-apps-gt-app-protection-policies-platform-iosipados" data-id="intune-gt-apps-gt-app-protection-policies-platform-iosipados" class="anchor"><span>Intune &gt; Apps &gt; App protection policies (Platform = iOS/iPadOS)</span></a></h2><p><em>MSGraph/DeviceAppManagement/IosManagedAppProtections</em></p><h6 id="hidden-header-49"><a href="#/baseline?id=hidden-header-49" data-id="hidden-header-49" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-protect-policy-managed-client-apps-on-unmanaged-ios-devices"><a href="#/baseline?id=baseline-protect-policy-managed-client-apps-on-unmanaged-ios-devices" data-id="baseline-protect-policy-managed-client-apps-on-unmanaged-ios-devices" class="anchor"><span>Baseline - Protect Policy Managed Client Apps on Unmanaged iOS Devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Protect Policy Managed Client Apps on Unmanaged iOS Devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures the default behavior for managed client apps on unmanaged iOS devices. The baseline allows data to flow between protected apps, but prohibits users from copying or saving data outside of the app except for users in the Azure AD group "Baseline - Unrestricted Access From Unmanaged Devices And Untrusted Locations".</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to protect your data on users' personal iOS devices by preventing organization data from leaving protected apps.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> iOS device users cannot copy or save data outside of your managed client apps.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" target="_blank" rel="noopener">How you can protect app data</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-compliance-policies"><a href="#/baseline?id=intune-gt-devices-gt-compliance-policies" data-id="intune-gt-devices-gt-compliance-policies" class="anchor"><span>Intune &gt; Devices &gt; Compliance policies</span></a></h2><p><em>MSGraph/DeviceManagement/DeviceCompliancePolicies</em></p><h6 id="hidden-header-50"><a href="#/baseline?id=hidden-header-50" data-id="hidden-header-50" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-physical-windows"><a href="#/baseline?id=baseline-corporate-devices-physical-windows" data-id="baseline-corporate-devices-physical-windows" class="anchor"><span>Baseline - Corporate Devices - Physical - Windows</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Physical - Windows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the required state that a physical device must be in to be considered compliant and before it can access organization data. The baseline requires that a physical device has a number of security controls configured including BitLocker encryption and a Microsoft Defender ATP risk score of medium or less. Assignment is based on the Azure AD group "Baseline - Corporate Devices – Physical". This policy applies only to physical devices since some requirements such as BitLocker are not supported on virtual devices.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This ensures your managed Windows devices meet a minimum level of security to access data.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may only access organization data if the device passes the compliance policy conditions.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-get-started" target="_blank" rel="noopener">Use compliance policies to set rules for devices you manage with Intune</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-51"><a href="#/baseline?id=hidden-header-51" data-id="hidden-header-51" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-corporate-devices-windows"><a href="#/baseline?id=baseline-corporate-devices-windows" data-id="baseline-corporate-devices-windows" class="anchor"><span>Baseline - Corporate Devices - Windows</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Corporate Devices - Windows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the required state that a device (both physical and virtual) must be in to be considered compliant before accessing an organization's data. The baseline requires that a device has Microsoft Defender Antimalware configured. This policy applies to all devices in the Azure AD group "Baseline - Corporate Devices".</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This ensures your managed Windows devices, both physical and virtual, meet a minimum level of security to access data.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may access an organization's data only if the device has Microsoft Defender Antimalware configured.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-get-started" target="_blank" rel="noopener">Use compliance policies to set rules for devices you manage with Intune</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-configuration-profiles"><a href="#/baseline?id=intune-gt-devices-gt-configuration-profiles" data-id="intune-gt-devices-gt-configuration-profiles" class="anchor"><span>Intune &gt; Devices &gt; Configuration profiles</span></a></h2><p><em>MSGraph/DeviceManagement/DeviceConfigurations</em></p><h6 id="hidden-header-52"><a href="#/baseline?id=hidden-header-52" data-id="hidden-header-52" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-functionality-microsoft-store-limited-to-private-store-only"><a href="#/baseline?id=baseline-functionality-microsoft-store-limited-to-private-store-only" data-id="baseline-functionality-microsoft-store-limited-to-private-store-only" class="anchor"><span>Baseline - Functionality - Microsoft Store Limited to Private Store Only</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Functionality - Microsoft Store Limited to Private Store Only</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Limits applications available for download in the Microsoft Store via the "Private Store" functionality. This policy allows you to restrict your users to only those applications that you deem necessary.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to limit the applications which users may download to those in your private store.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users may only use apps that have been added to the private store.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-store/distribute-apps-from-your-private-store" target="_blank" rel="noopener">Distribute apps using your private store</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-53"><a href="#/baseline?id=hidden-header-53" data-id="hidden-header-53" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-default-windows-10-update-ring"><a href="#/baseline?id=baseline-os-default-windows-10-update-ring" data-id="baseline-os-default-windows-10-update-ring" class="anchor"><span>Baseline - OS - Default Windows 10 Update Ring</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Default Windows 10 Update Ring</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the default Windows Update configuration for managed devices. The baseline delays feature updates for 30 days and quality updates for 14 days after released by Microsoft. Once the deferral period has expired for the device, users have 3 days to restart (if required). Unattended updates are only applied outside working hours of 5am to 10pm. The Windows Update configuration applies to all corporate devices except those in the "Insiders" or "Preview" update rings that will receive updates before they are released to all other corporates devices.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to ensure that your devices are kept up-to-date with the latest Windows updates.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Corporate devices outside of the "Insiders" or "Preview" rings will receive Windows feature updates 30 days after being released and quality updates 14 days after being released by Microsoft.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tactical-considerations-for-creating-windows-deployment-rings/ba-p/746979" target="_blank" rel="noopener">Tactical considerations for creating Windows deployment rings</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-54"><a href="#/baseline?id=hidden-header-54" data-id="hidden-header-54" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-insiders-windows-10-update-ring"><a href="#/baseline?id=baseline-os-insiders-windows-10-update-ring" data-id="baseline-os-insiders-windows-10-update-ring" class="anchor"><span>Baseline - OS - Insiders Windows 10 Update Ring</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Insiders Windows 10 Update Ring</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a Windows Update configuration for managed devices in the "Insiders" ring that receive updates before any other device in your tenant. The baseline delays feature and quality updates to "Insiders" for 3 days after released by Microsoft. Once the deferral period has expired for the device, users have 3 days to restart (if required). Unattended updates will be applied outside the working hours of 5am to 10pm. This Windows Update configuration applies to users in the Azure AD group "Baseline - Corporate Devices – Insiders".</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">A Windows update ring is the best way to ensure Windows updates are compatible in your environment. The "Insider" ring is meant for users that are technical enough to understand when an update is applied and to let you know if that update caused problems.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in the "Insiders" ring will receive feature and quality updates 3 days after being released by Microsoft.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tactical-considerations-for-creating-windows-deployment-rings/ba-p/746979" target="_blank" rel="noopener">Tactical considerations for creating Windows deployment rings</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-55"><a href="#/baseline?id=hidden-header-55" data-id="hidden-header-55" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-local-autopilot-reset-enabled"><a href="#/baseline?id=baseline-os-local-autopilot-reset-enabled" data-id="baseline-os-local-autopilot-reset-enabled" class="anchor"><span>Baseline - OS - Local Autopilot Reset Enabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Local Autopilot Reset Enabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables local Autopilot Reset on Windows 10, which allows an Autopilot Reset to be initiated locally at the device itself. If you do not enable this, you can initiate a reset only from the Azure Portal.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">In the event that remote Autopilot Reset from the Azure Portal is not possible due to connectivity or other issues, a user may initiate an Autopilot Reset themselves to restore their device to a known good state.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may initiate an Autopilot Reset themselves, which can come in handy if Autopilot Reset from the Azure Portal is not possible.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-reset-local" target="_blank" rel="noopener">Windows Autopilot Reset</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-56"><a href="#/baseline?id=hidden-header-56" data-id="hidden-header-56" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-preview-windows-10-update-ring"><a href="#/baseline?id=baseline-os-preview-windows-10-update-ring" data-id="baseline-os-preview-windows-10-update-ring" class="anchor"><span>Baseline - OS - Preview Windows 10 Update Ring</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Preview Windows 10 Update Ring</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a Windows Update configuration for managed devices in the "Preview" ring, which receive updates after "Insiders" but before devices with the default policy. The baseline delays feature and quality updates to the "Preview" group for 7 days after released by Microsoft. Once the deferral period has expired for a device, users have 3 days to restart (if required). Unattended updates will only be applied outside working hours of 5am to 10pm. Applies to users in the Azure AD group "Baseline - Corporate Devices – Preview".</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">A Windows update ring is the best way to ensure Windows updates are compatible in your environment by testing the update in rings of users.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in the "Preview" ring will receive updates 7 days after being released by Microsoft and after Insiders, but before devices with the default policy.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tactical-considerations-for-creating-windows-deployment-rings/ba-p/746979" target="_blank" rel="noopener">Tactical considerations for creating Windows deployment rings</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-57"><a href="#/baseline?id=hidden-header-57" data-id="hidden-header-57" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-rdp-enabled"><a href="#/baseline?id=baseline-os-rdp-enabled" data-id="baseline-os-rdp-enabled" class="anchor"><span>Baseline - OS - RDP Enabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - RDP Enabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables Remote Desktop access to the device for users that are members of the "Remote Desktop Users" local group. A separate configuration (Add-AuthenticatedUsersToRemoteDesktopUsers) adds the users to the "Remote Desktop Users" group.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow Remote Desktop access to managed devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users in the "Remote Desktop Users" local group will be able to connect to remote devices.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotedesktopservices" target="_blank" rel="noopener">Policy CSP - RemoteDesktopServices</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-58"><a href="#/baseline?id=hidden-header-58" data-id="hidden-header-58" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-bitlocker-device-encryption-enabled"><a href="#/baseline?id=baseline-security-bitlocker-device-encryption-enabled" data-id="baseline-security-bitlocker-device-encryption-enabled" class="anchor"><span>Baseline - Security - BitLocker Device Encryption Enabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - BitLocker Device Encryption Enabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables and configures BitLocker device encryption for physical devices. BitLocker requires a machine to have TPM 1.2 or later, which excludes older hardware and virtual machines.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Device encryption is essential to protecting data on physical devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Data on users' hard drives are encrypted.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10" target="_blank" rel="noopener">Overview of BitLocker Device Encryption in Windows 10</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-59"><a href="#/baseline?id=hidden-header-59" data-id="hidden-header-59" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-ie-site-to-zone-assignment"><a href="#/baseline?id=baseline-security-ie-site-to-zone-assignment" data-id="baseline-security-ie-site-to-zone-assignment" class="anchor"><span>Baseline - Security - IE Site-to-Zone Assignment</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - IE Site-to-Zone Assignment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures URLs to include in the browser's security zones. The baseline configures the Intranet zone to include necessary Microsoft URLs for Azure Active Directory Seamless Single Sign-On.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Improves your users' browsing experience by automatically logging in to sites secured by Azure AD.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will be unable to configure URLs for browser security zones themselves.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://support.microsoft.com/en-us/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users" target="_blank" rel="noopener">Internet Explorer security zones registry entries for advanced users</a>, <a href="https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-quick-start" target="_blank" rel="noopener">Azure Active Directory Seamless Single Sign-On</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-60"><a href="#/baseline?id=hidden-header-60" data-id="hidden-header-60" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-ntlmv2-lan-manager-authentication-level"><a href="#/baseline?id=baseline-security-ntlmv2-lan-manager-authentication-level" data-id="baseline-security-ntlmv2-lan-manager-authentication-level" class="anchor"><span>Baseline - Security - NTLMv2 LAN Manager Authentication Level</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - NTLMv2 LAN Manager Authentication Level</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures the Windows LAN Manager Authentication Level to require NTLMv2.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This is recommended by Microsoft to prevent the use of insecure protocols.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Windows file sharing will not work with any devices that do not support NTLMv2.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level" target="_blank" rel="noopener">Network security: LAN Manager authentication level</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-61"><a href="#/baseline?id=hidden-header-61" data-id="hidden-header-61" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-password-reset-enabled"><a href="#/baseline?id=baseline-security-password-reset-enabled" data-id="baseline-security-password-reset-enabled" class="anchor"><span>Baseline - Security - Password Reset Enabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - Password Reset Enabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables Azure AD users to reset their passwords from the Windows login screen.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow users to reset their passwords from the Windows login screen.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may reset their passwords from the Windows login screen.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-windows" target="_blank" rel="noopener">Enable Azure Active Directory self-service password reset at the Windows sign-in screen</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-62"><a href="#/baseline?id=hidden-header-62" data-id="hidden-header-62" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-personal-microsoft-accounts-blocked"><a href="#/baseline?id=baseline-security-personal-microsoft-accounts-blocked" data-id="baseline-security-personal-microsoft-accounts-blocked" class="anchor"><span>Baseline - Security - Personal Microsoft Accounts Blocked</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - Personal Microsoft Accounts Blocked</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables the addition of personal Microsoft accounts to devices to ensure Data Loss Prevention.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to prevent users from adding personal Microsoft accounts to Windows, which would allow them to transfer data outside of your organization.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users cannot connect Windows to personal Microsoft accounts.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/configuration/device-restrictions-windows-10#cloud-and-storage" target="_blank" rel="noopener">Microsoft accounts configuration</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-63"><a href="#/baseline?id=hidden-header-63" data-id="hidden-header-63" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-simple-passwords-disabled"><a href="#/baseline?id=baseline-security-simple-passwords-disabled" data-id="baseline-security-simple-passwords-disabled" class="anchor"><span>Baseline - Security - Simple Passwords Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - Simple Passwords Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Blocks simple passwords including picture passwords.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to increase security by blocking simple passwords.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users are restricted from creating simple passwords.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad" target="_blank" rel="noopener">Eliminate bad passwords using Azure Active Directory Password Protection</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-64"><a href="#/baseline?id=hidden-header-64" data-id="hidden-header-64" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-ux-microsoft-consumer-experience-disabled"><a href="#/baseline?id=baseline-ux-microsoft-consumer-experience-disabled" data-id="baseline-ux-microsoft-consumer-experience-disabled" class="anchor"><span>Baseline - UX - Microsoft Consumer Experience Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - UX - Microsoft Consumer Experience Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables Microsoft Consumer Experiences such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to improve the user experience by eliminating non value-add notifications and suggestions.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not see these additional pop-ups, suggestions and notifications.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsconsumerfeatures" target="_blank" rel="noopener">Policy CSP - Experience</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-65"><a href="#/baseline?id=hidden-header-65" data-id="hidden-header-65" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-ux-windows-first-run-animation-disabled"><a href="#/baseline?id=baseline-ux-windows-first-run-animation-disabled" data-id="baseline-ux-windows-first-run-animation-disabled" class="anchor"><span>Baseline - UX - Windows First Run Animation Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - UX - Windows First Run Animation Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables Windows First Run animation, which displays animation and marketing when a user first signs into Windows.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to eliminate marketing materials and non-essential animation during initial sign-in.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may have an improved experience when opting out of First Run Animation.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enablefirstlogonanimation" target="_blank" rel="noopener">Policy CSP - WindowsLogon</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-66"><a href="#/baseline?id=hidden-header-66" data-id="hidden-header-66" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-ux-windows-hello-disabled"><a href="#/baseline?id=baseline-ux-windows-hello-disabled" data-id="baseline-ux-windows-hello-disabled" class="anchor"><span>Baseline - UX - Windows Hello Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - UX - Windows Hello Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables Windows Hello, a biometric sign-in system for Windows 10 that uses a near infrared (IR) imaging camera or fingerprint reader instead of a password to identify users.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to disable Windows Hello and instead use passwords which are more in line with industry best practices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not be prompted to sign in with a biometric system.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-67"><a href="#/baseline?id=hidden-header-67" data-id="hidden-header-67" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-ux-windows-spotlight-disabled"><a href="#/baseline?id=baseline-ux-windows-spotlight-disabled" data-id="baseline-ux-windows-spotlight-disabled" class="anchor"><span>Baseline - UX - Windows Spotlight Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - UX - Windows Spotlight Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables Windows Spotlight, which displays tips and third party marketing materials on users' lock screen.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to eliminate marketing materials being displayed to users.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not receive third party marketing materials on the lock screen.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/windows/configuration/windows-spotlight" target="_blank" rel="noopener">Configure Windows Spotlight on the lock screen</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-configuration-profiles-profile-type-administrative-templates"><a href="#/baseline?id=intune-gt-devices-gt-configuration-profiles-profile-type-administrative-templates" data-id="intune-gt-devices-gt-configuration-profiles-profile-type-administrative-templates" class="anchor"><span>Intune &gt; Devices &gt; Configuration profiles (Profile Type = Administrative Templates)</span></a></h2><p><em>MSGraph/DeviceManagement/GroupPolicyConfigurations</em></p><h6 id="hidden-header-68"><a href="#/baseline?id=hidden-header-68" data-id="hidden-header-68" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-functionality-microsoft-edge-configuration"><a href="#/baseline?id=baseline-functionality-microsoft-edge-configuration" data-id="baseline-functionality-microsoft-edge-configuration" class="anchor"><span>Baseline - Functionality - Microsoft Edge Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Functionality - Microsoft Edge Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures Microsoft Edge for all devices to automatically sign in to the browser and synchronize history and passwords. Also sets Google as the default search engine.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to create an optimal user experience for the new Chromium Edge browser.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users' search history and passwords will be synchronized across devices.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/deployedge/microsoft-edge-enterprise-sync" target="_blank" rel="noopener">Microsoft Edge Enterprise Sync</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-69"><a href="#/baseline?id=hidden-header-69" data-id="hidden-header-69" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-functionality-onedrive-silent-configuration"><a href="#/baseline?id=baseline-functionality-onedrive-silent-configuration" data-id="baseline-functionality-onedrive-silent-configuration" class="anchor"><span>Baseline - Functionality - OneDrive Silent Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Functionality - OneDrive Silent Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Automatically and silently configures OneDrive and enables the Files On Demand feature.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Allows users to store data in OneDrive and access it without downloading all OneDrive content to the computer.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">The first time a user logs in to a device, OneDrive will automatically sign in. Upon first sign-in the user will be able to see all her files, but not all files need to be downloaded to the computer. Files stored in the cloud will have a cloud icon in the corner, whereas files stored locally will have a green checkmark.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://support.microsoft.com/en-us/office/sync-files-with-onedrive-files-on-demand-62e8d748-7877-420f-b600-24b56562aa70" target="_blank" rel="noopener">Sync files with OneDrive Files on Demand</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-70"><a href="#/baseline?id=hidden-header-70" data-id="hidden-header-70" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-functionality-windows-known-folders-move-to-onedrive"><a href="#/baseline?id=baseline-functionality-windows-known-folders-move-to-onedrive" data-id="baseline-functionality-windows-known-folders-move-to-onedrive" class="anchor"><span>Baseline - Functionality - Windows Known Folders Move to OneDrive</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Functionality - Windows Known Folders Move to OneDrive</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures OneDrive's Known Folders Move, which moves the directories Desktop, Documents, and Pictures to OneDrive and disables the option to opt out of the feature.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">When configured this way, OneDrive backs up user data and enables access from any device.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may continue using familiar folders while being backed up.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/onedrive/redirect-known-folders" target="_blank" rel="noopener">Redirect and move Windows known folders to OneDrive</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-71"><a href="#/baseline?id=hidden-header-71" data-id="hidden-header-71" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-sleep-when-plugged-in-disabled"><a href="#/baseline?id=baseline-os-sleep-when-plugged-in-disabled" data-id="baseline-os-sleep-when-plugged-in-disabled" class="anchor"><span>Baseline - OS - Sleep When Plugged In Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Sleep When Plugged In Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Sets the system sleep timeout for devices to "Never" when plugged in.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to prevent desktop computers from going to sleep so you can connect remotely at any time.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users' devices will not go to sleep when plugged in, so users may connect remotely at any time.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-72"><a href="#/baseline?id=hidden-header-72" data-id="hidden-header-72" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-linkedin-features-in-office-applications-disabled"><a href="#/baseline?id=baseline-security-linkedin-features-in-office-applications-disabled" data-id="baseline-security-linkedin-features-in-office-applications-disabled" class="anchor"><span>Baseline - Security - LinkedIn Features in Office Applications Disabled</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - LinkedIn Features in Office Applications Disabled</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline turns off LinkedIn features in Office applications. By default, this setting is turned on.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">You can turn off Office LinkedIn features so that your users are not sharing data externally with LinkedIn.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not be able to use the LinkedIn Office features.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/linkedin-integration" target="_blank" rel="noopener">Integrate LinkedIn account connections in Azure Active Directory</a></td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-enrollment-restrictions"><a href="#/baseline?id=intune-gt-devices-gt-enrollment-restrictions" data-id="intune-gt-devices-gt-enrollment-restrictions" class="anchor"><span>Intune &gt; Devices &gt; Enrollment restrictions</span></a></h2><p><em>MSGraph/DeviceManagement/DeviceEnrollmentConfigurations</em></p><h6 id="hidden-header-73"><a href="#/baseline?id=hidden-header-73" data-id="hidden-header-73" class="anchor"><span>hidden-header</span></a></h6><h3 id="limit-all-users-and-all-devices"><a href="#/baseline?id=limit-all-users-and-all-devices" data-id="limit-all-users-and-all-devices" class="anchor"><span>Limit - All users and all devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Limit - All users and all devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">This is the default Device Limit Restriction applied with the lowest priority to all users regardless of group membership.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-74"><a href="#/baseline?id=hidden-header-74" data-id="hidden-header-74" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestriction-android-baseline-device-enrollers-can-enroll-any-devices"><a href="#/baseline?id=platformrestriction-android-baseline-device-enrollers-can-enroll-any-devices" data-id="platformrestriction-android-baseline-device-enrollers-can-enroll-any-devices" class="anchor"><span>PlatformRestriction - android - Baseline - Device Enrollers can enroll any devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestriction - android - Baseline - Device Enrollers can enroll any devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline allows users in the Azure AD group "Baseline - Device Enrollers" to enroll any Windows device, even if they have not been previously registered in Autopilot. This can be overridden by other configurations with a higher priority.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users to register non-Autopilot registered devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only certain users will be able to enroll devices to Intune that are non-Autopilot registered.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/enrollment-restrictions-set" target="_blank" rel="noopener">Set enrollment restrictions</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-75"><a href="#/baseline?id=hidden-header-75" data-id="hidden-header-75" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestriction-androidforwork-baseline-device-enrollers-can-enroll-any-devices"><a href="#/baseline?id=platformrestriction-androidforwork-baseline-device-enrollers-can-enroll-any-devices" data-id="platformrestriction-androidforwork-baseline-device-enrollers-can-enroll-any-devices" class="anchor"><span>PlatformRestriction - androidForWork - Baseline - Device Enrollers can enroll any devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestriction - androidForWork - Baseline - Device Enrollers can enroll any devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline allows users in the Azure AD group "Baseline - Device Enrollers" to enroll any Windows device, even if they have not been previously registered in Autopilot. This can be overridden by other configurations with a higher priority.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users to register non-Autopilot registered devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only certain users will be able to enroll devices to Intune that are non-Autopilot registered.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/enrollment-restrictions-set" target="_blank" rel="noopener">Set enrollment restrictions</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-76"><a href="#/baseline?id=hidden-header-76" data-id="hidden-header-76" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestriction-ios-baseline-device-enrollers-can-enroll-any-devices"><a href="#/baseline?id=platformrestriction-ios-baseline-device-enrollers-can-enroll-any-devices" data-id="platformrestriction-ios-baseline-device-enrollers-can-enroll-any-devices" class="anchor"><span>PlatformRestriction - ios - Baseline - Device Enrollers can enroll any devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestriction - ios - Baseline - Device Enrollers can enroll any devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline allows users in the Azure AD group "Baseline - Device Enrollers" to enroll any Windows device, even if they have not been previously registered in Autopilot. This can be overridden by other configurations with a higher priority.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users to register non-Autopilot registered devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only certain users will be able to enroll devices to Intune that are non-Autopilot registered.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/enrollment-restrictions-set" target="_blank" rel="noopener">Set enrollment restrictions</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-77"><a href="#/baseline?id=hidden-header-77" data-id="hidden-header-77" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestriction-mac-baseline-device-enrollers-can-enroll-any-devices"><a href="#/baseline?id=platformrestriction-mac-baseline-device-enrollers-can-enroll-any-devices" data-id="platformrestriction-mac-baseline-device-enrollers-can-enroll-any-devices" class="anchor"><span>PlatformRestriction - mac - Baseline - Device Enrollers can enroll any devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestriction - mac - Baseline - Device Enrollers can enroll any devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline allows users in the Azure AD group "Baseline - Device Enrollers" to enroll any Windows device, even if they have not been previously registered in Autopilot. This can be overridden by other configurations with a higher priority.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users to register non-Autopilot registered devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only certain users will be able to enroll devices to Intune that are non-Autopilot registered.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/enrollment-restrictions-set" target="_blank" rel="noopener">Set enrollment restrictions</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-78"><a href="#/baseline?id=hidden-header-78" data-id="hidden-header-78" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestriction-windows-baseline-device-enrollers-can-enroll-any-devices"><a href="#/baseline?id=platformrestriction-windows-baseline-device-enrollers-can-enroll-any-devices" data-id="platformrestriction-windows-baseline-device-enrollers-can-enroll-any-devices" class="anchor"><span>PlatformRestriction - windows - Baseline - Device Enrollers can enroll any devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestriction - windows - Baseline - Device Enrollers can enroll any devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline allows users in the Azure AD group "Baseline - Device Enrollers" to enroll any Windows device, even if they have not been previously registered in Autopilot. This can be overridden by other configurations with a higher priority.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow certain users to register non-Autopilot registered devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Only certain users will be able to enroll devices to Intune that are non-Autopilot registered.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/enrollment-restrictions-set" target="_blank" rel="noopener">Set enrollment restrictions</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-79"><a href="#/baseline?id=hidden-header-79" data-id="hidden-header-79" class="anchor"><span>hidden-header</span></a></h6><h3 id="platformrestrictions-all-users-and-all-devices"><a href="#/baseline?id=platformrestrictions-all-users-and-all-devices" data-id="platformrestrictions-all-users-and-all-devices" class="anchor"><span>PlatformRestrictions - All users and all devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">PlatformRestrictions - All users and all devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">This is the default Device Type Restriction applied with the lowest priority to all users regardless of group membership.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-80"><a href="#/baseline?id=hidden-header-80" data-id="hidden-header-80" class="anchor"><span>hidden-header</span></a></h6><h3 id="windows10enrollmentcompletionpage-all-users-and-all-devices"><a href="#/baseline?id=windows10enrollmentcompletionpage-all-users-and-all-devices" data-id="windows10enrollmentcompletionpage-all-users-and-all-devices" class="anchor"><span>windows10EnrollmentCompletionPage - All users and all devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">windows10EnrollmentCompletionPage - All users and all devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">This is the default enrollment status screen configuration applied with the lowest priority to all users and all devices regardless of group membership.</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-81"><a href="#/baseline?id=hidden-header-81" data-id="hidden-header-81" class="anchor"><span>hidden-header</span></a></h6><h3 id="windowshelloforbusiness-all-users-and-all-devices"><a href="#/baseline?id=windowshelloforbusiness-all-users-and-all-devices" data-id="windowshelloforbusiness-all-users-and-all-devices" class="anchor"><span>WindowsHelloForBusiness - All users and all devices</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">WindowsHelloForBusiness - All users and all devices</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">This is the default Windows Hello for Business configuration applied with the lowest priority to all users regardless of group membership.</td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-scripts"><a href="#/baseline?id=intune-gt-devices-gt-scripts" data-id="intune-gt-devices-gt-scripts" class="anchor"><span>Intune &gt; Devices &gt; Scripts</span></a></h2><p><em>MSGraph/DeviceManagement/DeviceManagementScripts</em></p><h6 id="hidden-header-82"><a href="#/baseline?id=hidden-header-82" data-id="hidden-header-82" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-management-set-intunemanagementextensionconfiguration"><a href="#/baseline?id=baseline-management-set-intunemanagementextensionconfiguration" data-id="baseline-management-set-intunemanagementextensionconfiguration" class="anchor"><span>Baseline - Management - Set-IntuneManagementExtensionConfiguration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Management - Set-IntuneManagementExtensionConfiguration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">The baseline configures the IntuneManagementExtension to not delete installation logs from devices.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to have logs available to troubleshoot device management issues.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will be able to view installation logs.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-83"><a href="#/baseline?id=hidden-header-83" data-id="hidden-header-83" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-management-set-localadminpassword"><a href="#/baseline?id=baseline-management-set-localadminpassword" data-id="baseline-management-set-localadminpassword" class="anchor"><span>Baseline - Management - Set-LocalAdminPassword</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Management - Set-LocalAdminPassword</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates a local administrator account on Windows devices called "devicelocaladmin". This account password is set from the first three portions of the device's BitLocker recovery key (which can be viewed in the Azure portal) plus the letter "X" (e.g. 123456-123456-123456X)</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">Administrators with permission to view the BitLocker recovery key will be able to log in to Windows devices using a local administrator account.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://365adviser.com/azure/how-to-find-the-bitlocker-recovery-key-in-azure-ad" target="_blank" rel="noopener">View BitLocker recovery keys</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-84"><a href="#/baseline?id=hidden-header-84" data-id="hidden-header-84" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-enable-taskschedulerhistory"><a href="#/baseline?id=baseline-os-enable-taskschedulerhistory" data-id="baseline-os-enable-taskschedulerhistory" class="anchor"><span>Baseline - OS - Enable-TaskSchedulerHistory</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Enable-TaskSchedulerHistory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Enables the Windows Task Scheduler to display history of task runs. The baseline enables this setting. It is disabled in Windows by default.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This can help with troubleshooting scheduled tasks.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://medium.com/techygeekshome/enable-windows-task-scheduler-history-996a601a178c" target="_blank" rel="noopener">Enable Windows task scheduler history</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-85"><a href="#/baseline?id=hidden-header-85" data-id="hidden-header-85" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-os-set-timezone"><a href="#/baseline?id=baseline-os-set-timezone" data-id="baseline-os-set-timezone" class="anchor"><span>Baseline - OS - Set-TimeZone</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - OS - Set-TimeZone</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures Windows to set time zone automatically based on location. Also sets the default computer time zone based on public IP address, as some computers have issues using the Auto Time Zone Updater because of ISP or network restrictions.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to automatically set the time zone based on location.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">The time zone will be set automatically based on the device location.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-86"><a href="#/baseline?id=hidden-header-86" data-id="hidden-header-86" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-add-authenticateduserstoremotedesktopusers"><a href="#/baseline?id=baseline-security-add-authenticateduserstoremotedesktopusers" data-id="baseline-security-add-authenticateduserstoremotedesktopusers" class="anchor"><span>Baseline - Security - Add-AuthenticatedUsersToRemoteDesktopUsers</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - Add-AuthenticatedUsersToRemoteDesktopUsers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Adds the Authenticated Users group to the Remote Desktop Users group so any authenticated user can connect via Remote Desktop. A separate configuration (Baseline - OS - RDP Enabled) allows users in the "Remote Desktop users' group to access devices remotely.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to allow users to connect remotely via Remote Desktop.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may connect remotely via Remote Desktop.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">N/A</td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-87"><a href="#/baseline?id=hidden-header-87" data-id="hidden-header-87" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-security-disable-rdpnetworklevelauthentication"><a href="#/baseline?id=baseline-security-disable-rdpnetworklevelauthentication" data-id="baseline-security-disable-rdpnetworklevelauthentication" class="anchor"><span>Baseline - Security - Disable-RdpNetworkLevelAuthentication</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Security - Disable-RdpNetworkLevelAuthentication</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables Network Level Authentication as a requirement for Remote Desktop. This is required to support clients that do not support Network Level Authentication.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">To allow connections via Remote Desktop from non-Azure AD joined devices.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may connect remotely via Remote Desktop.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left">It is not currently possible to use Network Level Authentication when using Remote Desktop to connect from a non-Azure AD joined device to an Azure AD joined device. Removing the requirement for Network Level Authentication will not prevent clients from trying to negotiate Network Level Authentication if they support it. That means that Windows clients that are not joined to the same Azure AD as the host must explicitly add "enablecredsspsupport:i:0" in the .rdp file when connecting to prevent attempts to pre-authenticate.</td>
+</tr>
+</tbody></table>
+<h2 id="intune-gt-devices-gt-windows-autopilot-deployment-profiles"><a href="#/baseline?id=intune-gt-devices-gt-windows-autopilot-deployment-profiles" data-id="intune-gt-devices-gt-windows-autopilot-deployment-profiles" class="anchor"><span>Intune &gt; Devices &gt; Windows Autopilot deployment profiles</span></a></h2><p><em>MSGraph/DeviceManagement/WindowsAutopilotDeploymentProfiles</em></p><h6 id="hidden-header-88"><a href="#/baseline?id=hidden-header-88" data-id="hidden-header-88" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-self-deploying-profile"><a href="#/baseline?id=baseline-self-deploying-profile" data-id="baseline-self-deploying-profile" class="anchor"><span>Baseline: Self Deploying Profile</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline: Self Deploying Profile</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates an Intune Autopilot profile for enrolling machines using the self-deploying method, which enables a device to be enrolled into your environment with little to no user interaction. Self-deployment mode comes with restrictions including that the device must have TPM 2.0, and it is not supported on virtual machines even if they have a virtual TPM. Devices in the Azure AD group "Baseline - Autopilot Devices - Self Deploying" will be assigned this profile.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This is most useful for devices that will be shared or used as a kiosk. If a device is going to be used by a single user it is best to use the user-driven method.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">User devices assigned to this profile can be configured using the self-deployment method.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/autopilot/self-deploying" target="_blank" rel="noopener">Windows Autopilot Self-Deploying mode</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-89"><a href="#/baseline?id=hidden-header-89" data-id="hidden-header-89" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-user-driven-profile"><a href="#/baseline?id=baseline-user-driven-profile" data-id="baseline-user-driven-profile" class="anchor"><span>Baseline: User Driven Profile</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline: User Driven Profile</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Creates an Intune Autopilot profile for enrolling machines using the user-driven method. Devices in the Azure AD group "Autopilot Devices - User Driven" will be assigned this profile.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">When a device is going to be used by a single user, this approach is ideal because the device shows as assigned in all relevant Intune pages and reports. It is also the most stable and consistent Autopilot mode.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Devices with this profile can be enrolled by users themselves. The device will be registered to the user and the user will be able to use the company portal application.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/mem/autopilot/user-driven" target="_blank" rel="noopener">Windows Autopilot user-driven mode</a></td>
+</tr>
+</tbody></table>
+<h2 id="m365-admin-center-gt-password-expiration-policy"><a href="#/baseline?id=m365-admin-center-gt-password-expiration-policy" data-id="m365-admin-center-gt-password-expiration-policy" class="anchor"><span>M365 Admin Center &gt; Password expiration policy</span></a></h2><p><em>MSGraph/PasswordExpirationPolicies</em></p><h6 id="hidden-header-90"><a href="#/baseline?id=hidden-header-90" data-id="hidden-header-90" class="anchor"><span>hidden-header</span></a></h6><h3 id="resourcecontexttenantdomainname"><a href="#/baseline?id=resourcecontexttenantdomainname" data-id="resourcecontexttenantdomainname" class="anchor"><span>${ResourceContext:TenantDomainName}</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">${ResourceContext:TenantDomainName}</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Disables password expiration per Microsoft's recommendation.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">This is recommended by Microsoft and affects Microsoft secure score.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users will not be required to change their passwords.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/archive/blogs/secguide/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903" target="_blank" rel="noopener">Dropping the password expiration policies</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-exchange-gt-adminauditlogconfig"><a href="#/baseline?id=office-365-gt-exchange-gt-adminauditlogconfig" data-id="office-365-gt-exchange-gt-adminauditlogconfig" class="anchor"><span>Office 365 &gt; Exchange &gt; AdminAuditLogConfig</span></a></h2><p><em>PowerShell/ExchangeOnline/AdminAuditLogConfig</em></p><h6 id="hidden-header-91"><a href="#/baseline?id=hidden-header-91" data-id="hidden-header-91" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-8"><a href="#/baseline?id=configuration-8" data-id="configuration-8" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures Exchange logging so that IT users can search Exchange audit logs. The baseline turns on Exchange logging.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to identify who made the change, augment your change logs with detailed records of the change as it was implemented, comply with regulatory requirements and requests for discovery, as well as other tracing.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide#turn-on-audit-log-search" target="_blank" rel="noopener">Turn audit log search on or off</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-exchange-gt-organizationconfig"><a href="#/baseline?id=office-365-gt-exchange-gt-organizationconfig" data-id="office-365-gt-exchange-gt-organizationconfig" class="anchor"><span>Office 365 &gt; Exchange &gt; OrganizationConfig</span></a></h2><p><em>PowerShell/ExchangeOnline/OrganizationConfig</em></p><h6 id="hidden-header-92"><a href="#/baseline?id=hidden-header-92" data-id="hidden-header-92" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-9"><a href="#/baseline?id=configuration-9" data-id="configuration-9" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines various Exchange settings. Microsoft changes these settings frequently as features are added and removed. The baseline uses the default configurations provided by Microsoft.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to track configuration changes made in the environment.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/powershell/module/exchange/set-organizationconfig?view=exchange-ps" target="_blank" rel="noopener">Set-OrganizationConfig</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-exchange-gt-outlook-web-app-policies"><a href="#/baseline?id=office-365-gt-exchange-gt-outlook-web-app-policies" data-id="office-365-gt-exchange-gt-outlook-web-app-policies" class="anchor"><span>Office 365 &gt; Exchange &gt; Outlook Web App policies</span></a></h2><p><em>PowerShell/ExchangeOnline/OwaMailboxPolicies</em></p><h6 id="hidden-header-93"><a href="#/baseline?id=hidden-header-93" data-id="hidden-header-93" class="anchor"><span>hidden-header</span></a></h6><h3 id="owamailboxpolicy-default"><a href="#/baseline?id=owamailboxpolicy-default" data-id="owamailboxpolicy-default" class="anchor"><span>OwaMailboxPolicy-Default</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">OwaMailboxPolicy-Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures the default settings for Outlook on the web. The baseline uses the default configurations provided by Microsoft.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to use the default Outlook on the web policies.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">N/A</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps" target="_blank" rel="noopener">OwaMailboxPolicy</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-security-amp-compliance-gt-information-governance-gt-retention"><a href="#/baseline?id=office-365-gt-security-amp-compliance-gt-information-governance-gt-retention" data-id="office-365-gt-security-amp-compliance-gt-information-governance-gt-retention" class="anchor"><span>Office 365 &gt; Security &amp; Compliance &gt; Information governance &gt; Retention</span></a></h2><p><em>PowerShell/SecurityAndComplianceCenter/RetentionCompliancePolicies</em></p><h6 id="hidden-header-94"><a href="#/baseline?id=hidden-header-94" data-id="hidden-header-94" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-default-retention-policy"><a href="#/baseline?id=baseline-default-retention-policy" data-id="baseline-default-retention-policy" class="anchor"><span>Baseline - Default Retention Policy</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Default Retention Policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the data retention policy for SharePoint, OneDrive and Exchange Online. The baseline retains this data for one year.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want this data to be retained for one year and to be searchable in Office 365 content search tools.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users cannot permanently delete data that is less than one year old.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/retention?view=o365-worldwide" target="_blank" rel="noopener">Retention policies and labels</a></td>
+</tr>
+</tbody></table>
+<h6 id="hidden-header-95"><a href="#/baseline?id=hidden-header-95" data-id="hidden-header-95" class="anchor"><span>hidden-header</span></a></h6><h3 id="baseline-teams-retention-policy"><a href="#/baseline?id=baseline-teams-retention-policy" data-id="baseline-teams-retention-policy" class="anchor"><span>Baseline - Teams Retention Policy</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Baseline - Teams Retention Policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines the data retention policy for Microsoft Teams. Teams retention policies must be created independently of other retention policies. The baseline retains Teams data for one year.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want this data to be retained for one year and to be searchable in Office 365 content search tools.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users cannot permanently delete data that is less than one year old.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/retention?view=o365-worldwide" target="_blank" rel="noopener">Retention policies and labels</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-security-amp-compliance-gt-threat-management-gt-policy-gt-global-settings"><a href="#/baseline?id=office-365-gt-security-amp-compliance-gt-threat-management-gt-policy-gt-global-settings" data-id="office-365-gt-security-amp-compliance-gt-threat-management-gt-policy-gt-global-settings" class="anchor"><span>Office 365 &gt; Security &amp; Compliance &gt; Threat management &gt; Policy &gt; Global Settings</span></a></h2><p><em>PowerShell/ExchangeOnline/AtpPolicyForO365</em></p><h6 id="hidden-header-96"><a href="#/baseline?id=hidden-header-96" data-id="hidden-header-96" class="anchor"><span>hidden-header</span></a></h6><h3 id="configuration-10"><a href="#/baseline?id=configuration-10" data-id="configuration-10" class="anchor"><span>Configuration</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Configuration</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines Azure Active Directory authorization settings. The baseline allows users to sign up for email based subscriptions, use Self-Serve Password Reset, and join the tenant by email validation. Only adminstrators and guest inviters can invite external users to the organization. Users are allowed to read other users.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to apply Azure Active Directory authorization settings.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users are not allowed to read BitLocker keys for their owned device.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/graph/api/resources/authorizationpolicy?view=graph-rest-1.0" target="_blank" rel="noopener">Authorization Policy</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-teams-gt-apps-gt-permission-policies"><a href="#/baseline?id=office-365-gt-teams-gt-apps-gt-permission-policies" data-id="office-365-gt-teams-gt-apps-gt-permission-policies" class="anchor"><span>Office 365 &gt; Teams &gt; Apps &gt; Permission policies</span></a></h2><p><em>TeamsApi/TeamsAppPermissionPolicies</em></p><h6 id="hidden-header-97"><a href="#/baseline?id=hidden-header-97" data-id="hidden-header-97" class="anchor"><span>hidden-header</span></a></h6><h3 id="global"><a href="#/baseline?id=global" data-id="global" class="anchor"><span>Global</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Global</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Allows admins to specify approved Teams applications. Another setting (TenantWideAppsSettings) allows for Teams applications in general to be used. The baseline uses the default configurations provided by Microsoft.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">If you want to be able to restrict users from using unapproved Teams apps.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users may use only those Teams apps allowed by admins.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies" target="_blank" rel="noopener">Manage app permission policies in Microsoft Teams</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-teams-gt-meetings-gt-meeting-settings"><a href="#/baseline?id=office-365-gt-teams-gt-meetings-gt-meeting-settings" data-id="office-365-gt-teams-gt-meetings-gt-meeting-settings" class="anchor"><span>Office 365 &gt; Teams &gt; Meetings &gt; Meeting settings</span></a></h2><p><em>TeamsApi/TeamsMeetingConfiguration</em></p><h6 id="hidden-header-98"><a href="#/baseline?id=hidden-header-98" data-id="hidden-header-98" class="anchor"><span>hidden-header</span></a></h6><h3 id="global-1"><a href="#/baseline?id=global-1" data-id="global-1" class="anchor"><span>Global</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Global</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Configures Microsoft Teams meeting policies. The baseline prohibits anonymous users from joining Teams meetings.</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">The Microsoft default allows all anonymous users to join Teams meetings. Disabling this feature can protect users from unwanted Teams meeting attendees.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left">Users without Teams accounts will not be allowed into Teams meetings.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://docs.microsoft.com/en-us/microsoftteams/meeting-settings-in-teams" target="_blank" rel="noopener">Meeting Settings in Microsoft Teams</a></td>
+</tr>
+</tbody></table>
+<h2 id="office-365-gt-teams-gt-org-wide-settings-gt-teams-settings"><a href="#/baseline?id=office-365-gt-teams-gt-org-wide-settings-gt-teams-settings" data-id="office-365-gt-teams-gt-org-wide-settings-gt-teams-settings" class="anchor"><span>Office 365 &gt; Teams &gt; Org-wide settings &gt; Teams settings</span></a></h2><p><em>TeamsApi/TeamsClientConfiguration</em></p><h6 id="hidden-header-99"><a href="#/baseline?id=hidden-header-99" data-id="hidden-header-99" class="anchor"><span>hidden-header</span></a></h6><h3 id="global-2"><a href="#/baseline?id=global-2" data-id="global-2" class="anchor"><span>Global</span></a></h3><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Global</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">What does this do?</td>
+<td align="left">Defines global settings for Microsoft Teams. The baseline blocks third party file sharing applications (e.g. Box, DropBox, Google Drive).</td>
+</tr>
+<tr>
+<td align="left">Why should you use this?</td>
+<td align="left">To prevent users from sharing company content externally.</td>
+</tr>
+<tr>
+<td align="left">What is the end-user impact?</td>
+<td align="left"><span style="color: red">High Impact.</span> Users will not be able to share content outside of the organization using Microsoft Teams.</td>
+</tr>
+<tr>
+<td align="left">Learn more</td>
+<td align="left"><a href="https://techcommunity.microsoft.com/t5/microsoft-teams/disable-additional-cloud-storage-dropbox-box-and-google-drive/m-p/253335" target="_blank" rel="noopener">Disable additional cloud storage (DropBox, Box and Google Drive)</a></td>
+</tr>
+</tbody></table>
+</article></section></main>
+  <script>
+    window.$docsify = {
+      name: 'Simeon',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      logo: 'assets/images/logo.png',
+      autoHeader: true,
+      noCompileLinks: [
+        '.*\.ps1'
+      ]
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+
+<div class="progress" style="opacity: 0; width: 0%;"></div></body></html>
