@@ -24,7 +24,7 @@
 1. Set the following settings:
 
    | Description | Setting | 
-   |-----------|:-----------:|
+   |---|---|
    | Require a password to unlock mobile devices | **Required** |
    | Simple passwords | **Block** |  
    | Required password type | **At least alphanumeric** | 
