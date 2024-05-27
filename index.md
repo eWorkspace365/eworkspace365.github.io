@@ -1,5 +1,6 @@
 [[_TOC_]]
 
+![image](https://github.com/klieka/klieka.github.io/assets/168641483/49165fff-620a-42d4-bf46-492bd5fba0f1)
 
 # Windows 10/11
 ---
