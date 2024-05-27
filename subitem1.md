@@ -1,6 +1,5 @@
 - [Paste Your Document In Here](#windows-1011)
   * [And a table of contents](#and-a-table-of-contents)
-  * [On the right](#on-the-right)
 
 # Windows 10/11
 ---
