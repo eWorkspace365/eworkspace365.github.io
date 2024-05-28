@@ -1,3 +1,6 @@
+https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
+
+
 # Microsoft | Secure and Compliant Baseline Configuration
 
 ![image](https://github.com/klieka/klieka.github.io/assets/168641483/7702be10-bc4a-4f45-ba83-86a616f7748d)
