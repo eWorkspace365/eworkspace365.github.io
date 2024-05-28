@@ -1,4 +1,5 @@
 https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
+https://www.markdownguide.org/getting-started
 
 
 # Microsoft | Secure and Compliant Baseline Configuration
