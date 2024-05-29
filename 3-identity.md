@@ -8,31 +8,34 @@
 ## BL-CA01-BLOCK-LegacyAuthentication
 > More information about this setting, please go to:<br/> https://learn.microsoft.com/en-us/entra/identity/conditional-access/block-legacy-authentication
 
-| Name | <div align="left"> Configuration | 
-|-----------|:-----------:|
-| Name of this Policy? | <div align="left">**BL-CA01-BLOCK-LegacyAuthentication** |  
-| What does this do? | <div align="left">Blocking legacy authentication. |  
-| What is the end-user impact? <br/><br/><br/><br/><br/><br/> | <div align="left"> Users are unable to use the following protocols: <br/><br/> - Authenticated SMTP - Used to send authenticated email messages. <br/>- Exchange ActiveSync (EAS) - Used to connect and sync mailbox. <br/> - POP3 - Used by POP email clients. <br/> - Other clients - Other protocols identified to use legacy authentication.
-| What is are the settings?<br/><br/><br/> | <div align="left"> Users: **All Users** <br/>Target Resources: **All Cloud Apps**<br/> Condition: **Client Apps** = Exchange ActiveSync clients; Other clients <br/> Grant: **Block Access** |
+| Name | Configuration | 
+|-----------|:-----------|
+| Name of this Policy? | **BL-CA01-BLOCK-LegacyAuthentication** |  
+| What does this do? | Blocking legacy authentication. |  
+| What is the end-user impact? <br/><br/><br/><br/><br/><br/> | Users are unable to use the following protocols: <br/><br/> - Authenticated SMTP - Used to send authenticated email messages. <br/>- Exchange ActiveSync (EAS) - Used to connect and sync mailbox. <br/> - POP3 - Used by POP email clients. <br/> - Other clients - Other protocols identified to use legacy authentication.
+| What is are the settings?<br/><br/><br/> | Users: **All Users** <br/>Target Resources: **All Cloud Apps**<br/> Condition: **Client Apps** = Exchange ActiveSync clients; Other clients <br/> Grant: **Block Access** |
 
 ## BL-CA02-BLOCK-DevicePlatforms
 > More information about this setting, please go to:
 https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy-unknown-unsupported-device
 
-| Name | <div align="left"> Configuration | 
-|-----------|:-----------:|
-| Name of this Policy? | <div align="left">**BL-CA02-BLOCK-DevicePlatforms** |  
-| What does this do? | <div align="left">Blocking specific device platforms. |  
-| What is the end-user impact? | <div align="left"> Users are unable to connect from specific device platforms.
-| What is are the settings?<br/><br/><br/> | <div align="left"> Users: **All Users** (Exclude bl-entraid-sg-ca-exlude-breakglass-accounts)<br/>Target Resources: **All Cloud Apps**<br/> Condition: **Device platforms** > Windows Phone <br/> Grant: **Block Access** |
+| Name | Configuration | 
+|-----------|:-----------|
+| Name of this Policy? | **BL-CA02-BLOCK-DevicePlatforms** |  
+| What does this do? | Blocking specific device platforms. |  
+| What is the end-user impact? | Users are unable to connect from specific device platforms.
+| What is are the settings?<br/><br/><br/> | Users: **All Users** (Exclude bl-entraid-sg-ca-exlude-breakglass-accounts)<br/>Target Resources: **All Cloud Apps**<br/> Condition: **Device platforms** > Windows Phone <br/> Grant: **Block Access** |
 
 ## BL-CA03-BLOCK-GeoLocation
-| Name | <div align="left"> Configuration | 
-|-----------|:-----------:|
-| Name of this Policy? | <div align="left">**BL-CA03-BLOCK-GeoLocation** |  
-| What does this do? | <div align="left">Blocking specific geographic locations. |  
-| What is the end-user impact? | <div align="left"> Users are unable to connect from specific countries.
-| What is are the settings?<br/><br/><br/> | <div align="left"> Users: **All Users** (Exclude bl-entraid-sg-ca-exlude-breakglass-accounts)<br/>Target Resources: **All Cloud Apps**<br/> Condition: **Location** = Blocked-Countries (Exclude All trusted networks and locations) <br/> Condition: **Client Apps** = Browser; Mobile apps and dekstop clients <br/> Grant: **Block Access** |
+> More information about this setting, please go to:
+https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy-unknown-unsupported-device
+
+| Name | Configuration | 
+|-----------|:-----------|
+| Name of this Policy? | **BL-CA03-BLOCK-GeoLocation** |  
+| What does this do? | Blocking specific geographic locations. |  
+| What is the end-user impact? | Users are unable to connect from specific countries.
+| What is are the settings?<br/><br/><br/> | Users: **All Users** (Exclude bl-entraid-sg-ca-exlude-breakglass-accounts)<br/>Target Resources: **All Cloud Apps**<br/> Condition: **Location** = Blocked-Countries (Exclude All trusted networks and locations) <br/> Condition: **Client Apps** = Browser; Mobile apps and dekstop clients <br/> Grant: **Block Access** |
 
 ## BL-CA04-BLOCK-ServiceAccounts
 | Name | <div align="left"> Configuration | 
