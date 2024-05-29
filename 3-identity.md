@@ -16,7 +16,7 @@
 
 
 # Prerequisites
-# Baseline Configuration
+# Baseline Configuration 
 
 [conditional-access-policy-design-baseline-version-14.xlsx](/.attachments/conditional-access-policy-design-baseline-version-14-2925dbcb-1b72-4d32-b13a-2358df5aadc8.xlsx)
 
