@@ -15,12 +15,13 @@
 [Menu Item 3](item3.md)
 
 
-# Prerequisites
-# Baseline Configuration 
+## Prerequisites
+## Baseline Configuration
+
 
 [conditional-access-policy-design-baseline-version-14.xlsx](/.attachments/conditional-access-policy-design-baseline-version-14-2925dbcb-1b72-4d32-b13a-2358df5aadc8.xlsx)
 
-## BL-CA01-BLOCK-LegacyAuthentication
+### BL-CA01-BLOCK-LegacyAuthentication
 > More information about this setting, please go to:<br/> https://learn.microsoft.com/en-us/entra/identity/conditional-access/block-legacy-authentication
 
 | Name | Configuration | 
