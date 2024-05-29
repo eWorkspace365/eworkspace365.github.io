@@ -2,7 +2,8 @@ https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
 
 https://www.markdownguide.org/getting-started
 
-[Microsoft Intune admin center]([ttps://github.com/klieka/m365-baseline/blob/main/index.md).
+[Microsoft Intune admin center](https://github.com/klieka/m365-baseline/blob/main/index.md).
+
 
 
 
