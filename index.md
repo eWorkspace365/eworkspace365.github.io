@@ -4,8 +4,6 @@ https://www.markdownguide.org/getting-started
 
 
 https://github.com/klieka/m365-baseline/blob/main/index.md
-
-
 # Microsoft | Secure and Compliant Baseline Configuration
 
 ![image](https://github.com/klieka/klieka.github.io/assets/168641483/7702be10-bc4a-4f45-ba83-86a616f7748d)
