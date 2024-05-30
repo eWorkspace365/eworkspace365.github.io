@@ -49,6 +49,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy
 | **Target Resources** | Under Include, select **All cloud apps** |
 | **Condition** | Under **Device platforms**, select **Windows Phone** | 
 | **Grant** | Select **Block Access** and select **Require one of the selected controls** |
+<br/>
 
 ## BL-CA03-BLOCK-GeoLocation
 > More information about this setting, please go to:
@@ -65,3 +66,6 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 | **Condition** | Under **Location** > **Include**, select location  **Blocked-Countries**<br/>Under **Location** > **Exclude**, select > **All trusted networks and locations**
 | | Under **Client apps** select **Browser** and **Mobile apps and dekstop clients** |
 | **Grant** | Select **Block Access** and select **Require one of the selected controls** |
+<br/>
+
+
