@@ -46,7 +46,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy
 https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-conditional-access-policy-location
 
 | Name | Configuration | 
-|-----------|:-----------|
+|:-----------|:-----------|
 | Name of this Policy? | **BL-CA03-BLOCK-GeoLocation** |  
 | What does this do? | Blocking specific geographic locations. |  
 | What is the end-user impact? | Users are unable to connect from specific countries.
