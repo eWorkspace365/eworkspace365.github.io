@@ -33,7 +33,8 @@
 |**Target Resources** | Under Include, select **All cloud apps** |
 | **Condition** | Under **Client apps**, select **Exchange ActiveSync clients** and **Other clients** | 
 | **Grant** |  Select **Block Access** and select **Require one of the selected controls** |
-
+<br/>
+<br/>
 ## BL-CA02-BLOCK-DevicePlatforms
 > More information about this setting, please go to:
 https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy-unknown-unsupported-device
