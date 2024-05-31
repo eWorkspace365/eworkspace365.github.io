@@ -96,7 +96,7 @@ https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA05-BLOCK-HighRiskUsers** |  
 | What does this do? | Blocking high risk users |  
-| What is the end-user impact? | Users marked as high risk are unable to connect
+| What is the end-user impact? | Users marked as high risk are unable to connect |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group > **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** |  Under **Include**, select **All cloud apps** |
@@ -113,8 +113,9 @@ https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA06-BLOCK-HighRiskSignins** |  
 | What does this do? | Blocking high risk signins |  
-| What is the end-user impact? | Users marked as risky sign-in are unable to connect
-| What is are the settings? | Create a policy with the following parameters: |  | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
+| What is the end-user impact? | Users marked as risky sign-in are unable to connect |
+| What is are the settings? | Create a policy with the following parameters: |
+| **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** |  Under **Include**, select **All cloud apps** |
 | **Condition** | Under **Sign-in risk**, select **High** | 
 | **Grant** | Select **Block Access** and select **Require one of the selected controls** |
@@ -129,7 +130,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/how-to-polic
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA07-BLOCK-InsiderRisk** |  
 | What does this do? | Blocking users marked as insider risks. |  
-| What is the end-user impact? | Users marked as insider risk unable to connect from specific devices.
+| What is the end-user impact? | Users marked as insider risk unable to connect from specific devices |
 | What is are the settings? | Create a policy with the following parameters: | 
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -146,7 +147,7 @@ https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA08-GRANT-MediumRiskSignIns** |  
 | What does this do? | Force MFA and password change for medium risk signins. |  
-| What is the end-user impact? | Users marked as risky sign-in are unable to connect.
+| What is the end-user impact? | Users marked as risky sign-in are unable to connect |
 | What is are the settings? | Create a policy with the following parameters: | 
 | **Users** |  Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -163,7 +164,7 @@ https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA09-GRANT-MediumRiskUsers** |  
 | What does this do? | Force MFA and password change for medium risk users. |  
-| What is the end-user impact? | Users marked as medium risky  are unable to connect.
+| What is the end-user impact? | Users marked as medium risky  are unable to connect |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** |  Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -180,7 +181,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA10-GRANT-Administrators** |  
 | What does this do? | Force MFA for administrative roles and users. |  
-| What is the end-user impact? | Users with administrator roles will be forced to configure or require MFA authentication.
+| What is the end-user impact? | Users with administrator roles will be forced to configure or require MFA authentication |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **Users and groups** and select all **Administrator roles**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -197,7 +198,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA11-GRANT-Members** |  
 | What does this do? | Force MFA for all users. |  
-| What is the end-user impact? | All users will be forced to configure or require MFA authentication.
+| What is the end-user impact? | All users will be forced to configure or require MFA authentication |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -213,7 +214,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA12-GRANT-Guests** |  
 | What does this do? | Force MFA for all guests. |  
-| What is the end-user impact? | All guests will be forced to configure or require MFA authentication.
+| What is the end-user impact? | All guests will be forced to configure or require MFA authentication |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **Users and groups** and select **Guest or external users** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -230,12 +231,12 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA13-GRANT-RemoteDesktop** |  
 | What does this do? | Require a compliance device or workplace join for Remote Dekstop |  
-| What is the end-user impact? | All all users need a compliant device or workplace join to connect to Remote Desktop.
+| What is the end-user impact? | All all users need a compliant device or workplace join to connect to Remote Desktop |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users** |
-| **Target Resources** | Under **Include**, select the following services:<br/><br/>[x] **Azure Windows VM Sign-In**<br/>[x] **Microsoft Remote Desktop** <br/>[x] **Windows 365** <br/>[x] **Windows Cloud Login** <br/>[x] **Windows Virtual Desktop** <br/>[x] **Windows Virtual Desktop Client**|
+| **Target Resources** | Under **Include**, select the following services:<br/><br/>[x] **Azure Windows VM Sign-In**<br/>[x] **Microsoft Remote Desktop** <br/>[x] **Windows 365** <br/>[x] **Windows Cloud Login** <br/>[x] **Windows Virtual Desktop** <br/>[x] **Windows Virtual Desktop Client** |
 | **Condition** |  Under **Client apps** select **Browser** and **Mobile apps and dekstop clients** |
-| | Under **Filter for devices**, select **Exclude filtered devices from policy** and enter syntax: `device.trustType -eq "Workplace"`
+| | Under **Filter for devices**, select **Exclude filtered devices from policy** and enter syntax: `device.trustType -eq "Workplace"` |
 | **Grant** | Select **Grant Access** and select **Require device to be marked as compliant** and **Require Microsoft Entra hybrid joined device** with Operator = **OR** |
 | **Session** | Select **Sign-in frequency** and set to **1 hour** |
 
@@ -249,7 +250,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA14-GRANT-ManagedDevices** |  
 | What does this do? | Require a compliance device or workplace join for all services |  
-| What is the end-user impact? | All all users need a compliant device or workplace join to use Microsoft 365 services
+| What is the end-user impact? | All all users need a compliant device or workplace join to use Microsoft 365 services |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps**<br/>Under **Exclude**, select the following services:<br/><br/>[x] **Azure Windows VM Sign-In**<br/>[x] **Microsoft Remote Desktop** <br/>[x] **Windows 365** <br/>[x] **Windows Cloud Login** <br/>[x] **Windows Virtual Desktop** <br/>[x] **Windows Virtual Desktop Client**|
@@ -266,7 +267,7 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA15-GRANT-ApprovedApps** |  
 | What does this do? | Require an approved app |  
-| What is the end-user impact? | All all users need an approved app to use Microsoft 365 services
+| What is the end-user impact? | All all users need an approved app to use Microsoft 365 services |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
 | **Target Resources** | Under **Include**, select **All cloud apps** |
@@ -315,10 +316,10 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-policy
 | Name | Configuration | 
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA18-SESSION-AppEnforcedRestrictions** |  
-| What does this do? | Block or limit access to SharePoint, OneDrive, and Exchange content from unmanaged devices  |  
+| What does this do? | Block or limit access to SharePoint, OneDrive, and Exchange content from unmanaged devices |
 | What is the end-user impact? | Users are not allowed to download, print or sync on un-managed devices |
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group **bl-entraid-sg-ca-exlude-breakglass-accounts** |
-| **Target Resources** | Under **Include**, select **Selected apps**:<br/><br/>[x] **Office 365 SharePoint Online**  |
+| **Target Resources** | Under **Include**, select **Selected apps**:<br/><br/>[x] **Office 365 SharePoint Online** |
 | **Condition** | Under **Client apps** select **Browser** |
 | **Grant** | Select **Grant Access** and select **Use app enforced restrictions**  with Operator = **OR** |
