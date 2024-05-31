@@ -64,8 +64,8 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 | What is the end-user impact? | Users are unable to connect from specific countries
 | What is are the settings? | Create a policy with the following parameters: |
 | **Users** | Under **Include**, select **All users**<br/>Under **Exclude**, select group > **bl-entraid-sg-ca-exlude-breakglass-accounts** |
-| **Target Resources** | Under **Include**, select **All cloud apps**
-| **Condition** | Under **Location** > **Include**, select location  **Blocked-Countries**<br/>Under **Location** > **Exclude**, select > **All trusted networks and locations**
+| **Target Resources** | Under **Include**, select **All cloud apps** |
+| **Condition** | Under **Location** > **Include**, select location  **Blocked-Countries**<br/>Under **Location** > **Exclude**, select > **All trusted networks and locations** |
 | | Under **Client apps** select **Browser** and **Mobile apps and dekstop clients** |
 | **Grant** | Select **Block Access** and select **Require one of the selected controls** |
 
@@ -78,12 +78,12 @@ https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-condit
 | Name | Configuration | 
 |:-----------|:-----------|
 | Name of this Policy? | **BL-CA04-BLOCK-ServiceAccounts** |  
-| What does this do? | Blocking service accounts |  
-| What is the end-user impact? | Service accounts are unable to connect except from trusted locations
+| What does this do? | Blocking service accounts |
+| What is the end-user impact? | Service accounts are unable to connect except from trusted locations |
 | What is are the settings? | Create a policy with the following parameters: | 
 | **Users** | Under **Include**, select group > **bl-entraid-sg-ca-service-accounts** |
 | **Target Resources** |  Under **Include**, select **All cloud apps** |
-| **Condition** | Under **Location** > **Include**, select **Any network or location**<br/> Under **Location** > **Include**, select named location > **Service-Accounts**
+| **Condition** | Under **Location** > **Include**, select **Any network or location**<br/> Under **Location** > **Include**, select named location > **Service-Accounts** |
 | **Grant** | Select **Block Access** and select **Require one of the selected controls** |
 
 <br/>
