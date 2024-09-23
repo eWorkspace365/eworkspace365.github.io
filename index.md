@@ -4,7 +4,7 @@ https://www.markdownguide.org/getting-started
 
 [Conditional Access](3-identity.md).
 
-
+[Compliance](5-compliance.md).
 
 
 # Microsoft | Secure and Compliant Baseline Configuration
