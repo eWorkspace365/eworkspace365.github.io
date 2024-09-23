@@ -13,8 +13,6 @@ When published, the labels you choose here will be available in specified users'
 <details>
 <summary>Public (unencrypted)</summary>
 
-![image.png](/.attachments/image-dbd2ee77-6c71-4e86-8da2-6826ccb93e34.png)
-
 
 Define the scope for this label and select **Items**:
 - [X] Files
