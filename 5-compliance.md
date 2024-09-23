@@ -14,39 +14,39 @@ When published, the labels you choose here will be available in specified users'
 Public (unencrypted)
 
 Define the scope for this label and select **Items**:
-- [X] Files
-- [X] Emails
+[X] Files
+[X] Emails
 
 Configure **Privacy** > **Access control, and other settings to protect labeled Teams, Microsoft 365 Groups, and SharePoint sites** and select:
-- [X] Groups & sites
+[X] Groups & sites
 
 Configure **Protection settings** that will be enforced when the label is applied to items in Microsoft 365 and select:
-- [X] Control Access
-- [ ] Apply content marking
-- [ ] Protect Teams meetings and chats
+[X] Control Access
+[ ] Apply content marking
+[ ] Protect Teams meetings and chats
 
 Configure **Access control**. If the user applying the label has the correct usage rights or role, any existing access control settings will be removed from the item. 
-- [X] Remove access control settings if already applied to items
+[X] Remove access control settings if already applied to items
 
 Configure **Auto-labeling for files and emails** and uncheck:
-- [ ] Auto-labeling for files and emails
+[ ] Auto-labeling for files and emails
 
 **Define protection settings for groups and sites** and select:
-- [X] Privacy and external user access
-- [X] External sharing and conditional access
-- [ ] Private teams discoverability and shared channel settings
+[X] Privacy and external user access
+[X] External sharing and conditional access
+[ ] Private teams discoverability and shared channel settings
 
 **Define privacy and external user access settings** and select **Public**
 For **External user access**, select:
-- [X] Let Microsoft 365 Group owners add people outside your organization to the group as guests.
+[X] Let Microsoft 365 Group owners add people outside your organization to the group as guests.
 
 **Define external sharing and conditional access settings** 
 Control who can share SharePoint content with people outside your organization and decide whether users can access labeled sites from unmanaged devices.​
 
 Content can be shared with:
-- [X] Anyone
+[X] Anyone
 For unmanaged devices configure app enforced restrictions:
-- [X] Allow full access from desktop apps, mobile apps, and the web
+[X] Allow full access from desktop apps, mobile apps, and the web
 
 
 #Data Loss Prevention
