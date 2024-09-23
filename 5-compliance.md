@@ -14,7 +14,7 @@ When published, the labels you choose here will be available in specified users'
 Public (unencrypted)
 
 Define the scope for this label and select **Items**:
-[X] Files
+- [X] Files
 [X] Emails
 
 Configure **Privacy** > **Access control, and other settings to protect labeled Teams, Microsoft 365 Groups, and SharePoint sites** and select:
