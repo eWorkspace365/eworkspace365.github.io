@@ -13,6 +13,11 @@ When published, the labels you choose here will be available in specified users'
 
 Public (unencrypted)
 
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+
 Define the scope for this label and select **Items**:
 - [X] Files
 - [X] Emails
