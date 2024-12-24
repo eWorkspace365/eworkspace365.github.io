@@ -6,6 +6,7 @@
 https://purview.microsoft.com/settings/application-settings/informationprotection?tid=TenantID
 
 `Install-Module AzureADPreview`
+
 `Connect-AzureAD`
 #Login with global administrator credentials
 $Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
