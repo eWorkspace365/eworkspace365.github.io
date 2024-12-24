@@ -16,7 +16,14 @@ Table of contents
 
 # Mobile Application Management (MAM)
 
+## Apps Deployment
 
+## Apps Configuration
+
+## Monitor
+
+
+# Mobile Device Management (MDM)
 
 ## Configuration Profiles
 
