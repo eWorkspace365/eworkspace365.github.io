@@ -5,13 +5,14 @@
 
 https://purview.microsoft.com/settings/application-settings/informationprotection?tid=TenantID
 
-'
+`
 Install-Module AzureADPreview
 Connect-AzureAD
 #Login with global administrator credentials
 $Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
 $Setting.Values
-$Setting["EnableMIPLabels"] = "True" '
+$Setting["EnableMIPLabels"] = "True"
+`
 
 Set-AzureADDirectorySetting -Id $Setting.Id -DirectorySetting $Setting
 
