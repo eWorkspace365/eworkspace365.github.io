@@ -58,11 +58,11 @@ In a traditional network architecture, all outbound Internet connections travers
   
 Enterprise WANs are often designed to backhaul network traffic to a central company head office for inspection before egress to the Internet, usually through one or more proxy servers. The following diagram illustrates such a network topology.
   
-![Traditional enterprise network model.](../media/fc87b8fd-a191-47a7-9704-1e445599813a.png)
+![image](https://github.com/user-attachments/assets/256db3c7-ef0c-4ac6-846e-a5019f8574ee)
   
 Because Microsoft 365 runs on the Microsoft Global Network, which includes front-end servers around the world, there's often a front-end server close to the user's location. By providing local Internet egress and by configuring internal DNS servers to provide local name resolution for Microsoft 365 endpoints, network traffic destined for Microsoft 365 can connect to Microsoft 365 front end servers as close as possible to the user. The following diagram shows an example of a network topology that allows users connecting from main office, branch office, and remote locations to follow the shortest route to the closest Microsoft 365 entry point.
   
-![WAN network model with regional egress points.](../media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
+![image](https://github.com/user-attachments/assets/b4f348b6-a5c7-4fc4-b601-8fc0424d08f4)
   
 Shortening the network path to Microsoft 365 entry points in this way can improve connectivity performance and the end-user experience in Microsoft 365. It can also help to reduce the effect of future changes to the network architecture on Microsoft 365 performance and reliability.
   
@@ -83,7 +83,7 @@ The local egress architecture has the following benefits over the traditional mo
 <a name="BKMK_P3"> </a>
 ### Avoid network hairpins
 
-![Avoid hairpins.](../media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
+![image](https://github.com/user-attachments/assets/dc278114-1cda-4f2d-b9a9-5be03af5a257)
   
 As a general rule of thumb, the shortest, most direct route between user and closest Microsoft 365 endpoint offers the best performance. A network hairpin happens when WAN or VPN traffic bound for a particular destination is first directed to another intermediate location (such as security stack, cloud access broker, or cloud-based web gateway), introducing latency and potential redirection to a geographically distant endpoint. Network hairpins are also caused by routing/peering inefficiencies or suboptimal (remote) DNS lookups.
   
