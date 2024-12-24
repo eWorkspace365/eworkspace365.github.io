@@ -2,7 +2,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Mobile Application Management (MAM)](#usage)
+   * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [STDIN](#stdin)
       * [Local files](#local-files)
       * [Remote files](#remote-files)
