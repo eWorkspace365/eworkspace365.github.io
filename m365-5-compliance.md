@@ -5,6 +5,17 @@
 
 https://purview.microsoft.com/settings/application-settings/informationprotection?tid=TenantID
 
+'
+Install-Module AzureADPreview
+Connect-AzureAD
+#Login with global administrator credentials
+$Setting = Get-AzureADDirectorySetting -Id (Get-AzureADDirectorySetting | where -Property DisplayName -Value "Group.Unified" -EQ).id
+$Setting.Values
+$Setting["EnableMIPLabels"] = "True" '
+
+Set-AzureADDirectorySetting -Id $Setting.Id -DirectorySetting $Setting
+
+
 ##Sensitivity Labels
 
 When published, the labels you choose here will be available in specified users' Office apps (Word, Excel, PowerPoint, and Outlook), SharePoint and Teams sites, and Microsoft 365 Groups.​
