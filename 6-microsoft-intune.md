@@ -6,9 +6,7 @@ Table of contents
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
       * [Apps Monitor](#apps-monitor)
-   * [Tests](#tests)
-   * [Dependency](#dependency)
-   * [Docker](#docker)
+   * [Mobile Device Management (MDM)](#ocker)
      * [Local](#local)
      * [Public](#public)
 <!--te-->
