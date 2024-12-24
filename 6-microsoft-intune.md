@@ -6,7 +6,7 @@ Table of contents
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
       * [Apps Monitor](#apps-monitor)
-   * [Mobile Device Management (MDM)](#ocker)
+   * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
      * [Local](#local)
      * [Public](#public)
 <!--te-->
