@@ -70,7 +70,7 @@ Also, DNS requests can introduce latency if the responding DNS server is distant
   
 While regional egress can work well for Microsoft 365, the optimum connectivity model would be to always provide network egress at the user's location, regardless of whether it is on the corporate network or remote locations such as homes, hotels, coffee shops, and airports. This local direct egress model is represented in the following diagram.
   
-![Local egress network architecture.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![image](https://github.com/user-attachments/assets/b92ec3ee-b2d2-48ef-b536-4e1773ba36ac)
   
 Enterprises who have adopted Microsoft 365 can take advantage of the Microsoft Global Network's Distributed Service Front Door architecture by ensuring that user connections to Microsoft 365 take the shortest possible route to the nearest Microsoft Global Network entry point. The local egress network architecture does this by allowing Microsoft 365 traffic to be routed over the nearest egress, regardless of user location.
   
