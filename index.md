@@ -16,7 +16,7 @@ https://www.markdownguide.org/getting-started
 [Menu Item 1]()
 
   * # SubMenu Heading 1
-  * [SubMenu Item 1](subitem1.md)
+  * [6. Microsoft Intune](6-microsoft-intune.md)
   * [SubMenu Item 2](subitem2.md)
   - - - -
   * # SubMenu Heading 2
