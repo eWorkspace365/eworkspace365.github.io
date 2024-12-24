@@ -37,8 +37,8 @@ The primary goal in the network design should be to minimize latency by reducing
 <a name="BKMK_P1"> </a>
 ### Identify and differentiate Microsoft 365 traffic
 
-![Identify Microsoft 365 traffic.](../media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
-  
+![image](https://github.com/user-attachments/assets/189505ee-5156-49d0-892c-3edabd962013)
+
 Identifying Microsoft 365 network traffic is the first step in being able to differentiate that traffic from generic Internet-bound network traffic. Microsoft 365 connectivity can be optimized by implementing a combination of approaches like network route optimization, firewall rules, browser proxy settings. Additionally, bypassing of network inspection devices for certain endpoints is also beneficial.
   
 For more information on Microsoft 365 optimization methods, see the [optimizing connectivity to Microsoft 365 services](#BKMK_OptmizeConnectivity) section.
@@ -48,7 +48,7 @@ Microsoft now publishes all Microsoft 365 endpoints as a web service and provide
 <a name="BKMK_P2"> </a>
 ### Egress network connections locally
 
-![Egress network connections locally.](../media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![image](https://github.com/user-attachments/assets/a2203814-14f2-4996-82a3-f4e1c3952fd7)
   
 Local DNS and Internet egress is of critical importance for reducing connection latency and ensuring that user connections are made to the nearest point of entry to Microsoft 365 services. In a complex network topology, it's important to implement both local DNS and local Internet egress together. For more information about how Microsoft 365 routes client connections to the nearest point of entry, see the article [Client Connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
