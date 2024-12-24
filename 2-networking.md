@@ -96,7 +96,7 @@ Due to the large number of distributed locations with Microsoft 365 entry points
 <a name="BKMK_P4"> </a>
 ### Assess bypassing proxies, traffic inspection devices, and duplicate security technologies
 
-![Bypass proxies, traffic inspection devices, and duplicate security technologies.](../media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![image](https://github.com/user-attachments/assets/7ba4d065-287f-4a91-a8c2-247f7542cac4)
   
 Enterprise customers should review their network security and risk reduction methods specifically for Microsoft 365 bound traffic and use Microsoft 365 security features to reduce their reliance on intrusive, performance impacting, and expensive network security technologies for Microsoft 365 network traffic.
   
