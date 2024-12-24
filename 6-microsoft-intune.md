@@ -98,6 +98,9 @@ Compliance policies are commonly used in combination with Conditional Access. Th
 
 To meet with the compliancy policy that has been targeted, of course we enforce these settings first in the configuration policy. It is basically checking if those settings were applied. 
 
+https://learn.microsoft.com/en-us/mem/intune/fundamentals/deployment-plan-compliance-policies#level-2---enhanced-device-compliance-settings
+
+
 If the device meets the compliance policy, then Intune marks the device as compliant and access to company resources is granted. 
 
 | iOS |
