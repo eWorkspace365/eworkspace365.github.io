@@ -2,8 +2,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Installation](#installation)
-   * [Usage](#usage)
+   * [Mobile Application Management (MAM)](#usage)
       * [STDIN](#stdin)
       * [Local files](#local-files)
       * [Remote files](#remote-files)
