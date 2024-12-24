@@ -5,7 +5,7 @@ Table of contents
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
-      * [Apps Monitor](#app-monitor)
+      * [Apps Monitor](#apps-monitor)
    * [Tests](#tests)
    * [Dependency](#dependency)
    * [Docker](#docker)
