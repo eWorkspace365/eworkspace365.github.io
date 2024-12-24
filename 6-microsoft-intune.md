@@ -20,7 +20,6 @@ Table of contents
 
 ## Apps Configuration
 
-## Apps Monitor
 
 
 # Mobile Device Management (MDM)
