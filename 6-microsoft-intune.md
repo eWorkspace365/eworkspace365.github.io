@@ -1,4 +1,4 @@
-#Configuration Profiles
+# Configuration Profiles
 
 For all the **catalog settings** use the json-file to import all the baseline configuration profiles.
 
