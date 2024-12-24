@@ -4,8 +4,8 @@ Table of contents
 <!--ts-->
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [Apps Deployment](#apps-deployment)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
+      * [Apps Configuration](#apps-configuration)
+      * [Apps Monitor](#app-monitor)
    * [Tests](#tests)
    * [Dependency](#dependency)
    * [Docker](#docker)
@@ -20,7 +20,7 @@ Table of contents
 
 ## Apps Configuration
 
-## Monitor
+## Apps Monitor
 
 
 # Mobile Device Management (MDM)
