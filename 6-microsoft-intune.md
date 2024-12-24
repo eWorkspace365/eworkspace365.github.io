@@ -3,7 +3,7 @@ Table of contents
 
 <!--ts-->
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
-      * [STDIN](#stdin)
+      * [Apps Deployment](#apps-deployment)
       * [Local files](#local-files)
       * [Remote files](#remote-files)
    * [Tests](#tests)
