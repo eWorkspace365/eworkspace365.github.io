@@ -1,6 +1,8 @@
 How do I migrate to the cloud?
 Cloud migration is a complex but strategic digital transformation process, requiring careful planning and careful execution. It’s the movement of data, applications and other business elements from local IT systems to cloud-based solutions. To make this transition a success, it’s crucial to follow a series of well-defined steps and understand the different strategies available.
 
+https://www.altosor-communication.com/en/blog/microsoft-365-cloud-migration/
+
 Define migration goals: Before you start, it’s essential to understand why your company wants to migrate to the cloud. Define clear, measurable objectives for your migration. These objectives may include reducing costs, improving flexibility and scalability, or enhancing business continuity.
 Assess the current environment: Perform a complete audit of your current systems to identify what can and should be migrated. This assessment will help you understand the dependencies between applications and plan accordingly.
 Choosing a migration strategy: There are several strategies for migrating to the cloud: Moving as-is to the cloud or reconfiguring services. The choice will depend on your objectives, your budget and the time you have available.
