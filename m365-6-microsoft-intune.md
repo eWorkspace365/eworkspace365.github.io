@@ -73,6 +73,11 @@ For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundament
 
 **Windows**
 
+Import and create custom administrative templates:
+
+![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
+
+
 Go Home > Devices > Windows > Configuration Profiles: 
 
 Create a new profile with type: Device restrictions   
