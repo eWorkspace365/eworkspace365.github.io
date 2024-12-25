@@ -73,7 +73,7 @@ For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundament
 
 **Windows**
 
-Import and create custom administrative templates:
+To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
 
 ![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
 
