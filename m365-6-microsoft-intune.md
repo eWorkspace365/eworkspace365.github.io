@@ -24,6 +24,9 @@ Table of contents
 
 # Mobile Device Management (MDM)
 
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
+
+
 ## Configuration Profiles
 
 For all the **catalog settings** use the json-file to import all the baseline configuration profiles.
