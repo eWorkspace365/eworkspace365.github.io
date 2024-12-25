@@ -17,6 +17,14 @@ Table of contents
 
 # Tenant Administration
 ## Device Diagnostics
+
+Microsoft personnel may access device diagnostics to assist in troubleshooting and resolving incidents, enable all settings.
+Review documentation for more information on device diagnostics:
+https://go.microsoft.com/fwlink/?linkid=2214370
+
+![image](https://github.com/user-attachments/assets/0971f041-d335-4791-b613-6f3624319c61)
+
+
 ## End User Experiences
 ## Windows Autopatch
 
