@@ -1,3 +1,4 @@
+# Table of Contents
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
