@@ -1,10 +1,6 @@
 # EntraID
 [[_TOC_]]
 
-https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
-
-
-
 ##Users
 ###Setup break glass accounts
 his page describes the configuration of break glass accounts within Microsoft Entra ID associated with systems built according to the guidance provided by Rubicon Blueprint for Secure Cloud.
