@@ -65,7 +65,8 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 ## Configuration Profiles
 
 For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
-https://github.com/eWorkspace365/m365-landingzone/tree/main/6.%20Microsoft%20Intune/MDM/Settings%20Catalog
+
+https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog
 
 ![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
 
