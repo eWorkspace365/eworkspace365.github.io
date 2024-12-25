@@ -77,6 +77,9 @@ To configure Winget AutoUpdate in Intune, import and create custom administrativ
 
 ![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
 
+![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
+
+
 
 Go Home > Devices > Windows > Configuration Profiles: 
 
