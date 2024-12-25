@@ -6,8 +6,8 @@ https://www.markdownguide.org/getting-started
 
 [Compliance](5-compliance.md).
 
+![image](https://github.com/user-attachments/assets/bd01b82c-3033-4614-9027-6427e2f7cf95)
 
-![image](https://github.com/user-attachments/assets/db4649f0-3e33-4d7d-b915-1bf56a1cb78a)
 
 
 
