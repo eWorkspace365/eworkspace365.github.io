@@ -35,6 +35,13 @@ Complete the following steps for custom branding in Intune for End user experien
 
 ## Windows Autopatch
 
+### Autopatch Groups
+![image](https://github.com/user-attachments/assets/c2b66266-c574-4d01-8061-28557103f9f8)
+
+
+![image](https://github.com/user-attachments/assets/49dcbada-d517-40e4-8aa8-973bfde61fc3)
+
+
 # Mobile Application Management (MAM)
 
 ## Apps Deployment
