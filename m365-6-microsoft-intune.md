@@ -42,6 +42,9 @@ Complete the following steps for custom branding in Intune for End user experien
 ![image](https://github.com/user-attachments/assets/49dcbada-d517-40e4-8aa8-973bfde61fc3)
 
 
+![image](https://github.com/user-attachments/assets/a78a5f2f-a97c-44cc-b3b4-b1369ea17316)
+
+
 # Mobile Application Management (MAM)
 
 ## Apps Deployment
