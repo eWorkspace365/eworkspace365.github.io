@@ -1,3 +1,13 @@
+   * [Mobile Application Management (MAM)](#mobile-application-management-mam)
+      * [Apps Deployment](#apps-deployment)
+      * [Apps Configuration](#apps-configuration)
+      * [Apps Monitor](#apps-monitor)
+   * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
+     * [Local](#local)
+     * [Public](#public)
+
+
+
 https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
 
 https://www.markdownguide.org/getting-started
