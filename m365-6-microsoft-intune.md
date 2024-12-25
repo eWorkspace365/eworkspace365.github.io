@@ -26,6 +26,13 @@ https://go.microsoft.com/fwlink/?linkid=2214370
 
 
 ## End User Experiences
+Complete the following steps for custom branding in Intune for End user experiences:
+- Customization, for example: logo, privacy statement and company information.
+- Custom notifications
+- Terms and conditions
+
+![image](https://github.com/user-attachments/assets/055b417f-5331-4cfa-95f8-d0a80c3c4fd7)
+
 ## Windows Autopatch
 
 # Mobile Application Management (MAM)
