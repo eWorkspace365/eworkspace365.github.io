@@ -2,6 +2,10 @@ Table of contents
 =================
 
 <!--ts-->
+   * [Tenant Administration](#tenant-administration)
+      * [Device Diagnostics](#device-diagnostics)
+      * [End User Experiences](#end-user-experiences)
+      * [Windows Autopatch](#windows-autopatch)
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
@@ -11,6 +15,10 @@ Table of contents
      * [Public](#public)
 <!--te-->
 
+# Tenant Administration
+## Device Diagnostics
+## End User Experiences
+## Windows Autopatch
 
 # Mobile Application Management (MAM)
 
