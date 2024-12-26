@@ -3,6 +3,7 @@ Combining Microsoft Azure and Microsoft 365 creates a powerful modern workspace.
 
 
 # Table of Contents
+This guide covers the essential steps for implementation a secure modern workspace with Microsoft Azure and Microsoft 365:
 
 ## [Azure](#azure)
    * [1. EntraID](azure-1-0-entraid.md)
