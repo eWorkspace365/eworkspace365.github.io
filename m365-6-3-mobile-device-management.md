@@ -1,5 +1,5 @@
 # Mobile Device Management (MDM)
-Last modified on 12/26/20240 by Arian Bode
+Last modified on 12/26/2024 by Arian Bode
 
 ### In this article
 >    * [EndPoint Privileged Management](#azure)
