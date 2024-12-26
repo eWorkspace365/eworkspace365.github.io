@@ -1,8 +1,8 @@
-**Table of Contents:**
-   * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-       * [EndPoint Privileged Management](#azure)
-       * [1. EntraID](azure-1-0-entraid.md)
-       * [2. Compute Resources](azure-2-0-comp
+### In this article
+>   * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
+>       * [EndPoint Privileged Management](#azure)
+>       * [1. EntraID](azure-1-0-entraid.md)
+>       * [2. Compute Resources](azure-2-0-comp
 
 
 # Mobile Device Management (MDM)
