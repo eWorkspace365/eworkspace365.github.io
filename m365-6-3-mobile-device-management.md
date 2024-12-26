@@ -1,5 +1,5 @@
 # Mobile Device Management (MDM)
-Date:
+Article - 09/16/2024
 Applies to: Microsoft Intune
 
 ### In this article
