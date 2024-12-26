@@ -2,6 +2,7 @@
 # Mobile Device Management (MDM)
 ### In this article
 >    * [Configuration Profiles](azure-1-0-entraid.md)
+>    * [Device Restriction](test.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
 
 https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
