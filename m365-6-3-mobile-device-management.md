@@ -1,5 +1,5 @@
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Device Management (MDM)**
-
+# Mobile Device Management (MDM)
 ### In this article
 >    * [EndPoint Privileged Management](#azure)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
