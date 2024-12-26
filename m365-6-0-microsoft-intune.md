@@ -1,4 +1,4 @@
-[Home](https://eworkspace365.github.io) > [Microsoft 365](https://eworkspace365.github.io/#microsoft-365) > **6. Microsoft Intune**
+[Home](index.md) > **Microsoft 365** > **6. Microsoft Intune**
 
 Table of contents
 =================
