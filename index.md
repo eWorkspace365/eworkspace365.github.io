@@ -23,3 +23,4 @@ This guide covers the essential steps for implementation a secure modern workspa
    * [8. Roadmap](m365-8-0-roadmap.md)
 
 ## Strategy
+Cloud First fo Azure example...
