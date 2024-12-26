@@ -1,138 +1,163 @@
-# Windows 10/11
----
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+# Mobile Device Management (MDM)
 
-1. Go to **Devices** > **Compliance** and choose **Create policy**.
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
 
-1. Select a Platform for this policy:
+https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
-   - **Windows 10 and later**
 
-1. Name for this policy:
+## Configuration Profiles
 
-   - **BL-COBO-WIN-DEV-CPL-Personal-Desktop**
-   
-     ![image.png](/.attachments/image-f87132d7-69ab-4aa0-b34e-aba5984a9760.png)
+### EndPoint Privileged Management
 
-1. Set action "Mark device noncompliant" to schedule: 
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** > **Endpoint Privilege Management** > select the **Policies** tab > and then select **Create Policy**.
+   Set the *Platform* to **Windows**, *Profile* to **Windows elevation settings policy**, and then select **Create**.
 
-   - **Immediately**
+2. On **Basics**, enter the following properties:
 
-1. Set the following settings:
+   - **Name**: bl-win-cfg-privilege-mgmt
+  
+3. On **Assignments**, include the following group:
 
-   | Description | Setting | 
-   |-----------|:-----------:|
-   | Require a password to unlock mobile devices | **Required** |
-   | Simple passwords | **Block** |  
-   | Required password type | **At least alphanumeric** | 
-   | Minimum password length | **6** | 
-   | Maximum minutes of inactivity before password is required | **5 minutes** | 
-   | Require encryption of data storage on device | **Required** | 
-   | Firewall | **Required** | 
-   | Trusted Platform Module (TPM) | **Required** | 
-   | Antivirus | **Required** | 
-   | Antispyware | **Required** | 
-   | Microsoft Defender Antimalware | **Required** | 
-   | Microsoft Defender Antimalware security intelligence up-to-date | **Required** |
-   | Real-time protection | **Required** | 
-   | Require the device to be at or under the machine risk score | **Medium** | 
+   - **Group**: All Users
+  
+4. On **Configuration settings**, configure the following settings:
 
-# MacOS
-----
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
 
-1. Go to **Devices** > **Compliance** and choose **Create policy**.
+> [!TIP]
+> Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
 
-1. Select a Platform for this policy:
+### Settings Catalog
 
-   - **macOS**
+1. Download the JSON files from the [IntuneBaseline](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog) repository.
+2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to Devices > Windows > Configuration and select **Import Policy**.
 
-1. Name for this policy:
 
-   - **BL-COBO-MAC-DEV-CPL-Personal-Desktop**
 
-   ![image.png](/.attachments/image-d999709c-7a39-44cd-9187-2ed0e12de44e.png)
 
-1. Set action "Mark device noncompliant" to schedule: 
 
-   - **Immediately**
+For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
 
-1. Set the following settings:
+[Download Configuration Profiles](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog)
 
-   | Description | Setting | 
-   |-----------|:-----------:|
-   | Require system integrity protection | **Required** |
-   | Require a password to unlock mobile devices | **Required** |  
-   | Simple passwords | **Block** |
-   | Required password type | **At least alphanumeric** | 
-   | Minimum password length | **8** | 
-   | Maximum minutes of inactivity before password is required | **5 minutes** | 
-   | Require encryption of data storage on device | **Required** | 
-   | Firewall | **Required** | 
-   | Incoming connections | **Block** | 
-   | Stealth Mode | **Enabled** | 
-   | Allow apps downloaded from these locations | **Mac App Store** | 
+![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
 
-# Android
-----
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+For **device restrictions** configure the setting manually.
+For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels
 
-1. Go to **Devices** > **Compliance** and choose **Create policy**.
+**Windows**
 
-1. Select a Platform for this policy:
+To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
 
-   - **Android Enterprise**
+![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
 
-1. Name for this policy:
+![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
 
-   - **BL-COBO-AND-DEV-CPL-Personal-Device**
 
-   ![image.png](/.attachments/image-7d7f7531-9a5c-4215-a766-48612e7d98f6.png)
 
-1. Set action "Mark device noncompliant" to schedule: 
+Go Home > Devices > Windows > Configuration Profiles: 
 
-   - **Immediately**
+Create a new profile with type: Device restrictions   
+Name of the profile: bl-win-cfg-restrictions   
+Set all the restrictions according Windows security level 2:
 
-1. Set the following settings:
+**iOS** 
 
-   | Description | Setting | 
-   |-----------|:-----------:|
-   | Require a password to unlock mobile devices | **Required** |
-   | Required password type | **At least alphanumeric** | 
-   | Minimum password length | **6** | 
-   | Maximum minutes of inactivity before password is required | **5 minutes** | 
-   | Require encryption of data storage on device | **Required** | 
-   | Require the device to be at or under the machine risk score | **Medium** | 
+Go Home > Devices > iOS/iPadOS > Configuration Profiles: 
 
-# iOS
-----
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+Create a new profile with type: Device restrictions   
+Name of the profile: bl-ios-cfg-restrictions   
+Set all the restrictions according iOS security level 2:  
 
-1. Go to **Devices** > **Compliance** and choose **Create policy**.
 
-1. Select a Platform for this policy:
 
-   - **iOS/iPadOS**
 
-1. Name for this policy:
 
-   - **BL-COBO-IOS-DEV-CPL-Personal-Device**
+| Section | Setting | Value |
+| --- | --- | --- |
+| App Store, Doc Viewing, Gaming | Treat AirDrop as an unmanaged destination | Yes |
+| App Store, Doc Viewing, Gaming | Block viewing corporate documents in unmanaged apps | Yes |
+| App Store, Doc Viewing, Gaming | Block viewing non-corporate documents in corporate apps | Not configured |
+| App Store, Doc Viewing, Gaming | Allow managed apps to write contacts to unmanaged contacts accounts | Yes |
+| App Store, Doc Viewing, Gaming | Allow copy/paste to be affected by managed open-in | Not configured |
+| Built-in Apps | Block Siri while device is locked | Yes |
+| Built-in Apps | Require Safari fraud warnings | Yes |
+| Built-in Apps | Block Siri for dictation | Yes |
+| Built-in Apps | Block Siri for translation | Yes |
+| Cloud and Storage | Force encrypted backup | Yes |
+| Cloud and Storage | Block managed apps from storing data in iCloud | Yes |
+| Cloud Storage | Block backup of enterprise books | Yes |
+| Cloud Storage | Block notes and highlights sync for enterprise books | Yes |
+| Connected Devices | Force Apple Watch wrist detection | Yes |
+| General | Block untrusted TLS certificates | Yes |
+| General | Block trusting new enterprise app authors | Yes |
+| General | Block sending diagnostic and usage data to Apple | Yes |
+| Locked Screen Experience | Block Notification Center access in lock screen | Yes |
+| Locked Screen Experience | Block Today view in lock screen | Yes |
+| Password | Require a password | Yes |
+| Password | Block simple passwords | Yes |
+| Password | Required password type | Numeric |
+| Password | Minimum password length | 6 |
+| Password | Number of sign-in failures before wiping the device | 10 |
+| Password | Maximum minutes after screen lock before password is required | 5 |
+| Password | Maximum minutes of inactivity until screen locks | 5 |
 
-   ![image.png](/.attachments/image-1aeb753a-7a23-4c9b-9fab-adec23443082.png)
-1. Set action "Mark device noncompliant" to schedule: 
+**Android** 
 
-   - **Immediately**
+Go Home > Devices > Android > Configuration Profiles: 
 
-1. Set the following settings:
+Create a new profile with type: Device restrictions   
+Name of the profile: bl-and-cfg-restrictions    
+Set all the restrictions according Android security level 2:  
 
-   | Description | Setting | 
-   |-----------|:-----------:|
-   | Require the device to be at or under the Device Threat Level | **Secured** |
-   | Jailbroken devices | **Block** | 
-   | Require a password to unlock mobile devices | **Required** | 
-   | Simple passwords | **Block** | 
-   | Minimum password length | **6** | 
-   | Required password type | **6** | **At least numeric**
-   | Maximum minutes after screen lock before password is required | **5 minutes** | 
-   | Maximum minutes of inactivity until screen locks | **5 minutes** | 
-   | Require the device to be at or under the machine risk score | **Medium** | 
+| Section | Setting | Value |
+| --- | --- | --- |
+| Device password | Minimum password length | 6 |
+| Device password | Maximum minutes of inactivity until screen locks | 5 |
+| Device password | Number of sign-in failures before wiping device | 10 |
+| Device password | Password expiration (days) | Not configured |
+| Device password | Required password type | Numeric complex |
+| Device password | Prevent reuse of previous passwords | Not configured |
+| System Security | Threat scan on apps | Require |
+| System Security | Prevent app installations from unknown sources in the personal profile | Block |
+| Work profile settings | Copy and paste between work and personal profiles | Block |
+| Work profile settings | Data sharing between work and personal profiles | Apps in work profile can handle sharing request from personal profile |
+| Work profile settings | Work profile notifications while device locked | Not configured |
+| Work profile settings | Default app permissions | Device Default |
+| Work profile settings | Add and remove accounts | Block |
+| Work profile settings | Contact sharing via Bluetooth | Enable |
+| Work profile settings | Screen capture | Block |
+| Work profile settings | Search work contacts from personal profile | Not configured |
+| Work profile settings | Allow widgets from work profile apps | Enable |
+| Work profile settings | Require Work Profile Password | Require |
+| Work profile settings | Minimum password length | 6 |
+| Work profile settings | Maximum minutes of inactivity until work profile locks | 5 |
+| Work profile settings | Number of sign-in failures before wiping the work profile | 10 |
+| Work profile settings | Password expiration (days) | Numeric |
+| Work profile settings | Required password type | 6 |
+| Work profile settings | Prevent reuse of previous passwords | 10 |
+
+
+**Compliance Policies** 
+
+Compliance policies are commonly used in combination with Conditional Access. The Company Portal App synchronizes the device state to Intune and compares it with the compliancy policy that is targeted for the device.  
+
+To meet with the compliancy policy that has been targeted, of course we enforce these settings first in the configuration policy. It is basically checking if those settings were applied. 
+
+https://learn.microsoft.com/en-us/mem/intune/fundamentals/deployment-plan-compliance-policies#level-2---enhanced-device-compliance-settings
+
+
+If the device meets the compliance policy, then Intune marks the device as compliant and access to company resources is granted. 
+
+| iOS |
+| --- |
+| iOS/iPadOS device compliance security configurations - Microsoft Intune |
+| Security Level 1 |
+| Security Level 2 |
+| Security Level 3 |
+
+Go Home > Devices > iOS/iPadOS > Compliance Policies: 
+
+Create a new profile name: IOS-DEV-Compliancy-L2   
+Set all the restrictions according iOS security level 2:   
+   
