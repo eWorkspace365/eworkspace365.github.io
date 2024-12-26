@@ -11,7 +11,7 @@
      * [3. Identity](#3-identity)
      * [4. Security](#4-security)
      * [5. Compliance](#5-compliance)
-     * [6. Microsoft Intune](#6-microsoft-intune)
+     * [6. Microsoft Intune](m365-6-0-microsoft-intune.md)
      * [7. Monitoring](#7-monitoring)
      * [8. Roadmap](#8-roadmap)
 
