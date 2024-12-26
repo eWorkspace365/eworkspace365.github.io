@@ -1,4 +1,4 @@
-# Table of Contents
+**Table of Contents**
    * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
        * [EndPoint Privileged Management](#azure)
        * [1. EntraID](azure-1-0-entraid.md)
