@@ -1,3 +1,8 @@
+# Mobile Application Management (MAM)
+
+## Apps Deployment
+
+### Windows App (Win32)
 ##Requirements
 - https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool
 - [Winget-Package-Deployment.ps1](https://dev.azure.com/Rubicon-CMC/Monitoring/_git/Monitoring?path=/Scripts/winget-package-deployment.ps1&version=GBNew-Scripts)
@@ -21,6 +26,17 @@ Configure the following detection rule forthe application:
 Use the following method to correctly assign the application to the corresponding application group. 
 
 ![image.png](/.attachments/image-869f1053-27c7-41b0-ba03-c47b42f0dcd9.png)
+
+
+
+
+## Apps Configuration
+
+
+## Apps Monitor
+
+
+
 
 ##Update Policy
 - [X] [Deploy Store-app Winget-AutoUpdate-aaS](https://apps.microsoft.com/detail/xp89bsk82w9j28?amp%3Bgl=US&hl=en-us&gl=NL) 
