@@ -64,6 +64,14 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 ## Configuration Profiles
 
+### Settings Catalog
+
+Download the JSON files from the OpenIntuneBaseline repository.
+
+
+
+
+
 For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
 
 [Download Configuration Profiles](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog)
