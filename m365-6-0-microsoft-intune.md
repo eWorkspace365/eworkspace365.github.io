@@ -2,7 +2,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Tenant Administration](m365-6-0-tenant-administration.md)
+   * [Tenant Administration](m365-6-1-tenant-administration.md)
       * [Device Diagnostics](#device-diagnostics)
       * [End User Experiences](#end-user-experiences)
       * [Windows Autopatch](#windows-autopatch)
