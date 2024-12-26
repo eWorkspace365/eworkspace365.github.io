@@ -6,8 +6,8 @@
 
 > [!IMPORTANT]
 > - [X] https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool
-- 
-- [Winget-Package-Deployment.ps1](https://dev.azure.com/Rubicon-CMC/Monitoring/_git/Monitoring?path=/Scripts/winget-package-deployment.ps1&version=GBNew-Scripts)
+> - [X] - [Winget-Package-Deployment.ps1](https://www.google.nl)
+
 
 
 ##Deploy Application
