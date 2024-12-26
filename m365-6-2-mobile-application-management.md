@@ -6,7 +6,7 @@
 
 > [!IMPORTANT]
 > - [X] https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool
-> - [X] - [Winget-Package-Deployment.ps1](https://www.google.nl)
+> - [X] [Winget-Package-Deployment.ps1](https://www.google.nl)
 
 
 
