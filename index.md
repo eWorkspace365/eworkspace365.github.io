@@ -1,3 +1,55 @@
+# Table of Contents
+   * [Azure](#azure)
+      * [1. EntraID](#1-entraid)
+      * [2. Compute Resources](#2-compute-resources)
+      * [3. Monitor and Backup](#3-monitor-and-backup)
+      * [4. Storage and Databases](#4-storage-and-databases)
+      * [5. Virtual Networking](#5-virtual-networking)
+   * [Microsoft 365](#microsoft-365)
+     * [1. Cloud Adoption](#1-cloud-adoption)
+     * [2. Networking](#2-networking)
+     * [3. Identity](#3-identity)
+     * [4. Security](#4-security)
+     * [5. Compliance](#5-compliance)
+     * [6. Microsoft Intune](#6-microsoft-intune)
+     * [7. Monitoring](#7-monitoring)
+     * [8. Roadmap](#8-roadmap)
+
+
+# Azure
+
+## 1. EntraID
+
+## 2. Compute Resources
+
+## 3. Monitor and Backup
+
+## 4. Storage and Databases
+
+## 5. Virtual Networking
+
+
+# Microsoft 365
+
+## 1. Cloud Adoption
+
+## 2. Networking
+
+## 3. Identity
+
+## 4. Security
+
+## 5. Compliance
+
+## 6. Microsoft Intune
+
+## 7. Monitoring
+
+## 8. Roadmap
+
+
+
+
 https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
 
 https://www.markdownguide.org/getting-started
@@ -5,6 +57,11 @@ https://www.markdownguide.org/getting-started
 [Conditional Access](3-identity.md).
 
 [Compliance](5-compliance.md).
+
+![image](https://github.com/user-attachments/assets/bd01b82c-3033-4614-9027-6427e2f7cf95)
+
+
+
 
 
 # Microsoft | Secure and Compliant Baseline Configuration

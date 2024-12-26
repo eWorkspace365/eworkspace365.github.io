@@ -15,35 +15,6 @@ Table of contents
      * [Public](#public)
 <!--te-->
 
-# Tenant Administration
-## Device Diagnostics
-
-Microsoft personnel may access device diagnostics to assist in troubleshooting and resolving incidents, enable all settings.
-Review documentation for more information on device diagnostics:
-https://go.microsoft.com/fwlink/?linkid=2214370
-
-![image](https://github.com/user-attachments/assets/0971f041-d335-4791-b613-6f3624319c61)
-
-
-## End User Experiences
-Complete the following steps for custom branding in Intune for End user experiences:
-- Customization
-- Custom notifications
-- Terms and conditions
-
-![image](https://github.com/user-attachments/assets/055b417f-5331-4cfa-95f8-d0a80c3c4fd7)
-
-## Windows Autopatch
-
-### Autopatch Groups
-![image](https://github.com/user-attachments/assets/c2b66266-c574-4d01-8061-28557103f9f8)
-
-
-![image](https://github.com/user-attachments/assets/49dcbada-d517-40e4-8aa8-973bfde61fc3)
-
-
-![image](https://github.com/user-attachments/assets/a78a5f2f-a97c-44cc-b3b4-b1369ea17316)
-
 
 # Mobile Application Management (MAM)
 
@@ -64,8 +35,38 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 ## Configuration Profiles
 
+### EndPoint Privileged Management
+
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** > **Endpoint Privilege Management** > select the **Policies** tab > and then select **Create Policy**.
+   Set the *Platform* to **Windows**, *Profile* to **Windows elevation settings policy**, and then select **Create**.
+
+2. On **Basics**, enter the following properties:
+
+   - **Name**: bl-win-cfg-privilege-mgmt
+  
+3. On **Assignments**, include the following group:
+
+   - **Group**: All Users
+  
+4. On **Configuration settings**, configure the following settings:
+
+![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
+
+> [!TIP]
+> Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
+
+### Settings Catalog
+
+1. Download the JSON files from the [IntuneBaseline](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog) repository.
+2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to Devices > Windows > Configuration and select **Import Policy**.
+
+
+
+
+
 For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
-https://github.com/eWorkspace365/m365-landingzone/tree/main/6.%20Microsoft%20Intune/MDM/Settings%20Catalog
+
+[Download Configuration Profiles](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog)
 
 ![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
 
