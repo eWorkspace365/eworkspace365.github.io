@@ -51,13 +51,12 @@
 
 2. On **Basics**, enter the following properties:
 
-   - **Name**: Enter a descriptive name for the profile. Name profiles so you can easily identify them later.
-   - **Description**: Enter a description for the profile. This setting is optional but recommended.
-
-> Microsoft documentation: https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview
+   - **Name**: Enter a descriptive name: **bl-win-cfg-privilege-mgmt**
 
 ![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
 
+
+Microsoft documentation: https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview
 
 
 ## 7. Monitoring
