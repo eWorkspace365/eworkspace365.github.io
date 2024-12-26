@@ -1,39 +1,29 @@
-# Windows 10/11
----
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+##Requirements
+- https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool
+- [Winget-Package-Deployment.ps1](https://dev.azure.com/Rubicon-CMC/Monitoring/_git/Monitoring?path=/Scripts/winget-package-deployment.ps1&version=GBNew-Scripts)
 
-1. Go to **Devices** > **Compliance** and choose **Create policy**.
 
-1. Select a Platform for this policy:
+##Deploy Application
+Install command:
+`powershell -executionpolicy bypass -file winget-package-deployment.ps1 "install" "Jabra Direct"`
 
-   - **Windows 10 and later**
+Uninstall command:
+`powershell -executionpolicy bypass -file winget-package-deployment.ps1 "uninstall" "Jabra Direct"`
 
-1. Name for this policy:
+![image.png](/.attachments/image-1b4e7afa-6415-4ed7-bf75-e9b367ffcf96.png)
 
-   - **BL-COBO-WIN-DEV-CPL-Personal-Desktop**
-   
-     ![image.png](/.attachments/image-f87132d7-69ab-4aa0-b34e-aba5984a9760.png)
+Detection Rule:
+Configure the following detection rule forthe application:
 
-1. Set action "Mark device noncompliant" to schedule: 
+![image.png](/.attachments/image-d543bf81-5469-4be5-896d-bc1128e490dd.png)
 
-   - **Immediately**
+##Assignment Policy
+Use the following method to correctly assign the application to the corresponding application group. 
 
-1. Set the following settings:
+![image.png](/.attachments/image-869f1053-27c7-41b0-ba03-c47b42f0dcd9.png)
 
-   | Description | Setting | 
-   |-----------|:-----------:|
-   | Require a password to unlock mobile devices | **Required** |
-   | Simple passwords | **Block** |  
-   | Required password type | **At least alphanumeric** | 
-   | Minimum password length | **6** | 
-   | Maximum minutes of inactivity before password is required | **5 minutes** | 
-   | Require encryption of data storage on device | **Required** | 
-   | Firewall | **Required** | 
-   | Trusted Platform Module (TPM) | **Required** | 
-   | Antivirus | **Required** | 
-   | Antispyware | **Required** | 
-   | Microsoft Defender Antimalware | **Required** | 
-   | Microsoft Defender Antimalware security intelligence up-to-date | **Required** |
-   | Real-time protection | **Required** | 
-   | Require the device to be at or under the machine risk score | **Medium** | 
+##Update Policy
+- [X] [Deploy Store-app Winget-AutoUpdate-aaS](https://apps.microsoft.com/detail/xp89bsk82w9j28?amp%3Bgl=US&hl=en-us&gl=NL) 
+- [X] [Configure Winget-AutoUpdate ADMX templates](https://github.com/Romanitho/Winget-AutoUpdate/tree/main/Sources/Policies/ADMX) 
 
+![image.png](/.attachments/image-4e1022c5-7c6a-4b60-8d72-653acd019686.png)
