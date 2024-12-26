@@ -1,7 +1,6 @@
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Device Management (MDM)**
 # Mobile Device Management (MDM)
 ### In this article
->    * [EndPoint Privileged Management](#azure)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
 
@@ -12,23 +11,6 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 ## Configuration Profiles
 
-### EndPoint Privileged Management
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** > **Endpoint Privilege Management** > select the **Policies** tab > and then select **Create Policy**.
-   Set the *Platform* to **Windows**, *Profile* to **Windows elevation settings policy**, and then select **Create**.
-
-2. On **Basics**, enter the following properties:
-
-   - **Name**: bl-win-cfg-privilege-mgmt
-  
-3. On **Assignments**, include the following group:
-
-   - **Group**: All Users
-  
-4. On **Configuration settings**, configure the following settings:
-
-![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
-
 > [!TIP]
 > Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
 
@@ -37,15 +19,12 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 1. Download the JSON files from the [IntuneBaseline](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog) repository.
 2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to Devices > Windows > Configuration and select **Import Policy**.
 
-
-
-
-
-For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
+3. For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
 
 [Download Configuration Profiles](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog)
 
 ![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
+
 
 For **device restrictions** configure the setting manually.
 For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels
