@@ -1,4 +1,4 @@
-[Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune 6((m365-6-0-microsoft-intune.md) > **Tenant Adminitration**
+[Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Tenant Adminitration**
 
 # Tenant Administration
 ## Device Diagnostics
