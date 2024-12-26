@@ -1,4 +1,4 @@
-# Modern Workspace
+# Modern Digital Workspace
 Combining Microsoft Azure and Microsoft 365 creates a powerful modern workspace. Azure provides cloud services like Virtual Machines, Azure AD, and Azure DevOps, while Microsoft 365 includes productivity tools like Office apps, Teams, OneDrive, and SharePoint. Together, they enhance security with features like Multi-Factor Authentication and Conditional Access. They also enable seamless collaboration through Teams and SharePoint, and offer scalability and flexibility with Azure’s cloud infrastructure. Automation tools like Azure DevOps and Power Automate improve efficiency. Comprehensive management and security are ensured with Intune and Azure Security Center. This combination supports remote work, collaboration, and innovation effectively.
 
 
@@ -22,5 +22,5 @@ This guide covers the essential steps for implementation a secure modern workspa
    * [7. Monitoring](m365-7-0-monitoring.md)
    * [8. Roadmap](m365-8-0-roadmap.md)
 
-## Strategy
+## Cloud Strategy
 Cloud First fo Azure example...
