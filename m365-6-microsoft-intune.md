@@ -87,6 +87,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=55319
 ### Settings Catalog
 
 1. Download the JSON files from the [IntuneBaseline](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog) repository.
+2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to Devices > Windows > Configuration and select **Import Policy**.
 
 
 
