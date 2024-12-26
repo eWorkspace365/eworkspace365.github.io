@@ -14,15 +14,3 @@ Table of contents
      * [Local](#local)
      * [Public](#public)
 <!--te-->
-
-
-# Mobile Application Management (MAM)
-
-## Apps Deployment
-
-## Apps Configuration
-
-## Apps Monitor
-
-
-
