@@ -51,7 +51,7 @@
 
 2. On **Basics**, enter the following properties:
 
-   - **Name**: Enter a descriptive name: **bl-win-cfg-privilege-mgmt**
+   - **Name**: bl-win-cfg-privilege-mgmt
 
 ![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
 
