@@ -1,5 +1,5 @@
 # Mobile Device Management (MDM)
-Article: \today
+<!date^1392734382^Posted {date_num} {time_secs}|Posted 2014-02-18 6:39:42 AM PST>
 
 Applies to: Microsoft Intune
 
