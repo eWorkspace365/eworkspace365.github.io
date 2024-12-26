@@ -1,5 +1,6 @@
 # Table of Contents
-   * [Azure](#azure)
+
+   * ## [Azure](#azure)
       * [1. EntraID](azure-1-0-entraid.md)
       * [2. Compute Resources](azure-2-0-compute-resources.md)
       * [3. Monitor and Backup](azure-3-0-monitor-and-backup.md)
