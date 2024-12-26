@@ -1,10 +1,11 @@
+# Mobile Device Management (MDM)
+Article: 09/16/2024
+Applies to: Microsoft Intune
+
 ### In this article
 >    * [EndPoint Privileged Management](#azure)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
-
-
-# Mobile Device Management (MDM)
 
 https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
 
