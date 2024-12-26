@@ -43,28 +43,6 @@
 
 ## 6. Microsoft Intune
 
-
-### EndPoint Privileged Management
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** > **Endpoint Privilege Management** > select the **Policies** tab > and then select **Create Policy**.
-   Set the *Platform* to **Windows**, *Profile* to **Windows elevation settings policy**, and then select **Create**.
-
-2. On **Basics**, enter the following properties:
-
-   - **Name**: bl-win-cfg-privilege-mgmt
-  
-3. On **Assignments**, include the following group:
-
-   - **Group**: All Users
-  
-4. On **Configuration settings**, configure the following settings:
-
-![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
-
-> [!TIP]
-> Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
-
-
 ## 7. Monitoring
 
 ## 8. Roadmap
