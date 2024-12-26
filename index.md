@@ -1,6 +1,6 @@
 # Table of Contents
-   * [Mobile Application Management (MAM)](#mobile-application-management-mam)
-      * [Apps Deployment](#apps-deployment)
+   * [Azure](#azure)
+      * [1. EntraID](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
       * [Apps Monitor](#apps-monitor)
    * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
@@ -8,6 +8,9 @@
      * [Public](#public)
 
 
+# Azure
+
+## 1. EntraID
 
 https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
 
