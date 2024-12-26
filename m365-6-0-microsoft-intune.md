@@ -2,10 +2,10 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Tenant Administration](#tenant-administration)
-      * [Device Diagnostics](#device-diagnostics)
-      * [End User Experiences](#end-user-experiences)
-      * [Windows Autopatch](#windows-autopatch)
+   * [Tenant Administration](m365-6-1-tenant-administration.md)
+      * [Device Diagnostics](m365-6-1-tenant-administration.md#device-diagnostics)
+      * [End User Experiences](m365-6-1-tenant-administration.md#end-user-experiences)
+      * [Windows Autopatch](m365-6-1-tenant-administration.md#windows-autopatch)
    * [Mobile Application Management (MAM)](#mobile-application-management-mam)
       * [Apps Deployment](#apps-deployment)
       * [Apps Configuration](#apps-configuration)
