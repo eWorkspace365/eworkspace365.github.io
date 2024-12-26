@@ -1,3 +1,5 @@
+[Home](https://eworkspace365.github.io) > [Microsoft 365](https://eworkspace365.github.io/#microsoft-365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md)
+
 Table of contents
 =================
 
