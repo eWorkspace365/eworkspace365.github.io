@@ -1,4 +1,4 @@
-[Home](index.md) > [Microsoft 365](index.md#microsoft365) > **6. Microsoft Intune**
+[Microsoft 365](index.md#microsoft365) > **6. Microsoft Intune**
 
 Table of contents
 =================
