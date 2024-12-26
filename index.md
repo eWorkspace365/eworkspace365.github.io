@@ -6,14 +6,14 @@
       * [4. Storage and Databases](#4-storage-and-databases)
       * [5. Virtual Networking](#5-virtual-networking)
    * [Microsoft 365](#microsoft-365)
-     * [1. Cloud Adoption](#1-cloud-adoption)
-     * [2. Networking](#2-networking)
-     * [3. Identity](#3-identity)
-     * [4. Security](#4-security)
-     * [5. Compliance](#5-compliance)
+     * [1. Cloud Adoption](m365-1-0-cloud-adoption.md)
+     * [2. Networking](m365-2-0-networking.md)
+     * [3. Identity](m365-3-0-identity.md)
+     * [4. Security](m365-4-0-security.md)
+     * [5. Compliance](m365-5-0-compliance.md)
      * [6. Microsoft Intune](m365-6-0-microsoft-intune.md)
-     * [7. Monitoring](#7-monitoring)
-     * [8. Roadmap](#8-roadmap)
+     * [7. Monitoring](m365-7-0-monitoring.md)
+     * [8. Roadmap](m365-8-0-roadmap.md)
 
 
 # Azure
