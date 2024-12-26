@@ -1,6 +1,5 @@
 # Mobile Device Management (MDM)
-Article - 09/16/2024
-Applies to: Microsoft Intune
+Last modified on 12/26/20240 by Arian Bode
 
 ### In this article
 >    * [EndPoint Privileged Management](#azure)
