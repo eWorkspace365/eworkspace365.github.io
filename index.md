@@ -21,3 +21,5 @@ This guide covers the essential steps for implementation a secure modern workspa
    * [6. Microsoft Intune](m365-6-0-microsoft-intune.md)
    * [7. Monitoring](m365-7-0-monitoring.md)
    * [8. Roadmap](m365-8-0-roadmap.md)
+
+## Strategy
