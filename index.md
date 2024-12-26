@@ -24,3 +24,13 @@ This guide covers the essential steps for implementation a secure modern workspa
 
 ## Cloud Strategy
 Cloud First fo Azure example...
+### Onboarding
+ICT service providers can only exist if they deliver value to the customer
+
+As a tactical and strategic process, Portfolio Management aims to achieve the maximum result with the portfolio of IT services.
+
+The responsibility includes developing and managing a portfolio of services. Not by performing the development or management of the IT services themselves, but by ensuring that supply and demand for IT services are perfectly aligned at the time of delivery.
+
+The objective is to achieve maximum results across all services by making visible what is being delivered and identifying areas for improvement.
+
+This can be achieved by continuously assessing whether things can be done smarter or simpler, or whether more can be achieved with less, while ensuring the right speed and flexibility. Naturally, this must also be carried out at the lowest possible cost and in compliance with the organization’s rules (Security and Compliance).
