@@ -45,7 +45,8 @@
 
 
 ### Privileged EndPoint Management
-| sdfsdfgsdfgsf
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
 ![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
 
