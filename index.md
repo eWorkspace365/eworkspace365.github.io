@@ -45,7 +45,15 @@
 
 
 ### EndPoint Privileged Management
-> [!NOTE]
+
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** > **Endpoint Privilege Management** > select the **Policies** tab > and then select **Create Policy**.
+   Set the *Platform* to **Windows**, *Profile* to **Windows elevation settings policy**, and then select **Create**.
+
+2. On **Basics**, enter the following properties:
+
+   - **Name**: Enter a descriptive name for the profile. Name profiles so you can easily identify them later.
+   - **Description**: Enter a description for the profile. This setting is optional but recommended.
+
 > Microsoft documentation: https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview
 
 ![image](https://github.com/user-attachments/assets/e65829b8-b41f-4f23-87aa-39ef8f0d2db1)
