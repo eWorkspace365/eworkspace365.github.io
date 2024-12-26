@@ -11,6 +11,7 @@ Table of contents
       * [Apps Configuration](#apps-configuration)
       * [Apps Monitor](#apps-monitor)
    * [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-     * [Local](#local)
-     * [Public](#public)
+     * [AutoPilot](#local)
+     * [Compliance Policies](#public)
+     * [Cofiguration Profiles](#public)
 <!--te-->
