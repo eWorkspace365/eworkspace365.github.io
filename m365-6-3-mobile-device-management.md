@@ -1,4 +1,3 @@
-# Mobile Device Management (MDM)
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Device Management (MDM)**
 
 ### In this article
