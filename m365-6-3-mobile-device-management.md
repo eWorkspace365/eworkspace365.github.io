@@ -203,3 +203,12 @@ To meet with the compliancy policy that has been targeted, of course we enforce 
 3. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Compliance** and create the following **Compliance Policies**:
    
 ![image](https://github.com/user-attachments/assets/2bf73984-88d7-4f7c-8f9b-5fb5d8561240)
+
+## Scripts and Remediations
+
+![image](https://github.com/user-attachments/assets/a8817cf0-320d-4e65-bcf5-662d75daa852)
+
+
+![image](https://github.com/user-attachments/assets/db0fae52-34e8-4c56-946d-acfb1c28a0ad)
+
+
