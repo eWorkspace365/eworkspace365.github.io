@@ -5,7 +5,8 @@
 ### Microsoft Store App
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to Apps > All apps and select **Add**.
 2. Select App type > Microsoft Store app
-3. Add the following Microsoft Store apps and assign them to baseline group **bl-sg-devices-windows-mdm**.
+3. Edit for all assigments Group mode > Required
+4. Add all the following Microsoft Store apps and assign them to baseline group **bl-sg-devices-windows-mdm**.
   
 ![image](https://github.com/user-attachments/assets/a02d692b-e745-4d56-99a7-6db6a0571b46)
 
