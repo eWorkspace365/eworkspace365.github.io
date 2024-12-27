@@ -2,8 +2,8 @@
 
 # Mobile Device Management (MDM)
 ### In this article
->    * [Device Lifecycle](#device-lifecycle.md)
->    * [Configuration Profiles](azure-1-0-entraid.md)
+>    * [Device Lifecycle](#device-lifecycle)
+>    * [Configuration Profiles](#configuration-profiles)
 >    * [Compliance Policies](azure-1-0-entraid.md)
 >    * [Scripts and Remediations](azure-1-0-entraid.md)
 <br/>
