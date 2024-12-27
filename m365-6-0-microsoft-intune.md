@@ -1,5 +1,8 @@
 [Microsoft 365](index.md#microsoft365) > **6. Microsoft Intune**
 
+# Microsoft Intune
+Microsoft Intune is a cloud-based endpoint management solution that helps organizations manage devices and applications. It ensures secure access to company resources, protects data on both corporate and personal devices, and supports compliance with security policies. Intune integrates with other Microsoft services like Azure AD for identity management and provides a comprehensive approach to device and app management.
+
 # Table of contents
 <!--ts-->
    * [Tenant Administration](m365-6-1-tenant-administration.md)
