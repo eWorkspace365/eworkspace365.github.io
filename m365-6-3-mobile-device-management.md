@@ -22,6 +22,7 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 ![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
 
 5. Select **Windows Hello for Business**
+
 | Section | Setting | Value |
 | --- | --- | --- |
 | App Store, Doc Viewing, Gaming | Treat AirDrop as an unmanaged destination | Yes |
@@ -32,7 +33,6 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 
 ## Configuration Profiles
 
-> [!TIP]
 > Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
 
 ### Settings Catalog
