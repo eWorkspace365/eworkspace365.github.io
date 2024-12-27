@@ -2,6 +2,11 @@
 
 ## Apps Deployment
 
+### Microsoft Store App
+
+![image](https://github.com/user-attachments/assets/a02d692b-e745-4d56-99a7-6db6a0571b46)
+
+
 ### Windows App (Win32)
 
 > [!IMPORTANT]
