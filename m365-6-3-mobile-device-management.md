@@ -208,7 +208,7 @@ To meet with the compliancy policy that has been targeted, of course we enforce 
 
 https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/powershell-scripts/Windows/Remediations
 
-![image](https://github.com/user-attachments/assets/a8817cf0-320d-4e65-bcf5-662d75daa852)
+![image](https://github.com/user-attachments/assets/b63fc8e2-4a98-42aa-9a83-04c43e65cf17)
 
 https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/powershell-scripts/Windows/Platform%20Scripts
 
