@@ -66,7 +66,9 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 ### Device clean-up rules
 Set your Intune device cleanup rules to delete Intune MDM enrolled devices that appear inactive, stale, or unresponsive. Intune applies cleanup rules immediately and continuously so that your device records remain current.
 
-![image](https://github.com/user-attachments/assets/4236b287-7588-48ae-9086-54d5dd883b64)
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Device clean-up rules** and configure **Delete devices based on last check-in date** and set to 45 day.
+
+![image](https://github.com/user-attachments/assets/fb5617b9-f773-4e15-ba29-5d602b4a7c02)
 
 
 ## Configuration Profiles
