@@ -6,9 +6,7 @@
 >    * [Compliance Policies](azure-1-0-entraid.md)
 >    * [Scripts and remediations](azure-1-0-entraid.md)
 >    * [Device clean-up rules](azure-1-0-entraid.md)
-
-
-
+<br/>
 
 ## Configuration Profiles
 
