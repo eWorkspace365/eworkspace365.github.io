@@ -93,13 +93,14 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 
 <br/>
 
-1. To configure Winget AutoUpdate in Intune, import and create custom administrative templates. Download the templates from Github: https://github.com/Romanitho/Winget-AutoUpdate
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Configuration** and select tab **Import ADMX**. Import the templates from Github: https://github.com/Romanitho/Winget-AutoUpdate
 
-2. Import
+2. Go to **Devices** > **Windows** > **Configuration** and select **Create** > **New Policy**.
+3. Select platform **Windows 10 and later** and profile type **Templates** > **Imported Administrative templates**.
    
 ![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
 
-3. lkdf;lgdfg
+5. lkdf;lgdfg
    
 ![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
 
