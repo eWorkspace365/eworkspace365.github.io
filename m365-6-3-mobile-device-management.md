@@ -7,9 +7,7 @@
 >    * [Scripts and remediations](azure-1-0-entraid.md)
 >    * [Device clean-up rules](azure-1-0-entraid.md)
 
-https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
 
-https://www.microsoft.com/en-us/download/details.aspx?id=55319
 
 
 ## Configuration Profiles
@@ -148,3 +146,6 @@ Go Home > Devices > iOS/iPadOS > Compliance Policies: 
 Create a new profile name: IOS-DEV-Compliancy-L2   
 Set all the restrictions according iOS security level 2:   
    
+https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
+
+https://www.microsoft.com/en-us/download/details.aspx?id=55319
