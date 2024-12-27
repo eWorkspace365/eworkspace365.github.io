@@ -22,6 +22,7 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 ![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
 
 5. Select **Windows Hello for Business** for: <br/><br/>
+
 | Section | Setting | Value |
 | --- | --- | --- |
 | App Store, Doc Viewing, Gaming | Treat AirDrop as an unmanaged destination | Yes |
