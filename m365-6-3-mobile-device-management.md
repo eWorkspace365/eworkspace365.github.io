@@ -174,13 +174,13 @@ To meet with the compliancy policy that has been targeted, of course we enforce 
 
 1. Use the following Protection Level for Compliance Settings:
 
-  * [Level 2 - Enhanced device compliance settings](https://learn.microsoft.com/en-us/mem/intune/fundamentals/deployment-plan-compliance-policies#level-2---enhanced-device-compliance-settings)
+    * [Level 2 - Enhanced device compliance settings](https://learn.microsoft.com/en-us/mem/intune/fundamentals/deployment-plan-compliance-policies#level-2---enhanced-device-compliance-settings)
 
 2. Use the following names for the policies:
 
-  * bl-devices-cpl-windows
-  * bl-devices-cpl-ios
-  * bl-devices-cpl-android
+    * bl-devices-cpl-windows
+    * bl-devices-cpl-ios
+    * bl-devices-cpl-android
 
 ![image](https://github.com/user-attachments/assets/2bf73984-88d7-4f7c-8f9b-5fb5d8561240)
 
