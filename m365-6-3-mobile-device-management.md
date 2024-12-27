@@ -4,8 +4,8 @@
 ### In this article
 >    * [Device Lifecycle](#device-lifecycle)
 >    * [Configuration Profiles](#configuration-profiles)
->    * [Compliance Policies](azure-1-0-entraid.md)
->    * [Scripts and Remediations](azure-1-0-entraid.md)
+>    * [Compliance Policies](#compliance-policies)
+>    * [Scripts and Remediations](#scripts-and-remediations)
 <br/>
 
 ## Device Lifecycle
