@@ -89,7 +89,7 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 <br/>
 
 ### Custom Templates
-> Download the latest [Security Compliance Toolkit](https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10anagement) 
+> The Microsoft [Security Configuration Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319) enables enterprise security administrators to effectively manage their enterprise’s Group Policy Objects (GPOs).
 
 <br/>
 
@@ -99,7 +99,7 @@ To configure Winget AutoUpdate in Intune, import and create custom administrativ
 
 ![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
 
-[Direct Download link](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
+[Direct Download link]()
 
 <br/>
 
