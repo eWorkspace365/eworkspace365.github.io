@@ -1,8 +1,6 @@
 [Microsoft 365](index.md#microsoft365) > **6. Microsoft Intune**
 
-Table of contents
-=================
-
+# Table of contents
 <!--ts-->
    * [Tenant Administration](m365-6-1-tenant-administration.md)
       * [Device Diagnostics](m365-6-1-tenant-administration.md#device-diagnostics)
