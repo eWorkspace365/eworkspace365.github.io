@@ -23,7 +23,7 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 2. Select **Automatic Enrollment** and set both **MDM user scope** and **(WIP) user scope** to **All**.
 3. Select **Device platform restriction** and configure default setting: <br/>
 
-![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
+![image](https://github.com/user-attachments/assets/18bf6f9d-3c4b-4579-965a-f17248da91e3)
 
 5. Select and configure **Windows Hello for Business** and assign to **All users**: <br/>
 
