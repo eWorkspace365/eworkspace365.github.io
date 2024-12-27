@@ -182,23 +182,10 @@ To meet with the compliancy policy that has been targeted, of course we enforce 
     * bl-devices-cpl-ios
     * bl-devices-cpl-android
 
+3. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Compliance** and create the following **Compliance Policies**:
+   
 ![image](https://github.com/user-attachments/assets/2bf73984-88d7-4f7c-8f9b-5fb5d8561240)
 
-
-
-If the device meets the compliance policy, then Intune marks the device as compliant and access to company resources is granted. 
-
-| iOS |
-| --- |
-| iOS/iPadOS device compliance security configurations - Microsoft Intune |
-| Security Level 1 |
-| Security Level 2 |
-| Security Level 3 |
-
-Go Home > Devices > iOS/iPadOS > Compliance Policies: 
-
-Create a new profile name: IOS-DEV-Compliancy-L2   
-Set all the restrictions according iOS security level 2:   
 
 
 
