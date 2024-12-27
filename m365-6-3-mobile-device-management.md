@@ -8,8 +8,6 @@
 >    * [Scripts and Remediations](azure-1-0-entraid.md)
 <br/>
 
-![image](https://github.com/user-attachments/assets/170715ea-b572-4faa-9f41-58645191e92e)
-
 ## Device Lifecycle
 Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 
@@ -17,6 +15,8 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 2. **Configuration**: Policies are applied to ensure devices meet security and compliance standards.
 3. **Protection**: Security measures are implemented to safeguard data and devices.
 4. **Retirement**: Devices are securely wiped and decommissioned when no longer needed
+
+![image](https://github.com/user-attachments/assets/170715ea-b572-4faa-9f41-58645191e92e)
 
 ### Windows AutoPilot 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Windows** > **Enrollment**.
