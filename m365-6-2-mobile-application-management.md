@@ -7,6 +7,7 @@
 >   * [Apps Configuration)](#mobile-application-management-mam)
 >   * [Apps Monitor](#mobile-device-management-mdm)
 
+
 ## Apps Deployment
 
 ### Microsoft Store App
