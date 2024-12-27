@@ -87,6 +87,9 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 ### Device Restrictions
 For **device restrictions** configure the setting manually. For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels
 
+1.  Windows  
+
+![image](https://github.com/user-attachments/assets/d4cd42fe-54e9-422e-9fc2-293a348ab1d1)
 
 
 **Windows**
