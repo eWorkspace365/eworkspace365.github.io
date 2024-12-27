@@ -88,6 +88,21 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 
 <br/>
 
+### Custom Templates
+> Download the latest [Security Compliance Toolkit](https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10anagement) 
+
+<br/>
+
+To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
+
+![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
+
+![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
+
+[Direct Download link](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
+
+<br/>
+
 ### Device Restrictions
 > For **device restrictions** configure the setting manually. For more information see: [Protection Configuration Levels](https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels)
 
@@ -185,19 +200,3 @@ To meet with the compliancy policy that has been targeted, of course we enforce 
 3. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Compliance** and create the following **Compliance Policies**:
    
 ![image](https://github.com/user-attachments/assets/2bf73984-88d7-4f7c-8f9b-5fb5d8561240)
-
-
-
-
-To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
-
-![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
-
-![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
-
-
-
-
-https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
-
-https://www.microsoft.com/en-us/download/details.aspx?id=55319
