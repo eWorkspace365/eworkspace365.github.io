@@ -20,3 +20,4 @@ Microsoft Intune is a cloud-based endpoint management solution that helps organi
 <!--te-->
 
 ## Related articles
+   * [Troubleshoot Windows Enrollment Errors](https://docs.microsoft.com/nl-nl/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors)
