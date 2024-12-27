@@ -1,6 +1,14 @@
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Tenant Adminitration**
 
 # Tenant Administration
+
+
+### In this article
+>   * [Apps Deployment](m365-6-1-tenant-administration.md)
+>   * [Apps Configuration)](#mobile-application-management-mam)
+>   * [Apps Monitor](#mobile-device-management-mdm)
+
+
 ## Device Diagnostics
 
 Microsoft personnel may access device diagnostics to assist in troubleshooting and resolving incidents, enable all settings.
