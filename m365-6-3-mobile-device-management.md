@@ -1,11 +1,10 @@
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Device Management (MDM)**
 # Mobile Device Management (MDM)
 ### In this article
+>    * [Organize Devices](test.md)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
->    * [Device Restrictions](test.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
 >    * [Scripts and remediations](azure-1-0-entraid.md)
->    * [Device clean-up rules](azure-1-0-entraid.md)
 <br/>
 
 ## Configuration Profiles
