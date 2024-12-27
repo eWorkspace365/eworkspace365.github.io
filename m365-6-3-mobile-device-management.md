@@ -134,15 +134,10 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 | Password | Maximum minutes after screen lock before password is required | 5 |
 | Password | Maximum minutes of inactivity until screen locks | 5 |
 
-
-
-**Android** 
-
-Go Home > Devices > Android > Configuration Profiles: 
-
-Create a new profile with type: Device restrictions   
-Name of the profile: bl-and-cfg-restrictions    
-Set all the restrictions according Android security level 2:  
+9. Go to **Devices** > **Android** > **Configuration** and select **Create** > **New Policy**.
+10. Select platform **Android Enterprise** and profile type **Templates** > **Device Restrictions**.
+11. Type the name of the profile: **bl-and-cfg-restrictions** 
+12. Set **Device Restriction** for **Android Enterprise** using the following settings:   
 
 | Section | Setting | Value |
 | --- | --- | --- |
@@ -172,7 +167,7 @@ Set all the restrictions according Android security level 2:  
 | Work profile settings | Prevent reuse of previous passwords | 10 |
 
 
-**Compliance Policies** 
+## Compliance Policies
 
 Compliance policies are commonly used in combination with Conditional Access. The Company Portal App synchronizes the device state to Intune and compares it with the compliancy policy that is targeted for the device.  
 
