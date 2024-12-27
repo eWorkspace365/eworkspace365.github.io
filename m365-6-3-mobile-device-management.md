@@ -63,6 +63,12 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 | Apply device name template | Yes |
 | Enter a name | dev-win-mdm-%RAND:1% |
 
+### Device clean-up rules
+Set your Intune device cleanup rules to delete Intune MDM enrolled devices that appear inactive, stale, or unresponsive. Intune applies cleanup rules immediately and continuously so that your device records remain current.
+
+![image](https://github.com/user-attachments/assets/4236b287-7588-48ae-9086-54d5dd883b64)
+
+
 ## Configuration Profiles
 
 > Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
