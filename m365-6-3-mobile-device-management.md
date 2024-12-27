@@ -18,9 +18,9 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 ### Windows AutoPilot 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Windows** > **Enrollment**.
 2. Select **Automatic Enrollment** and set both **MDM user scope** and **(WIP) user scope** to **All**.
-3. Select **Device platform restriction**
-4. ![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
-
+3. Select **Device platform restriction** and configure default setting:
+![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
+4. Select **Windows Hello for Business**
 
 ## Configuration Profiles
 
