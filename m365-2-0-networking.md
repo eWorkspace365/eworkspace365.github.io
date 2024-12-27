@@ -213,6 +213,8 @@ You can approach optimization as an incremental process, applying each method su
 
 [Managing Office 365 endpoints](managing-office-365-endpoints.md)
 
+[Microsoft 365 URLs and IP address ranges](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)
+
 [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md)
 
 [Office 365 IP Address and URL Web service](microsoft-365-ip-web-service.md)
