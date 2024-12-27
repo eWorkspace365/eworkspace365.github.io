@@ -41,10 +41,24 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 | Enable enhanced sign in security | Enabled |
 | Use security keys for sign-in | Not configured |
 
-6. Select and configure **Deployment profiles** and assign the User-Driven profile to security group **bl-sg-devices-windows-autopilot**
+6. Select and configure **Deployment profiles** and assign the User-Driven profile to security group **bl-sg-devices-windows-autopilot**.
 
 ![image](https://github.com/user-attachments/assets/a0998b45-c70f-4ce4-97d3-ad7da8a6c7d3)
 
+7. Create a custom security group for the **Self-Deploying** profile and for both profiles configure the following settings:
+
+| Setting | Value |
+| :--- | :--- |
+| Join to Microsoft Entra ID as | Microsoft Entra joined |
+| Language (Region) | Operating system default |
+| Automatically configure keyboard | Yes |
+| Microsoft Software License Terms | Hide |
+| Privacy settings | Hide |
+| Hide change account options | Hide |
+| User account type | Standard |
+| Allow pre-provisioned deployment | No |
+| Apply device name template | Yes |
+| Enter a name | dev-win-mdm-%RAND:1% |
 
 ## Configuration Profiles
 
