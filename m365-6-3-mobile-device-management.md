@@ -4,7 +4,7 @@
 >    * [Organize Devices](test.md)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
->    * [Scripts and remediations](azure-1-0-entraid.md)
+>    * [Scripts and Remediations](azure-1-0-entraid.md)
 <br/>
 
 ## Configuration Profiles
