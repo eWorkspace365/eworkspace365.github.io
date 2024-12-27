@@ -22,7 +22,7 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 
 ![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
 
-5. Select **Windows Hello for Business** for: <br/>
+5. Select and configure **Windows Hello for Business** and assign to **All users**: <br/>
 
 | Setting | Value |
 | :--- | :--- |
