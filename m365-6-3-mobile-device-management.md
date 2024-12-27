@@ -100,7 +100,7 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
    
 ![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
 
-5. lkdf;lgdfg
+5. Configure thefowlling setting for Winget AutoUpdate:
    
 ![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
 
