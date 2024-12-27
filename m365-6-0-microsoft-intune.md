@@ -14,10 +14,10 @@ Microsoft Intune is a cloud-based endpoint management solution that helps organi
       * [Apps Configuration](m365-6-2-mobile-application-management.md#apps-configuration)
       * [Apps Monitor](m365-6-2-mobile-application-management.md#apps-monitor)
    * [Mobile Device Management (MDM)](m365-6-3-mobile-device-management.md)
-     * [Device Lifecycle](m365-6-3-mobile-device-management.md#local)
-     * [Compliance Policies](m365-6-3-mobile-device-management.md#public)
-     * [Cofiguration Profiles](m365-6-3-mobile-device-management.md#public)
-     * [Scripts and Remediations](m365-6-3-mobile-device-management.md#public)
+     * [Device Lifecycle](m365-6-3-mobile-device-management.md#device-lifecycle)
+     * [Compliance Policies](m365-6-3-mobile-device-management.md#compliance-policies)
+     * [Cofiguration Profiles](m365-6-3-mobile-device-management.md#configuration-profiles)
+     * [Scripts and Remediations](m365-6-3-mobile-device-management.md#scripts-and-remediations)
 <!--te-->
 
 <br/>
