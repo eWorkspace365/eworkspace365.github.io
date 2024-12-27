@@ -25,7 +25,7 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 5. Select **Windows Hello for Business** for: <br/>
 
 | Setting | Value |
-| --- | --- |
+| :--- | :--- |
 | Configure Windows Hello for Business | Enabled |
 | Use a Trusted Platform Module (TPM) | Required |
 | Minimum PIN length | 6 |
@@ -90,7 +90,7 @@ Set all the restrictions according iOS security level 2:  
 
 
 | Section | Setting | Value |
-| --- | --- | --- |
+| :--- | --- | --- |
 | App Store, Doc Viewing, Gaming | Treat AirDrop as an unmanaged destination | Yes |
 | App Store, Doc Viewing, Gaming | Block viewing corporate documents in unmanaged apps | Yes |
 | App Store, Doc Viewing, Gaming | Block viewing non-corporate documents in corporate apps | Not configured |
