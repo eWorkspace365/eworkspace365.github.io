@@ -6,8 +6,7 @@
 >  * [Apps Deployment](m365-6-1-tenant-administration.md)
 >   * [Apps Configuration)](#mobile-application-management-mam)
 >   * [Apps Monitor](#mobile-device-management-mdm)
-
-
+<br/>
 ## Apps Deployment
 
 ### Microsoft Store App
