@@ -18,3 +18,5 @@ Microsoft Intune is a cloud-based endpoint management solution that helps organi
      * [Compliance Policies](#public)
      * [Cofiguration Profiles](#public)
 <!--te-->
+
+## Related articles
