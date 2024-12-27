@@ -7,6 +7,7 @@
 >    * [Compliance Policies](azure-1-0-entraid.md)
 >    * [Scripts and Remediations](azure-1-0-entraid.md)
 <br/>
+![image](https://github.com/user-attachments/assets/170715ea-b572-4faa-9f41-58645191e92e)
 
 ## Device Lifecycle
 Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
