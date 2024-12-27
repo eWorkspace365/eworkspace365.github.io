@@ -85,40 +85,19 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 ![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
 
 ### Device Restrictions
-For **device restrictions** configure the setting manually. For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels
+> For **device restrictions** configure the setting manually. For more information see: https://learn.microsoft.com/nl-nl/mem/intune/fundamentals/protection-configuration-levels
 
-1.  Windows  
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Devices** > **Windows** > **Configuration** and select **Create** > **New Policy**.
+2. Select platform **Windows 10 and later** and profile type **Templates** > **Device Restrictions**.
+3. Type the name of the profile: **bl-win-cfg-restrictions** 
+4. Set **Device Restriction** for **Windows** using the following settings:   
 
 ![image](https://github.com/user-attachments/assets/d4cd42fe-54e9-422e-9fc2-293a348ab1d1)
 
-
-**Windows**
-
-To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
-
-![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
-
-![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
-
-
-
-Go Home > Devices > Windows > Configuration Profiles: 
-
-Create a new profile with type: Device restrictions   
-Name of the profile: bl-win-cfg-restrictions   
-Set all the restrictions according Windows security level 2:
-
-**iOS** 
-
-Go Home > Devices > iOS/iPadOS > Configuration Profiles: 
-
-Create a new profile with type: Device restrictions   
-Name of the profile: bl-ios-cfg-restrictions   
-Set all the restrictions according iOS security level 2:  
-
-
-
-
+5. Go to **Devices** > **iOS/iPadOS** > **Configuration** and select **Create** > **New Policy**.
+6. Select platform **iOS/iPadOS** and profile type **Templates** > **Device Restrictions**.
+7. Type the name of the profile: **bl-ios-cfg-restrictions** 
+8. Set **Device Restriction** for **iOS/iPadOS** using the following settings:   
 
 | Section | Setting | Value |
 | :--- | --- | --- |
@@ -148,6 +127,8 @@ Set all the restrictions according iOS security level 2:  
 | Password | Number of sign-in failures before wiping the device | 10 |
 | Password | Maximum minutes after screen lock before password is required | 5 |
 | Password | Maximum minutes of inactivity until screen locks | 5 |
+
+
 
 **Android** 
 
@@ -207,7 +188,18 @@ Go Home > Devices > iOS/iPadOS > Compliance Policies: 
 
 Create a new profile name: IOS-DEV-Compliancy-L2   
 Set all the restrictions according iOS security level 2:   
-   
+
+
+
+To configure Winget AutoUpdate in Intune, import and create custom administrative templates. These polcicies can be downloaded for Github: https://github.com/Romanitho/Winget-AutoUpdate
+
+![image](https://github.com/user-attachments/assets/c3492ef6-dff3-419b-8744-67364f489b5f)
+
+![image](https://github.com/user-attachments/assets/ca940e04-dd68-4881-8057-6c4cdd7a39a9)
+
+
+
+
 https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/security-compliance-toolkit-10
 
 https://www.microsoft.com/en-us/download/details.aspx?id=55319
