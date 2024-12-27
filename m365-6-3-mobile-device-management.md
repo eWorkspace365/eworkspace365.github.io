@@ -22,6 +22,13 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 ![image](https://github.com/user-attachments/assets/26230513-3efa-456f-a669-cdacc13a51b5)
 
 5. Select **Windows Hello for Business**
+5. | Section | Setting | Value |
+5. | --- | --- | --- |
+5. | App Store, Doc Viewing, Gaming | Treat AirDrop as an unmanaged destination | Yes |
+5. | App Store, Doc Viewing, Gaming | Block viewing corporate documents in unmanaged apps | Yes |
+5. | App Store, Doc Viewing, Gaming | Block viewing non-corporate documents in corporate apps | Not configured |
+5. | App Store, Doc Viewing, Gaming | Allow managed apps to write contacts to unmanaged contacts accounts | Yes |
+5. | App Store, Doc Viewing, Gaming | Allow copy/paste to be affected by managed open-in | Not configured |
 
 ## Configuration Profiles
 
