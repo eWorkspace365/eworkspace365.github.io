@@ -41,6 +41,10 @@ Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 | Enable enhanced sign in security | Enabled |
 | Use security keys for sign-in | Not configured |
 
+6. Select and configure **Deployment profiles** and assign to
+
+![image](https://github.com/user-attachments/assets/a0998b45-c70f-4ce4-97d3-ad7da8a6c7d3)
+
 
 ## Configuration Profiles
 
