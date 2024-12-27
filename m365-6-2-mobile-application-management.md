@@ -10,7 +10,7 @@
 
 
 
-##Deploy Application
+## Deploy Application
 Install command:
 `powershell -executionpolicy bypass -file winget-package-deployment.ps1 "install" "Jabra Direct"`
 
