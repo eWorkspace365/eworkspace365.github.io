@@ -1,7 +1,8 @@
 [Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Device Management (MDM)**
+
 # Mobile Device Management (MDM)
 ### In this article
->    * [Device Lifecycle](test.md)
+>    * [Device Lifecycle](#device-lifecycle.md)
 >    * [Configuration Profiles](azure-1-0-entraid.md)
 >    * [Compliance Policies](azure-1-0-entraid.md)
 >    * [Scripts and Remediations](azure-1-0-entraid.md)
