@@ -1,3 +1,5 @@
+[Microsoft 365](index.md#microsoft365) > [6. Microsoft Intune](m365-6-0-microsoft-intune.md) > **Mobile Application Management (MAM)**
+
 # Mobile Application Management (MAM)
 
 ### In this article
