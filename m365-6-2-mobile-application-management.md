@@ -17,7 +17,8 @@ Install command:
 Uninstall command:
 `powershell -executionpolicy bypass -file winget-package-deployment.ps1 "uninstall" "Jabra Direct"`
 
-![image.png](/.attachments/image-1b4e7afa-6415-4ed7-bf75-e9b367ffcf96.png)
+![image](https://github.com/user-attachments/assets/9af95f9e-5110-4ea0-8410-ae09777bf3d7)
+
 
 Detection Rule:
 Configure the following detection rule forthe application:
