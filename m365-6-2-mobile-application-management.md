@@ -2,17 +2,8 @@
 
 ### In this article
 >  * [Apps Deployment](m365-6-1-tenant-administration.md)
->      * [Microsoft Store App](m365-6-1-tenant-administration.md#device-diagnostics)
->      * [End User Experiences](m365-6-1-tenant-administration.md#end-user-experiences)
->      * [Windows Autopatch](m365-6-1-tenant-administration.md#windows-autopatch)
 >   * [Apps Configuration)](#mobile-application-management-mam)
->      * [Apps Deployment](#apps-deployment)
->      * [Apps Configuration](#apps-configuration)
->      * [Apps Monitor](#apps-monitor)
 >   * [Apps Monitor](#mobile-device-management-mdm)
->     * [AutoPilot](#local)
->     * [Compliance Policies](#public)
->     * [Cofiguration Profiles](#public)
 
 ## Apps Deployment
 
