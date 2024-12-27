@@ -82,8 +82,6 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 
 3. For all the **catalog settings** use the json-file to import all the baseline configuration profiles:
 
-[Download Configuration Profiles](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog)
-
 ![image](https://github.com/user-attachments/assets/2909a342-7ade-4132-8136-8b7a62c0734a)
 
 
