@@ -76,6 +76,7 @@ Set your Intune device cleanup rules to delete Intune MDM enrolled devices that 
 > Endpoint Privilege Management is available as an Intune add-on which requires an additional license to use, and supports Windows 10 and Windows 11 devices. For more information, see [Endpoint Privilege Management](https://learn.microsoft.com/en-us/mem/intune/protect/epm-overview).
 
 <br/>
+
 ### Settings Catalog
 
 1. Download the JSON files from the [IntuneBaseline](https://github.com/eWorkspace365/m365-landingzone/tree/main/6-microsoft-intune/mdm/settings-catalog) repository.
