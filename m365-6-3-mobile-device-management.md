@@ -10,10 +10,10 @@
 ## Device Lifecycle
 Device Lifecycle Management (DLM) with Microsoft Intune involves several stages:
 
-1. Enrollment: Devices are registered with Intune for management.
-2. Configuration: Policies are applied to ensure devices meet security and compliance standards.
-3. Protection: Security measures are implemented to safeguard data and devices.
-4. Retirement: Devices are securely wiped and decommissioned when no longer needed
+1. **Enrollment**: Devices are registered with Intune for management.
+2. **Configuration**: Policies are applied to ensure devices meet security and compliance standards.
+3. **Protection**: Security measures are implemented to safeguard data and devices.
+4. **Retirement**: Devices are securely wiped and decommissioned when no longer needed
 
 ### Windows AutoPilot 
 
